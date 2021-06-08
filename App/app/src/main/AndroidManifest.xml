@@ -12,9 +12,13 @@
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".IndexActivity"
+            android:label="@string/title_activity_index"
+            android:theme="@style/Theme.OTMA.NoActionBar"></activity>
+        <activity
             android:name=".CadastroActivity"
             android:label="@string/title_activity_cadastro"
-            android:theme="@style/Theme.OTMA.NoActionBar"></activity>
+            android:theme="@style/Theme.OTMA.NoActionBar" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -27,6 +31,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
