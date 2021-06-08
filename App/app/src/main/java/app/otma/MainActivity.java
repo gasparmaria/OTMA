@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.itemperfil:
                     Toast.makeText(MainActivity.this, "Perfil", Toast.LENGTH_SHORT).show();
                     return true;
+                case R.id.itemsair:
+                    Toast.makeText(MainActivity.this, "Sair", Toast.LENGTH_SHORT).show();
+                    return true;
             }
             return true;
         });
