@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id= "@+id/iteminicio"
+          android:title="@string/menu_inicio">
+    </item>
+
+    <item android:id= "@+id/itemcategorias"
+        android:title="@string/menu_categorias">
+    </item>
+
+    <item android:id= "@+id/itemcarriho"
+        android:title="@string/menu_carrinho">
+    </item>
+
+    <item android:id= "@+id/itemperfil"
+        android:title="@string/menu_perfil">
+    </item>
+
+    <item android:id= "@+id/itemsair"
+        android:title="@string/menu_sair">
+    </item>
+</menu>
