@@ -11,4 +11,11 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_cadastro">CadastroActivity</string>
     <string name="title_activity_index">IndexActivity</string>
+
+    <!-- MENU -->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_categorias">Categorias</string>
+    <string name="menu_carrinho">Carrinho</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_sair">Sair</string>
 </resources>
