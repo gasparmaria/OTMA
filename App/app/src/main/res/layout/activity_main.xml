@@ -17,12 +17,15 @@
     <include
         layout="@layout/layout_header"/>
 </RelativeLayout>
+
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/NavigationView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/NavigationView"
         android:layout_gravity="start"
+        android:background="@color/cor_principal"
         app:headerLayout="@layout/layout_hamburguer_menu"
-        app:menu="@menu/hamburguer_menu"/>
+        app:itemIconTint="@color/white"
+        app:menu="@menu/hamburguer_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
