@@ -19,11 +19,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
         android:text="Cadastro"
         android:textColor="@color/cor_principal"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="67dp" />
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="65dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"

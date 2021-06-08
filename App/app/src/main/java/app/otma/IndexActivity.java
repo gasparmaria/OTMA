@@ -13,39 +13,38 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import app.otma.databinding.ActivityLoginBinding;
+import app.otma.databinding.ActivityIndexBinding;
 
-public class LoginActivity extends AppCompatActivity {
+public class IndexActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityLoginBinding binding;
+    private ActivityIndexBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        binding = ActivityIndexBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-       // setSupportActionBar(binding.toolbar);
+        setSupportActionBar(binding.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_login);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_index);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.imageView3.setOnClickListener(new View.OnClickListener() {
-        /*binding.fab.setOnClickListener(new View.OnClickListener() {
+        binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });*/
+        });
     }
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_login);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_index);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
