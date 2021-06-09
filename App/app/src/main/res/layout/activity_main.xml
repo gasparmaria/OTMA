@@ -11,13 +11,10 @@
 
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:navigationIcon="@drawable/ic_menuicon"
-    >
+    android:layout_height="wrap_content">
     <include
         layout="@layout/layout_header"/>
 </RelativeLayout>
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/NavigationView"
         android:layout_width="match_parent"
@@ -25,7 +22,7 @@
         android:layout_gravity="start"
         android:background="@color/cor_principal"
         app:headerLayout="@layout/layout_hamburguer_menu"
-        app:itemIconTint="@color/white"
-        app:menu="@menu/hamburguer_menu" />
+        app:menu="@menu/hamburguer_menu"
+        app:collapseIcon="@drawable/ic_arrow_back"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

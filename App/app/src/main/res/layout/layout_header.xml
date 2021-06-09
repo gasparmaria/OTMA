@@ -8,7 +8,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include layout="@layout/layout_hamburguer_menu" />
 
         <ImageView
             android:id="@+id/carrinho_icon"
@@ -28,6 +27,9 @@
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/logo_preto"
             tools:srcCompat="@drawable/logo_preto" />
+
+        <include layout="@layout/layout_hamburguer_menu" />
     </RelativeLayout>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
