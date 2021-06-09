@@ -13,10 +13,11 @@
         android:layout_height="643dp"
         android:background="@drawable/rounded_view"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="44dp" />
+        tools:layout_editor_absoluteY="44dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
@@ -24,10 +25,11 @@
         android:textColor="@color/cor_principal"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteY="65dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtxtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -35,10 +37,11 @@
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="116dp"
-        android:background="@drawable/rounded_edittext" />
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints"  />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/edtxtCPF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -46,10 +49,11 @@
         android:inputType="number"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="178dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/edtxtNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,10 +61,11 @@
         android:inputType="phone"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="244dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/edtxtIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -68,10 +73,11 @@
         android:inputType="number"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="310dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/edtxtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -79,10 +85,11 @@
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="382dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/edtxtSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -90,10 +97,11 @@
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="448dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/edtxtConfSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -101,33 +109,37 @@
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="515dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkPolitica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Política de privacidade"
         android:textColor="@color/black"
         android:textSize="12sp"
         tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="560dp" />
+        tools:layout_editor_absoluteY="560dp"
+        tools:ignore="MissingConstraints"  />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCadastrar"
         android:layout_width="212dp"
         android:layout_height="45dp"
         android:text="cadastrar"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="606dp" />
+        tools:layout_editor_absoluteY="606dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtFacaLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tem cadastro? Faça login"
         android:textColor="@color/black"
         android:textSize="10sp"
         tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="660dp" />
+        tools:layout_editor_absoluteY="660dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

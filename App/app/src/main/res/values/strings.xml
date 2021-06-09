@@ -18,4 +18,5 @@
     <string name="menu_carrinho">Carrinho</string>
     <string name="menu_perfil">Perfil</string>
     <string name="menu_sair">Sair</string>
+    <string name="title_activity_cerveja">CervejaActivity</string>
 </resources>

@@ -14,8 +14,8 @@
     android:layout_height="wrap_content"
     app:navigationIcon="@drawable/ic_menuicon"
     >
-    <include
-        layout="@layout/layout_header"/>
+
+    <include layout="@layout/layout_header" />
 </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView

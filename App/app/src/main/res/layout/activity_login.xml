@@ -13,7 +13,8 @@
         android:layout_height="89dp"
         app:srcCompat="@drawable/logo_branca"
         tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="55dp" />
+        tools:layout_editor_absoluteY="55dp"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/view2"
@@ -21,20 +22,22 @@
         android:layout_height="386dp"
         android:background="@drawable/rounded_view"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="210dp" />
+        tools:layout_editor_absoluteY="210dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textColor="@color/cor_principal"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="234dp" />
+        tools:layout_editor_absoluteY="234dp"
+        tools:ignore="MissingConstraints"  />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/edtxtEmailLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_edittext"
@@ -42,10 +45,11 @@
         android:hint="E-mail"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="307dp" />
+        tools:layout_editor_absoluteY="307dp"
+        tools:ignore="MissingConstraints"  />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtxtSenhaLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_edittext"
@@ -53,36 +57,39 @@
         android:hint="Senha"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="377dp" />
+        tools:layout_editor_absoluteY="377dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtEsqueciSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Esqueci minha senha"
         android:textColor="@color/black"
         android:textSize="10sp"
         tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="429dp" />
+        tools:layout_editor_absoluteY="429dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEntrar"
         android:layout_width="209dp"
         android:layout_height="43dp"
-        android:onClick=" "
         android:text="entrar"
         app:backgroundTint="@color/cor_principal"
         tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="489dp" />
+        tools:layout_editor_absoluteY="489dp"
+        tools:ignore="MissingConstraints"  />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtFacaCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Não tem cadastro? Cadastre-se"
         android:textColor="@color/black"
         android:textSize="10sp"
         tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="547dp" />
+        tools:layout_editor_absoluteY="547dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
