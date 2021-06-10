@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void openNextActivity()
     {
-        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        Intent intent = new Intent(getApplicationContext(), IndexActivity.class);
         startActivity(intent);
     }
 }
