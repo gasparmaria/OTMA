@@ -8,16 +8,22 @@
     tools:context=".CarrinhoActivity">
 
     <!-- TÍTULO -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+    <TextView
+        android:id="@+id/titulo_carrinho"
+        android:layout_width="158dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:background="@drawable/rounded_view"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat"
-        android:backgroundTint="@color/cor_principal"
-        android:text="Confirmar Pedido" />
+        android:gravity="center"
+        android:text="@string/menu_carrinho"
+        android:textAllCaps="true"
+        android:textColor="@color/cor_principal"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- BOTÃO VOLTAR -->
     <ImageView
@@ -34,14 +40,55 @@
         app:srcCompat="@drawable/ic_arrow_back"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="30dp"
-        tools:srcCompat="@drawable/ic_arrow_back" />
+        tools:srcCompat="@drawable/ic_arrow_back"
+        tools:ignore="VectorDrawableCompat" />
 
+    <!-- BOTÃO CONFIRMAR PEDIDO -->
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/rounded_view"
+        android:fontFamily="@font/montserrat"
+        android:backgroundTint="@color/cor_principal"
+        android:text="Confirmar Pedido" />-->
     <!-- LINK MAIS PRODUTOS -->
+    <!-- CARDS -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_card"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="294dp"
+        android:text="Adicionar mais produtos"
+        android:textColor="@color/cor_principal"
+        android:textSize="16sp" />
+
     <LinearLayout
+        android:id="@+id/frame_card"
         android:layout_width="413dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="80dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         tools:layout_editor_absoluteX="-2dp"
@@ -68,12 +115,13 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginRight="5dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="68dp"
                     android:background="@drawable/ic_close" />
 
                 <TextView
@@ -203,11 +251,17 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginLeft="238dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
+                    android:layout_marginBottom="68dp"
                     android:background="@drawable/ic_close" />
 
                 <TextView
@@ -457,7 +511,7 @@
 
     </LinearLayout>
 
-    <!-- BOTÃO -->
+    <!-- INFORMAÇÕES -->
     <RelativeLayout
         android:layout_width="408dp"
         android:layout_height="150dp"
@@ -551,46 +605,27 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <!-- CARD -->
-    <TextView
-        android:id="@+id/textView10"
+    <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginLeft="127dp"
-        android:layout_marginBottom="299dp"
-        android:text="Adicionar mais produtos"
-        android:textColor="@color/cor_principal"
-        android:textSize="16sp" />
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginBottom="35dp"
+        android:background="@color/cor_principal"
+        android:text="Button" />
 
-    <!-- INFORMAÇÕES -->
-    <TextView
-        android:id="@+id/titulo_carrinho"
-        android:layout_width="158dp"
-        android:layout_height="44dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat"
-        android:gravity="center"
-        android:text="@string/menu_carrinho"
-        android:textAllCaps="true"
-        android:textColor="@color/cor_principal"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <include
         layout="@layout/endereco_activity"
         android:layout_width="match_parent"
         android:layout_height="326dp"
         android:layout_alignParentBottom="true"
-        android:visibility="visible"/>
+        android:visibility="visible" />
 
 
 </RelativeLayout>
