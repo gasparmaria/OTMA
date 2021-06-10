@@ -178,7 +178,8 @@
         android:text="Populares"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="394dp" />
+        tools:layout_editor_absoluteY="394dp"
+        tools:ignore="MissingConstraints" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
