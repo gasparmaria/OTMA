@@ -19,4 +19,5 @@
     <string name="menu_perfil">Perfil</string>
     <string name="menu_sair">Sair</string>
     <string name="title_activity_cerveja">CervejaActivity</string>
+    <string name="txtLogin">Login</string>
 </resources>

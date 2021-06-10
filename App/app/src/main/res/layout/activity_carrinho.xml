@@ -10,11 +10,11 @@
     <!-- TÍTULO -->
     <TextView
         android:id="@+id/titulo_carrinho"
-        android:layout_width="158dp"
-        android:layout_height="44dp"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="17dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="@string/menu_carrinho"
@@ -100,14 +100,26 @@
             android:layout_gravity="fill"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true">
 
             <RelativeLayout
-                android:layout_width="270dp"
+                android:layout_width="269dp"
                 android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/border">
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/border"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -197,13 +209,12 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="33dp"
+                        android:layout_width="32dp"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginRight="34dp"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginRight="35dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="1"
@@ -218,13 +229,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginRight="9dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="54dp"
                     android:fontFamily="@font/montserrat"
                     android:text="R$500,00"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -244,13 +261,17 @@
             <RelativeLayout
                 android:layout_width="270dp"
                 android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/border">
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
@@ -260,6 +281,7 @@
                     android:layout_marginStart="238dp"
                     android:layout_marginLeft="238dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="68dp"
                     android:background="@drawable/ic_close" />
@@ -294,6 +316,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/itemCarrinho"
                 android:layout_width="102dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill"
@@ -308,9 +331,6 @@
                     <TextView
                         android:layout_width="34dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="1dp"
-                        android:layout_marginLeft="1dp"
-                        android:layout_marginBottom="-60dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
                         android:text="-"
@@ -337,13 +357,14 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="33dp"
+                        android:layout_width="32dp"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginRight="34dp"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="5"
@@ -358,17 +379,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="45dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="54dp"
                     android:fontFamily="@font/montserrat"
                     android:text="R$50,00"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="17sp" />
             </RelativeLayout>
         </RelativeLayout>
 
@@ -383,8 +411,12 @@
             <RelativeLayout
                 android:layout_width="270dp"
                 android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/border">
 
                 <ImageButton
@@ -394,8 +426,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
+                    android:layout_marginBottom="68dp"
                     android:background="@drawable/ic_close" />
 
                 <TextView
@@ -473,13 +507,14 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="33dp"
+                        android:layout_width="31dp"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginRight="34dp"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="36dp"
+                        android:layout_marginRight="36dp"
+                        android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="2"
@@ -495,17 +530,25 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="44dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="54dp"
                     android:fontFamily="@font/montserrat"
                     android:text="R$4,00"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="17sp" />
             </RelativeLayout>
         </RelativeLayout>
 
@@ -605,6 +648,7 @@
         </LinearLayout>
     </RelativeLayout>
 
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
@@ -613,12 +657,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="149dp"
-        android:layout_marginLeft="149dp"
-        android:layout_marginBottom="35dp"
-        android:background="@color/cor_principal"
-        android:text="Button" />
-
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="46dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/cor_principal"
+        app:iconTint="@color/white"
+        app:rippleColor="@color/cor_principal"
+        android:background="@drawable/rounded_edittext"
+        android:text="Confirmar pedido" />
 
     <include
         layout="@layout/endereco_activity"

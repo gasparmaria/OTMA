@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.itemcategorias:
                     Toast.makeText(MainActivity.this, "Categorias", Toast.LENGTH_SHORT).show();
+                    openNextActivity();
                     return true;
                 case R.id.itemcarriho:
                     Toast.makeText(MainActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
-                    openNextActivity();
                     return true;
                 case R.id.itemperfil:
                     Toast.makeText(MainActivity.this, "Perfil", Toast.LENGTH_SHORT).show();
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void openNextActivity()
     {
-        Intent intent = new Intent(getApplicationContext(), CadastroActivity.class);
+        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
         startActivity(intent);
     }
 }
