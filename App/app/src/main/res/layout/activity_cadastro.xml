@@ -9,11 +9,14 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="351dp"
-        android:layout_height="643dp"
+        android:layout_width="315dp"
+        android:layout_height="600dp"
         android:background="@drawable/rounded_view"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -24,122 +27,156 @@
         android:text="Cadastro"
         android:textColor="@color/cor_principal"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtxtNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="Nome completo"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="116dp"
-        android:background="@drawable/rounded_edittext"
-        tools:ignore="MissingConstraints"  />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtCPF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="CPF"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="178dp"
-        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtNome"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="(DDD) + Número"
         android:inputType="phone"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="244dp"
-        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtCPF"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="Idade"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="310dp"
-        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtNumero"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="382dp"
-        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtIdade"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="448dp"
-        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtEmail"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtConfSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="Confirmar senha"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="515dp"
-        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtSenha"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/chkPolitica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="Política de privacidade"
         android:textColor="@color/black"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="560dp"
-        tools:ignore="MissingConstraints"  />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtConfSenha"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_width="212dp"
         android:layout_height="45dp"
+        android:layout_marginTop="5dp"
         android:text="cadastrar"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="606dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkPolitica"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txtFacaLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Tem cadastro? Faça login"
         android:textColor="@color/black"
         android:textSize="10sp"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"
+        app:layout_constraintVertical_bias="0.092"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,8 @@
         android:text="Categorias"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="141dp" />
+        tools:layout_editor_absoluteY="141dp"
+        tools:ignore="MissingConstraints" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
