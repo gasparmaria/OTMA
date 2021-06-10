@@ -107,6 +107,10 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/card_info1"
+                android:layout_toRightOf="@+id/card_info1"
                 android:background="@drawable/border">
 
                 <ImageButton
@@ -154,6 +158,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@id/card_info1"
                 android:layout_width="102dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill"
@@ -246,6 +251,10 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/card_info2"
+                android:layout_toRightOf="@+id/card_info2"
                 android:background="@drawable/border">
 
                 <ImageButton
@@ -294,6 +303,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/card_info2"
                 android:layout_width="102dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill"
@@ -385,6 +395,10 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/card_info3"
+                android:layout_toRightOf="@+id/card_info3"
                 android:background="@drawable/border">
 
                 <ImageButton
@@ -428,6 +442,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/card_info3"
                 android:layout_width="102dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill"
