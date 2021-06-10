@@ -1,7 +1,9 @@
 package app.otma;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.itemcarriho:
                     Toast.makeText(MainActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
+                    openNextActivity();
                     return true;
                 case R.id.itemperfil:
                     Toast.makeText(MainActivity.this, "Perfil", Toast.LENGTH_SHORT).show();
@@ -63,5 +66,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void openNextActivity()
+    {
+        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        startActivity(intent);
     }
 }

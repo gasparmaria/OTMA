@@ -24,7 +24,7 @@ public class CadastroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityCadastroBinding.inflate(getLayoutInflater());
+        /*binding = ActivityCadastroBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         //setSupportActionBar(binding.toolbar);
@@ -39,11 +39,11 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });*/
     }
-
+    /*
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_cadastro);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
-    }
+    }*/
 }
