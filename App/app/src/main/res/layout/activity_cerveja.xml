@@ -14,8 +14,10 @@
     <ScrollView
         android:layout_width="411dp"
         android:layout_height="617dp"
+        android:background="@color/white"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="114dp">
+        tools:layout_editor_absoluteY="114dp"
+        tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -54,9 +56,10 @@
             <HorizontalScrollView
                 android:id="@+id/horiz_scroll1"
                 android:layout_width="415dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="243dp"
+                android:layout_marginTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtSkol"
                 tools:ignore="MissingConstraints">
@@ -67,15 +70,153 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/cardSkol0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_skol0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/skol1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtSkol0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Skol 269ml"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoSkol0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="R$2,29"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout"
+                                android:layout_width="122dp"
+                                android:layout_height="28dp"
+                                android:background="#F3F1F1"
+                                android:marginTop="1dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_marginTop="1dp">
+
+                                <TextView
+                                    android:layout_width="33dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="-"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="+"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="46dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginStart="38dp"
+                                    android:layout_marginLeft="38dp"
+                                    android:layout_marginEnd="38dp"
+                                    android:layout_marginRight="38dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="adicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                                tools:layout_editor_absoluteX="0dp" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:id="@+id/cardSkol1"
                         android:layout_width="125dp"
-                        android:layout_height="179dp"
+                        android:layout_height="180dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onClick="adSkol1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -111,8 +252,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="R$2,29"
                             android:textColor="#373737"
-                            android:textStyle="bold"
-                            android:visibility="visible" />
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
