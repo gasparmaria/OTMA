@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
     <item android:id= "@+id/iteminicio"
-          android:title="@string/menu_inicio">
+          android:title="@string/txtInicio"
+        android:icon="@drawable/ic_baseline_home">
     </item>
 
-    <item android:id= "@+id/itemcategorias"
+    <item
+        android:id="@+id/itemcategorias"
         android:title="@string/menu_categorias">
+        <menu>
+            <item
+                android:id="@+id/categoria_cerveja"
+                android:title="@string/txtCerveja" />
+            <item
+                android:id="@+id/categoria_vinho"
+                android:icon="@drawable/ic_wine"
+                android:title="@string/txtVinho"></item>
+            <item
+                android:id="@+id/categoria_destilados"
+                android:title="@string/txtDestilados"></item>
+            <item
+                android:id="@+id/categoria_semAlcool"
+                android:title="@string/txt_semAlcool"></item>
+
+        </menu>
     </item>
 
-    <item android:id= "@+id/itemcarriho"
-        android:title="@string/menu_carrinho">
-    </item>
-
-    <item android:id= "@+id/itemperfil"
+    <item
+        android:id="@+id/itemperfil"
         android:title="@string/menu_perfil">
+        <menu>
+            <item
+                android:id="@+id/itemcarriho"
+                android:contentDescription="@string/menu_inicio"
+                android:icon="@drawable/ic_shopping_cart"
+                android:title="@string/txtCarrinho"></item>
+            <item
+                android:id="@+id/itemsair"
+                android:icon="@drawable/ic_exit_to_app"
+                android:title="@string/txtSair"></item>
+        </menu>
     </item>
 
-    <item android:id= "@+id/itemsair"
-        android:title="@string/menu_sair">
-    </item>
+
 </menu>

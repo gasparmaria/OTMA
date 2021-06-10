@@ -20,4 +20,11 @@
     <string name="menu_sair">Sair</string>
     <string name="title_activity_cerveja">CervejaActivity</string>
     <string name="txtLogin">Login</string>
+    <string name="txtCarrinho">Carrinho</string>
+    <string name="txtSair">Sair</string>
+    <string name="txtCerveja">Cerveja</string>
+    <string name="txtInicio">Inicio</string>
+    <string name="txtVinho">Vinhos</string>
+    <string name="txtDestilados">Destilados</string>
+    <string name="txt_semAlcool">Sem álcool</string>
 </resources>

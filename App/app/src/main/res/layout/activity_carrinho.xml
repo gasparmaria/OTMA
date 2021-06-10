@@ -36,11 +36,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/ic_arrow_back"
-        app:srcCompat="@drawable/ic_arrow_back"
+        android:background="@drawable/ic_baseline_keyboard_backspace"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="30dp"
-        tools:srcCompat="@drawable/ic_arrow_back"
+        tools:srcCompat="@drawable/ic_baseline_keyboard_backspace"
         tools:ignore="VectorDrawableCompat" />
 
     <!-- BOTÃO CONFIRMAR PEDIDO -->

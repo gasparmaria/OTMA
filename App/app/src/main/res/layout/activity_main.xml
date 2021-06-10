@@ -7,13 +7,10 @@
     tools:context=".MainActivity"
     android:background="@color/white"
     android:id="@+id/DrawerLayout">
-
-
 <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:navigationIcon="@drawable/ic_menuicon"
-    >
+    app:navigationIcon="@drawable/ic_arrow_back">
     <include layout="@layout/layout_header" />
 </RelativeLayout>
 
@@ -22,9 +19,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/cor_principal"
         app:headerLayout="@layout/layout_hamburguer_menu"
-        app:itemIconTint="@color/white"
+        android:background="@color/white"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
         app:menu="@menu/hamburguer_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
