@@ -23,7 +23,7 @@
                 android:title="@string/txtDestilados"></item>
             <item
                 android:id="@+id/categoria_semAlcool"
-                android:title="@string/txt_semAlcool"></item>
+                android:title="@string/txtsemAlcool"></item>
 
         </menu>
     </item>

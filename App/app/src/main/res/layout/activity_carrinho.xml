@@ -208,7 +208,7 @@
                         android:layout_marginRight="35dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="@string/txtqtdprod1"
+                        android:text="@string/txtqtdProd1"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/black"

@@ -45,12 +45,13 @@
     <!-- INDEX -->
     <string name="txtCategoria">Categorias</string>
     <string name="txtPopulares">Populares</string>
-
-    <!-- CATEGORIAS -->
+    <!-- categorias -->
     <string name="txtVinho">Vinhos</string>
     <string name="txtDestilados">Destilados</string>
     <string name="txtsemAlcool">Sem álcool</string>
     <string name="txtCervejas">Cervejas</string>
+    <!-- populares -->
+
     <!-- adicionar produto -->
     <string name="txtdiminuirItem">-</string>
     <string name="txtaumentarItem">+</string>
