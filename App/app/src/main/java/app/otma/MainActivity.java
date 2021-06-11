@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout=findViewById(R.id.DrawerLayout);
         toolbar=findViewById(R.id.app_Bar);
 
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         setSupportActionBar(toolbar);
         ActionBar actionBar=getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);

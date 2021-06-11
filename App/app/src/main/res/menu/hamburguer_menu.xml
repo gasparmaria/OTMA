@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+>
     <item android:id= "@+id/iteminicio"
           android:title="@string/txtInicio"
         android:icon="@drawable/ic_baseline_home">
@@ -9,20 +8,24 @@
 
     <item
         android:id="@+id/itemcategorias"
-        android:title="@string/menu_categorias">
+        android:title="@string/menu_categorias"
+        android:visible="true">
         <menu>
             <item
                 android:id="@+id/categoria_cerveja"
+                android:icon="@drawable/beer"
                 android:title="@string/txtCerveja" />
             <item
                 android:id="@+id/categoria_vinho"
-                android:icon="@drawable/ic_wine"
+                android:icon="@drawable/wine_bottle"
                 android:title="@string/txtVinho"></item>
             <item
                 android:id="@+id/categoria_destilados"
+                android:icon="@drawable/acool"
                 android:title="@string/txtDestilados"></item>
             <item
                 android:id="@+id/categoria_semAlcool"
+                android:icon="@drawable/no_alcohol"
                 android:title="@string/txt_semAlcool"></item>
 
         </menu>
@@ -30,7 +33,8 @@
 
     <item
         android:id="@+id/itemperfil"
-        android:title="@string/menu_perfil">
+        android:title="@string/menu_perfil"
+        android:visible="true">
         <menu>
             <item
                 android:id="@+id/itemcarrinho"
