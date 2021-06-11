@@ -9,7 +9,8 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:navigationIcon="@drawable/ic_menuicon">
+        app:navigationIcon="@drawable/ic_menuicon"
+        tools:ignore="MissingConstraints">
         <include layout="@layout/layout_header" />
     </RelativeLayout>
 
@@ -27,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
-        android:text="Categorias"
+        android:text="@string/txtCategoria"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="141dp"
@@ -69,12 +70,12 @@
                     tools:layout_editor_absoluteY="0dp" />
 
                 <TextView
-                    android:id="@+id/txtSkol1"
+                    android:id="@+id/txtCatCervejas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Cervejas"
+                    android:text="@string/txtCervejas"
                     android:textColor="#494848"
                     android:textSize="16sp"
                     tools:layout_editor_absoluteX="48dp"
@@ -107,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Vinhos"
+                    android:text="@string/txtVinho"
                     android:textColor="#494848"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -139,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Destilados"
+                    android:text="@string/txtDestilados"
                     android:textColor="#494848"
                     android:textSize="16sp"
                     tools:layout_editor_absoluteX="48dp"
@@ -173,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Sem Álcool"
+                    android:text="@string/txtsemAlcool"
                     android:textColor="#494848"
                     android:textSize="16sp"
                     tools:layout_editor_absoluteX="48dp"
@@ -187,7 +188,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
-        android:text="Populares"
+        android:text="@string/txtPopulares"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="394dp"

@@ -7,7 +7,9 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -18,8 +20,7 @@ import app.otma.databinding.ActivityCervejaBinding;
 
 public class CervejaActivity extends AppCompatActivity {
 
-    public LinearLayout card;
-    public LinearLayout cardAdd;
+    public LinearLayout card, cardAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

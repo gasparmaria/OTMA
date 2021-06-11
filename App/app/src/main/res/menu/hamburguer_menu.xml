@@ -33,7 +33,7 @@
         android:title="@string/menu_perfil">
         <menu>
             <item
-                android:id="@+id/itemcarriho"
+                android:id="@+id/itemcarrinho"
                 android:contentDescription="@string/menu_inicio"
                 android:icon="@drawable/ic_shopping_cart"
                 android:title="@string/txtCarrinho"></item>

@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">OTMA</string>
-    <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_cadastro">CadastroActivity</string>
     <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_cerveja">CervejaActivity</string>
 
     <!-- MENU -->
     <string name="menu_inicio">Inicio</string>
@@ -18,13 +18,119 @@
     <string name="menu_carrinho">Carrinho</string>
     <string name="menu_perfil">Perfil</string>
     <string name="menu_sair">Sair</string>
-    <string name="title_activity_cerveja">CervejaActivity</string>
     <string name="txtLogin">Login</string>
     <string name="txtCarrinho">Carrinho</string>
     <string name="txtSair">Sair</string>
     <string name="txtCerveja">Cerveja</string>
     <string name="txtInicio">Inicio</string>
+
+    <!-- LOGIN -->
+    <string name="txtEsqueciSenha">Esqueci minha senha</string>
+    <string name="btnEntrar">entrar</string>
+    <string name="txtFacaCadastro">Não tem cadastro? Cadastre-se</string>
+
+    <!-- CADASTRO -->
+    <string name="txtcadastro">Cadastro</string>
+    <string name="edtxtNome">Nome completo</string>
+    <string name="edtxtCPF">CPF</string>
+    <string name="edtxtNumero">(DDD) + Número</string>
+    <string name="edtxtIdade">Idade</string>
+    <string name="edtxtEmail">E-mail</string>
+    <string name="edtxtSenha">Senha</string>
+    <string name="edtxtConfSenha">Confirmar senha</string>
+    <string name="chkPolitica">Política de privacidade</string>
+    <string name="btnCadastrar">cadastrar</string>
+    <string name="txtFacaLogin">Tem cadastro? Faça login</string>
+
+    <!-- INDEX -->
+    <string name="txtCategoria">Categorias</string>
+    <string name="txtPopulares">Populares</string>
+
+    <!-- CATEGORIAS -->
     <string name="txtVinho">Vinhos</string>
     <string name="txtDestilados">Destilados</string>
-    <string name="txt_semAlcool">Sem álcool</string>
+    <string name="txtsemAlcool">Sem álcool</string>
+    <string name="txtCervejas">Cervejas</string>
+    <!-- adicionar produto -->
+    <string name="txtdiminuirItem">-</string>
+    <string name="txtaumentarItem">+</string>
+    <string name="txtqtd">1</string>
+
+    <!-- CERVEJAS -->
+    <!-- skol -->
+    <string name="txtskol">Skol</string>
+    <string name="txtskol1">Skol 269ml</string>
+    <string name="txtprecoSkol1">R$2,29</string>
+    <string name="txtadicionar">adicionar</string>
+    <string name="txtSkol2">Skol 473ml</string>
+    <string name="txtprecoSkol2">R$3,29</string>
+    <string name="txtSkol3">Skol Puro Malte 269ml</string>
+    <string name="txtprecoSkol3">R$2,39</string>
+    <string name="txtSkol4">Skol Puro Malte 473ml</string>
+    <string name="txtprecoSkol4">R$3,39</string>
+    <string name="txtSkol5">Skol Hops 269ml</string>
+    <string name="txtprecoSkol5">R$2,79</string>
+    <string name="txtSkol6">Skol Hops 473ml</string>
+    <string name="txtprecoSkol6">R$3,49</string>
+    <!-- brahma -->
+    <string name="txtBrahma">Brahma</string>
+    <string name="txtBrahma1">Brahma Chopp 350ml</string>
+    <string name="txtprecoBrahma1">R$2,49</string>
+    <string name="txtBrahma2">Brahma Duplo Malte 350ml</string>
+    <string name="txtprecoBrahma2">R$3,09</string>
+    <string name="txtBrahma3">Brahma Malzbier 355ml</string>
+    <string name="txtprecoBrahma3">R$3,39</string>
+    <string name="txtBrahma4">Brahma Zero 350ml</string>
+    <string name="txtprecoBrahma4">R$3,29</string>
+    <string name="txtBrahma5">Brahma Extra Lager 350ml</string>
+    <string name="txtprecoBrahma5">R$2,99</string>
+    <!-- heineken -->
+    <string name="txtHeineken">Heineken</string>
+    <string name="txtHeineken1">Heineken 250ml</string>
+    <string name="txtprecoHeineken1">R$3,79</string>
+    <string name="txtHeineken2">Heineken 330ml</string>
+    <string name="txtprecoHeineken2">R$4,99</string>
+    <string name="txtHeineken3">Heineken 600ml</string>
+    <string name="txtprecoHeineken3">R$9,79</string>
+    <!-- stella artois -->
+    <string name="txtStella">Stella Artois</string>
+    <string name="txtStella1">Stella Artois 269ml</string>
+    <string name="txtprecoStella1">R$3,79</string>
+    <string name="txtStella2">Stella Artois 330ml</string>
+    <string name="txtprecoHStella2">R$4,99</string>
+    <string name="txtStella3">Stella Artois 550ml</string>
+    <string name="txtprecoStella3">R$8,99</string>
+    <!-- colorado -->
+    <string name="txtColorado1">Colorado Appia 600ml</string>
+    <string name="txtprecoColorado1">R$10,90</string>
+    <string name="txtColorado2">Colorado Nassau 600ml</string>
+    <string name="txtprecoColorado2">R$14,99</string>
+    <string name="txtColorado3">Colorado Ribeirão Lager 600ml</string>
+    <string name="txtprecoColorado3">R$10,90</string>
+    <string name="txtColorado4">Colorado Murica 600ml</string>
+    <string name="txtprecoColorado4">R$14,99</string>
+    <string name="txtColorado5">Colorado Demoiselle 600ml</string>
+    <string name="txtprecoColorado5">R$14,99</string>
+
+    <!-- CARRINHO -->
+    <string name="txtpreco1">R$500,00</string>
+    <string name="txtprod1">Vinho Ausone</string>
+    <string name="txtqtdProd1">1</string>
+    <string name="txtValor1">R$500,00</string>
+    <string name="txtprod2">Skol Beats</string>
+    <string name="txtpreco2">R$10,00</string>
+    <string name="txtqtdProd2">5</string>
+    <string name="txtvalor2">R$50,00</string>
+    <string name="txtprod3">Águas Miralba</string>
+    <string name="txtpreco3">R$2,00</string>
+    <string name="txtqtdProd3">2</string>
+    <string name="txtvalor3">R$4,00</string>
+    <string name="txtaddProd">Adicionar mais produtos</string>
+    <string name="txtsubtotal">Subtotal</string>
+    <string name="txtvalorSubtotal">R$554,00</string>
+    <string name="txtTaxaEntrega">Taxa de entrega</string>
+    <string name="txtValorTaxa">R$5,00</string>
+    <string name="txtTotal">Total</string>
+    <string name="txtValorTotal">R$559,00</string>
+    <string name="btnConfirmarPedido">Confirmar pedido</string>
 </resources>

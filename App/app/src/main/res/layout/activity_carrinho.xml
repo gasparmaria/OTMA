@@ -17,7 +17,7 @@
         android:layout_marginTop="17dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="@string/menu_carrinho"
+        android:text="@string/txtCarrinho"
         android:textAllCaps="true"
         android:textColor="@color/cor_principal"
         android:textSize="28sp"
@@ -27,7 +27,7 @@
 
     <!-- BOTÃO VOLTAR -->
     <ImageView
-        android:id="@+id/voltar"
+        android:id="@+id/btnvoltar"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_alignParentStart="true"
@@ -43,21 +43,8 @@
         tools:srcCompat="@drawable/ic_baseline_keyboard_backspace"
         tools:ignore="VectorDrawableCompat" />
 
-    <!-- BOTÃO CONFIRMAR PEDIDO -->
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:background="@drawable/rounded_view"
-        android:fontFamily="@font/montserrat"
-        android:backgroundTint="@color/cor_principal"
-        android:text="Confirmar Pedido" />-->
-    <!-- LINK MAIS PRODUTOS -->
-    <!-- CARDS -->
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtaddProd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frame_card"
@@ -71,7 +58,7 @@
         android:layout_marginEnd="127dp"
         android:layout_marginRight="127dp"
         android:layout_marginBottom="294dp"
-        android:text="Adicionar mais produtos"
+        android:text="@string/txtaddProd"
         android:textColor="@color/cor_principal"
         android:textSize="16sp" />
 
@@ -148,7 +135,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="R$500,00"
+                    android:text="@string/txtpreco1"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -161,7 +148,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Vinho Ausone"
+                    android:text="@string/txtprod1"
                     android:textColor="@color/black"
                     android:textSize="22sp" />
 
@@ -189,7 +176,7 @@
                         android:layout_marginBottom="-60dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
-                        android:text="-"
+                        android:text="@string/txtdiminuirItem"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/cor_principal"
@@ -205,7 +192,7 @@
                         android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
-                        android:text="+"
+                        android:text="@string/txtaumentarItem"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/cor_principal"
@@ -221,11 +208,11 @@
                         android:layout_marginRight="35dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="1"
+                        android:text="@string/txtqtdprod1"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/black"
-                        android:textSize="16dp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -247,7 +234,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="54dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="R$500,00"
+                    android:text="@string/txtValor1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/black"
                     android:textSize="17sp" />
@@ -301,7 +288,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="R$10,00"
+                    android:text="@string/txtpreco2"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -314,7 +301,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Skol Beats"
+                    android:text="@string/txtprod2"
                     android:textColor="@color/black"
                     android:textSize="22sp" />
 
@@ -339,7 +326,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
-                        android:text="-"
+                        android:text="@string/txtdiminuirItem"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/cor_principal"
@@ -355,7 +342,7 @@
                         android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
-                        android:text="+"
+                        android:text="@string/txtaumentarItem"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/cor_principal"
@@ -373,11 +360,11 @@
                         android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="5"
+                        android:text="@string/txtqtdProd2"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/black"
-                        android:textSize="16dp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -399,7 +386,7 @@
                     android:layout_marginRight="14dp"
                     android:layout_marginBottom="54dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="R$50,00"
+                    android:text="@string/txtvalor2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/black"
                     android:textSize="17sp" />
@@ -450,7 +437,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="R$2,00"
+                    android:text="@string/txtpreco3"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -463,7 +450,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Águas Miralba"
+                    android:text="@string/txtprod3"
                     android:textColor="@color/black"
                     android:textSize="22sp" />
 
@@ -491,7 +478,7 @@
                         android:layout_marginBottom="-60dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
-                        android:text="-"
+                        android:text="@string/txtdiminuirItem"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/cor_principal"
@@ -505,11 +492,9 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
-                        android:text="+"
+                        android:text="@string/txtaumentarItem"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/cor_principal"
@@ -527,11 +512,11 @@
                         android:layout_marginBottom="0dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="2"
+                        android:text="@string/txtqtdProd3"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/black"
-                        android:textSize="16dp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -555,7 +540,7 @@
                     android:layout_marginRight="13dp"
                     android:layout_marginBottom="54dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="R$4,00"
+                    android:text="@string/txtvalor3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/black"
                     android:textSize="17sp" />
@@ -586,7 +571,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="18dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Subtotal"
+                android:text="@string/txtsubtotal"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -595,7 +580,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="18dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Taxa de entrega"
+                android:text="@string/txtTaxaEntrega"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -603,11 +588,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
-                android:text="Total"
+                android:text="@string/txtTotal"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
-
-
 
         </LinearLayout>
 
@@ -629,7 +612,7 @@
                 android:layout_marginBottom="18dp"
                 android:fontFamily="@font/montserrat"
                 android:gravity="end"
-                android:text="R$554,00"
+                android:text="@string/txtvalorSubtotal"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
@@ -640,7 +623,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/montserrat"
                 android:gravity="end"
-                android:text="R$5,00"
+                android:text="@string/txtValorTaxa"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
@@ -650,14 +633,13 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:gravity="end"
-                android:text="R$559,00"
+                android:text="@string/txtValorTotal"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
-
 
     <Button
         android:id="@+id/button3"
@@ -676,7 +658,7 @@
         app:iconTint="@color/white"
         app:rippleColor="@color/cor_principal"
         android:background="@drawable/rounded_edittext"
-        android:text="Confirmar pedido" />
+        android:text="@string/btnConfirmarPedido" />
 
     <include
         layout="@layout/endereco_activity"
@@ -684,6 +666,4 @@
         android:layout_height="326dp"
         android:layout_alignParentBottom="true"
         android:visibility="invisible" />
-
-
 </RelativeLayout>

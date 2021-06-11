@@ -40,19 +40,19 @@ public class MainActivity extends AppCompatActivity {
             {
                 case R.id.iteminicio:
                     Toast.makeText(MainActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
+                    openIndex();
                     return true;
-                case R.id.itemcategorias:
+                case R.id.categoria_cerveja:
                     Toast.makeText(MainActivity.this, "Categorias", Toast.LENGTH_SHORT).show();
-                    openNextActivity();
+                    openCerveja();
                     return true;
-                case R.id.itemcarriho:
+                case R.id.itemcarrinho:
                     Toast.makeText(MainActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
-                    return true;
-                case R.id.itemperfil:
-                    Toast.makeText(MainActivity.this, "Perfil", Toast.LENGTH_SHORT).show();
+                    openCarrinho();
                     return true;
                 case R.id.itemsair:
                     Toast.makeText(MainActivity.this, "Sair", Toast.LENGTH_SHORT).show();
+                    openLogin();
                     return true;
             }
             return true;
@@ -68,9 +68,24 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openNextActivity()
+    public void openIndex()
+    {
+        Intent intent = new Intent(getApplicationContext(), IndexActivity.class);
+        startActivity(intent);
+    }
+    public void openCerveja()
     {
         Intent intent = new Intent(getApplicationContext(), CervejaActivity.class);
+        startActivity(intent);
+    }
+    public void openCarrinho()
+    {
+        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        startActivity(intent);
+    }
+    public void openLogin()
+    {
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
     }
 }
