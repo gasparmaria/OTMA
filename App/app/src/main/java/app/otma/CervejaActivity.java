@@ -12,8 +12,8 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
-import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -23,9 +23,8 @@ import app.otma.databinding.ActivityCervejaBinding;
 
 public class CervejaActivity extends AppCompatActivity {
 
-    public LinearLayout card, cardAdd;
-    public TextView brahma;
-    public HorizontalScrollView hsvSkol;
+    public LinearLayout cardSkol1, cardSkol2, cardSkol3, cardSkol4, cardSkol5, cardSkol6;
+    public LinearLayout cardAddSkol1, cardAddSkol2, cardAddSkol3, cardAddSkol4, cardAddSkol5, cardAddSkol6;
     public Toolbar toolbar;
 
     @Override
@@ -33,21 +32,47 @@ public class CervejaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cerveja);
 
-        toolbar=findViewById(R.id.app_Bar);
-
-        setSupportActionBar(toolbar);
-        ActionBar actionBar=getSupportActionBar();
+        setSupportActionBar(findViewById(R.id.app_Bar));
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
-        card = (LinearLayout) findViewById(R.id.cardSkol1);
-        cardAdd = (LinearLayout) findViewById(R.id.cardSkol0);
-        brahma = (TextView) findViewById(R.id.txtBrahma);
-        hsvSkol = (HorizontalScrollView) findViewById(R.id.horiz_scroll1);
+        cardSkol1 = (LinearLayout) findViewById(R.id.cardSkol1);
+        cardAddSkol1 = (LinearLayout) findViewById(R.id.cardSkol1_0);
+        cardSkol2 = (LinearLayout) findViewById(R.id.cardSkol2);
+        cardAddSkol2 = (LinearLayout) findViewById(R.id.cardSkol2_0);
+        cardSkol2 = (LinearLayout) findViewById(R.id.cardSkol3);
+        cardAddSkol2 = (LinearLayout) findViewById(R.id.cardSkol3_0);
+        cardSkol2 = (LinearLayout) findViewById(R.id.cardSkol4);
+        cardAddSkol2 = (LinearLayout) findViewById(R.id.cardSkol4_0);
+        cardSkol2 = (LinearLayout) findViewById(R.id.cardSkol5);
+        cardAddSkol2 = (LinearLayout) findViewById(R.id.cardSkol5_0);
+        cardSkol2 = (LinearLayout) findViewById(R.id.cardSkol6);
+        cardAddSkol2 = (LinearLayout) findViewById(R.id.cardSkol6_0);
     }
 
     public void adSkol1(View asc){
-        card.setVisibility(View.GONE);
-        cardAdd.setVisibility(View.VISIBLE);
+        cardSkol1.setVisibility(View.GONE);
+        cardAddSkol1.setVisibility(View.VISIBLE);
+    }
+    public void adSkol2(View asc){
+        cardSkol2.setVisibility(View.GONE);
+        cardAddSkol2.setVisibility(View.VISIBLE);
+    }
+    public void adSkol3(View asc){
+        cardSkol3.setVisibility(View.GONE);
+        cardAddSkol3.setVisibility(View.VISIBLE);
+    }
+    public void adSkol4(View asc){
+        cardSkol4.setVisibility(View.GONE);
+        cardAddSkol4.setVisibility(View.VISIBLE);
+    }
+    public void adSkol5(View asc){
+        cardSkol5.setVisibility(View.GONE);
+        cardAddSkol5.setVisibility(View.VISIBLE);
+    }
+    public void adSkol6(View asc){
+        cardSkol6.setVisibility(View.GONE);
+        cardAddSkol6.setVisibility(View.VISIBLE);
     }
 }

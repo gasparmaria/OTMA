@@ -7,56 +7,31 @@
     android:background="@color/white"
     tools:context=".CervejaActivity">
 
-
-    <include layout="@layout/layout_header" />
     <!-- menu -->
-    <!--<RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_header"
+        android:layout_width="wrap_content"
+        android:layout_height="131dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:id="@+id/carrinho_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="16dp"
-            app:srcCompat="@drawable/carrinho"
-            tools:srcCompat="@drawable/carrinho" />
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="200dp"
-            android:layout_height="45dp"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/logo_preto"
-            tools:srcCompat="@drawable/logo_preto" />
-
-        <include layout="@layout/layout_hamburguer_menu" />
-    </RelativeLayout>-->
+        app:layout_constraintVertical_bias="0.0" />
 
     <!-- scrollview vertical -->
-
-
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="411dp"
-        android:layout_height="617dp"
+        android:layout_width="410dp"
+        android:layout_height="602dp"
         android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -113,7 +88,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/cardSkol0"
+                        android:id="@+id/cardSkol1_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="15dp"
@@ -123,11 +98,10 @@
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
                         android:orientation="vertical"
-                        android:visibility="gone"
-                        tools:visibility="gone">
+                        android:visibility="gone">
 
                         <ImageButton
-                            android:id="@+id/img_skol0"
+                            android:id="@+id/img_skol1_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
@@ -139,7 +113,7 @@
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtSkol0"
+                            android:id="@+id/txtSkol1_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
@@ -153,7 +127,7 @@
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoSkol0"
+                            android:id="@+id/txtprecoSkol1_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -169,22 +143,22 @@
                             android:layout_marginTop="3dp"
                             android:background="@drawable/ic_adicionar">
 
-                            <RelativeLayout
-                                android:id="@+id/relativeLayout"
-                                android:layout_width="122dp"
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1"
+                                android:layout_width="121dp"
                                 android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
                                 android:layout_marginTop="1dp"
                                 android:background="#F3F1F1"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent">
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
 
                                 <TextView
-                                    android:layout_width="33dp"
+                                    android:layout_width="40dp"
                                     android:layout_height="match_parent"
-                                    android:layout_alignParentStart="true"
-                                    android:layout_alignParentLeft="true"
-                                    android:layout_alignParentBottom="true"
                                     android:layout_marginBottom="0dp"
                                     android:fontFamily="@font/montserrat"
                                     android:gravity="center_horizontal"
@@ -195,11 +169,20 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:layout_width="35dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_alignParentBottom="true"
                                     android:layout_marginBottom="0dp"
                                     android:fontFamily="@font/montserrat"
                                     android:gravity="center_horizontal"
@@ -209,39 +192,18 @@
                                     android:textSize="20sp"
                                     android:textStyle="bold" />
 
-                                <TextView
-                                    android:layout_width="46dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_alignParentStart="true"
-                                    android:layout_alignParentLeft="true"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_alignParentRight="true"
-                                    android:layout_marginStart="38dp"
-                                    android:layout_marginLeft="38dp"
-                                    android:layout_marginEnd="38dp"
-                                    android:layout_marginRight="38dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-                            </RelativeLayout>
+                            </LinearLayout>
 
                             <Button
-                                android:id="@+id/button2"
+                                android:id="@+id/btnAdSkol1"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
                                 android:text="@string/txtadicionar"
                                 android:textColor="@color/white"
                                 android:textSize="10sp"
                                 app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1"
                                 tools:ignore="SmallSp"
                                 tools:layout_editor_absoluteX="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -297,6 +259,130 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/cardSkol2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_skol2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/skol2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtSkol2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtSkol2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoSkol2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoSkol2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAdSkol2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:id="@+id/cardSkol2"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
@@ -307,6 +393,7 @@
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
                         android:orientation="vertical"
+                        android:onClick="adSkol2"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
@@ -345,6 +432,129 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/cardSkol3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_skol3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/skol3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtSkol3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtSkol3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoSkol3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoSkol3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAdSkol3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                    <LinearLayout
                         android:id="@+id/cardSkol3"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
@@ -354,6 +564,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onClick="adSkol3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -392,6 +603,129 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/cardSkol4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_skol4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/skol4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtSkol4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtSkol4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoSkol4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoSkol4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAdSkol4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
                     <LinearLayout
                         android:id="@+id/cardSkol4"
                         android:layout_width="125dp"
@@ -441,6 +775,129 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/cardSkol5_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_skol5_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/skol5"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtSkol5_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtSkol5"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoSkol5_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoSkol5"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd5"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAdSkol5"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                    <LinearLayout
                         android:id="@+id/cardSkol5"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
@@ -488,6 +945,129 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/cardSkol6_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_skol6_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/skol6"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtSkol6_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtSkol6"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoSkol6_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoSkol6"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd6"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAdSkol6"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd6"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
                     <LinearLayout
                         android:id="@+id/cardSkol6"
                         android:layout_width="125dp"
