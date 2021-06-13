@@ -87,6 +87,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <!-- card 1 skol -->
                     <LinearLayout
                         android:id="@+id/cardSkol1_0"
                         android:layout_width="match_parent"
@@ -195,7 +196,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAdSkol1"
+                                android:id="@+id/btnAddSkol1"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -219,7 +220,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="adSkol1"
+                        android:onClick="addSkol1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -258,6 +259,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 2 skol -->
                     <LinearLayout
                         android:id="@+id/cardSkol2_0"
                         android:layout_width="match_parent"
@@ -366,7 +368,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAdSkol2"
+                                android:id="@+id/btnAddSkol2"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -393,7 +395,7 @@
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
                         android:orientation="vertical"
-                        android:onClick="adSkol2"
+                        android:onClick="addSkol2"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
@@ -431,6 +433,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 3 skol -->
                     <LinearLayout
                         android:id="@+id/cardSkol3_0"
                         android:layout_width="match_parent"
@@ -539,7 +542,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAdSkol3"
+                                android:id="@+id/btnAddSkol3"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -554,6 +557,7 @@
                                 tools:layout_editor_absoluteX="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardSkol3"
                         android:layout_width="125dp"
@@ -564,7 +568,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="adSkol3"
+                        android:onClick="addSkol3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -603,6 +607,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 4 skol -->
                     <LinearLayout
                         android:id="@+id/cardSkol4_0"
                         android:layout_width="match_parent"
@@ -711,7 +716,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAdSkol4"
+                                android:id="@+id/btnAddSkol4"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -726,6 +731,7 @@
                                 tools:layout_editor_absoluteX="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardSkol4"
                         android:layout_width="125dp"
@@ -736,6 +742,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addSkol4"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -744,7 +751,7 @@
                         <ImageButton
                             android:id="@+id/img_skol4"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="80dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
@@ -774,6 +781,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 5 skol -->
                     <LinearLayout
                         android:id="@+id/cardSkol5_0"
                         android:layout_width="match_parent"
@@ -882,7 +890,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAdSkol5"
+                                android:id="@+id/btnAddSkol5"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -897,6 +905,7 @@
                                 tools:layout_editor_absoluteX="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardSkol5"
                         android:layout_width="125dp"
@@ -907,6 +916,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addSkol5"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -945,6 +955,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 6 skol -->
                     <LinearLayout
                         android:id="@+id/cardSkol6_0"
                         android:layout_width="match_parent"
@@ -1053,7 +1064,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAdSkol6"
+                                android:id="@+id/btnAddSkol6"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -1068,6 +1079,7 @@
                                 tools:layout_editor_absoluteX="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardSkol6"
                         android:layout_width="125dp"
@@ -1078,6 +1090,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addSkol6"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1150,8 +1163,133 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <!-- card 1 brahma -->
                     <LinearLayout
-                        android:id="@+id/cardBrahma"
+                        android:id="@+id/cardBrahma1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_brahma1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/brahma1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBrahma1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBrahma1"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBrahma1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBrahma1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBrahma1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBrahma1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -1160,6 +1298,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addBrahma1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1187,7 +1326,139 @@
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
+                        <TextView
+                            android:id="@+id/txtprecoBrahma1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBrahma1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
+                    <!-- card 2 brahma -->
+                    <LinearLayout
+                        android:id="@+id/cardBrahma2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_brahma2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/brahma2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBrahma2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBrahma2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBrahma2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBrahma2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBrahma2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -1200,6 +1471,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addBrahma2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1238,6 +1510,131 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 3 brahma -->
+                    <LinearLayout
+                        android:id="@+id/cardBrahma3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_brahma3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/brahma3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBrahma3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBrahma3"
+                            android:textColor="#515151"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBrahma3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBrahma3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBrahma3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardBrahma3"
                         android:layout_width="125dp"
@@ -1248,6 +1645,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addBrahma3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1272,7 +1670,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBrahma3"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -1284,6 +1682,131 @@
                             android:text="@string/txtprecoBrahma3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 4 brahma -->
+                    <LinearLayout
+                        android:id="@+id/cardBrahma4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_brahma4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/brahma4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBrahma4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBrahma4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBrahma4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBrahma4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBrahma4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -1334,8 +1857,133 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 5 brahma -->
                     <LinearLayout
-                        android:id="@+id/carBrahma5"
+                        android:id="@+id/cardBrahma5_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_brahma5_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/brahma5"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBrahma5_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBrahma5"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBrahma5_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBrahma5"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_5"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBrahma5"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_5"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBrahma5"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -1391,7 +2039,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="250dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/txtHeineken"
                 android:textColor="#1E1E1E"
@@ -1416,8 +2064,133 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <!-- card 1 heineken -->
                     <LinearLayout
-                        android:id="@+id/cardHeineken"
+                        android:id="@+id/cardHeineken1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_heineken1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/heineken1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtHeineken1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtHeineken1"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoHeineken1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoHeineken1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddHeineken1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardHeineken1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -1426,6 +2199,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addHeineken1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1465,6 +2239,131 @@
                             android:visibility="visible" />
                     </LinearLayout>
 
+                    <!-- card 2 heineken -->
+                    <LinearLayout
+                        android:id="@+id/cardHeineken2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_heineken2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/heineken2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtHeineken2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtHeineken2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoHeineken2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoHeineken2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddHeineken2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardHeineken2"
                         android:layout_width="125dp"
@@ -1475,6 +2374,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addHeineken2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1513,6 +2413,131 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 3 heineken -->
+                    <LinearLayout
+                        android:id="@+id/cardHeineken3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_heineken3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/heineken3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtHeineken3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtHeineken3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoHeineken3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoHeineken3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddHeineken3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardHeineken3"
                         android:layout_width="125dp"
@@ -1523,6 +2548,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addHeineken3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1570,7 +2596,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="250dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/txtStella"
                 android:textColor="#1E1E1E"
@@ -1595,8 +2621,133 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <!-- card 1 stella -->
                     <LinearLayout
-                        android:id="@+id/cardStella"
+                        android:id="@+id/cardStella1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_stella1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/stella1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtStella1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtStella1"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoStella1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoStella1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd4_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddStella1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd4_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardStella1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -1605,6 +2756,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addStella1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1644,6 +2796,131 @@
                             android:visibility="visible" />
                     </LinearLayout>
 
+                    <!-- card 2 stella -->
+                    <LinearLayout
+                        android:id="@+id/cardStella2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_stella2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/stella2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtStella2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtStella2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoStella2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoStella2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd4_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddStella2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd4_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardStella2"
                         android:layout_width="125dp"
@@ -1654,6 +2931,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addStella2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1687,9 +2965,134 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoHStella2"
+                            android:text="@string/txtprecoStella2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 3 stella -->
+                    <LinearLayout
+                        android:id="@+id/cardStella3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_stella3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/stella3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtStella3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtStella3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoStella3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoStella3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd4_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddStella3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd4_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -1702,6 +3105,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addStella3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1747,9 +3151,11 @@
                 android:id="@+id/txtColorado"
                 android:layout_width="95dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="250dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Colorado"
+                android:text="@string/txtColorado"
                 android:textColor="#1E1E1E"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -1772,8 +3178,133 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <!-- card 1 colorado -->
                     <LinearLayout
-                        android:id="@+id/cardColorado"
+                        android:id="@+id/cardColorado1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_colorado1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/colorado1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtColorado1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtColorado1"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoColorado1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoColorado1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd5_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddColorado1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardColorado1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -1782,6 +3313,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addColorado1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1819,6 +3351,131 @@
                             android:textColor="#373737"
                             android:textStyle="bold"
                             android:visibility="visible" />
+                    </LinearLayout>
+
+                    <!-- card 2 colorado -->
+                    <LinearLayout
+                        android:id="@+id/cardColorado2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_colorado2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/colorado2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtColorado2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtColorado2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoColorado2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoColorado2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd5_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddColorado2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -1869,6 +3526,131 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <!-- card 3 colorado -->
+                    <LinearLayout
+                        android:id="@+id/cardColorado3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_colorado3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/colorado3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtColorado3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtColorado3"
+                            android:textColor="#515151"
+                            android:textSize="13sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoColorado3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoColorado3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd5_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddColorado3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/cardColorado3"
                         android:layout_width="125dp"
@@ -1879,6 +3661,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onclick="addColorado3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1903,7 +3686,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado3"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -1915,6 +3698,131 @@
                             android:text="@string/txtprecoColorado3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 4 colorado -->
+                    <LinearLayout
+                        android:id="@+id/cardColorado4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_colorado4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/colorado4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtColorado4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtColorado4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoColorado4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoColorado4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd5_4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddColorado4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -1961,54 +3869,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtprecoColorado4"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/carColorado5"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_colorado5"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/colorado5"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtColorado5"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtColorado5"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoColorado5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoColorado5"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>

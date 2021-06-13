@@ -98,20 +98,141 @@
     <string name="txtStella1">Stella Artois 269ml</string>
     <string name="txtprecoStella1">R$3,79</string>
     <string name="txtStella2">Stella Artois 330ml</string>
-    <string name="txtprecoHStella2">R$4,99</string>
+    <string name="txtprecoStella2">R$4,99</string>
     <string name="txtStella3">Stella Artois 550ml</string>
     <string name="txtprecoStella3">R$8,99</string>
     <!-- colorado -->
+    <string name="txtColorado">Colorado</string>
     <string name="txtColorado1">Colorado Appia 600ml</string>
     <string name="txtprecoColorado1">R$10,90</string>
     <string name="txtColorado2">Colorado Nassau 600ml</string>
     <string name="txtprecoColorado2">R$14,99</string>
-    <string name="txtColorado3">Colorado Ribeirão Lager 600ml</string>
+    <string name="txtColorado3">Colorado Ribeirão 600ml</string>
     <string name="txtprecoColorado3">R$10,90</string>
     <string name="txtColorado4">Colorado Murica 600ml</string>
     <string name="txtprecoColorado4">R$14,99</string>
-    <string name="txtColorado5">Colorado Demoiselle 600ml</string>
-    <string name="txtprecoColorado5">R$14,99</string>
+
+    <!-- VINHOS -->
+    <!-- tinto -->
+    <string name="txtTinto">Vinhos Tintos</string>
+    <string name="txtTinto1">Vinho San Martin Tinto Suave 750ml</string>
+    <string name="txtprecoTinto1">R$10,90</string>
+    <string name="txtTinto2">Vinho Chilano Cabernet Sauvignon 750ml</string>
+    <string name="txtprecoTinto2">R$24,90</string>
+    <string name="txtTinto3">Vinho Santa Helena Reservado Cabernet Sauvignon 750ml</string>
+    <string name="txtprecoTinto3">R$30,45</string>
+    <string name="txtTinto4">Vinho Tinto Pérgola Suave 1L</string>
+    <string name="txtprecoTinto4">R$24,90</string>
+    <string name="txtTinto5">Vinho Trapiche Malbec 750ml</string>
+    <string name="txtprecoTinto5">R$48,50</string>
+    <!-- branco -->
+    <string name="txtBranco">Vinhos Brancos</string>
+    <string name="txtBranco1">Vinho Concha Y Toro Chardonnay 750ml</string>
+    <string name="txtprecoBranco1">R$32,99</string>
+    <string name="txtBranco2">Vinho Portillo Sauvignon Blanc 750ml</string>
+    <string name="txtprecoBranco2">R$90,10</string>
+    <string name="txtBranco3">Vinho Branco Casal Garcia Sweet 750ml</string>
+    <string name="txtprecoBranco3">R$73,90</string>
+    <string name="txtBranco4">Vinho Castellani Pinot Grigio 750ml</string>
+    <string name="txtprecoBranco4">R$42,00</string>
+    <!-- rosé -->
+    <string name="txtRose">Vinhos Rosés</string>
+    <string name="txtRose1">Vinho Rosé Freixenet Italian 750ml</string>
+    <string name="txtprecoRose1">R$81,60</string>
+    <string name="txtRose2">Vinho Veroni Rosé</string>
+    <string name="txtprecoRose2">R$79,00</string>
+    <string name="txtRose3">Vinho Rose Mioranza Frisante Suave 750ml</string>
+    <string name="txtprecoRose3">R$29,00</string>
+
+    <!-- DESTILADOS -->
+    <!-- beats -->
+    <string name="txtBeats">Beats</string>
+    <string name="txtBeats1">Beats Senses 269ml</string>
+    <string name="txtprecoBeats1">R$4,49</string>
+    <string name="txtBeats2">Beats GT 269ml</string>
+    <string name="txtprecoBeats2">R$5,19</string>
+    <string name="txtBeats3">Beats 150 BPM 100ml</string>
+    <string name="txtprecoBeats3">R$3,89</string>
+    <string name="txtBeats4">Beats Zodiac Água 269ml</string>
+    <string name="txtprecoBeats4">R$4,99</string>
+    <string name="txtBeats5">Beats Zodiac Ar 269ml</string>
+    <string name="txtprecoBeats5">R$4,99</string>
+    <string name="txtBeats6">Beats Zodiac Fogo 269ml</string>
+    <string name="txtprecoBeats6">R$4,99</string>
+    <string name="txtBeats7">Beats Zodiac Terra 269ml</string>
+    <string name="txtprecoBeats7">R$4,99</string>
+    <!-- vodka -->
+    <string name="txtVodka">Vodka</string>
+    <string name="txtVodka1">Vodka Smirnoff 998ml</string>
+    <string name="txtprecoVodka1">R$35,99</string>
+    <string name="txtVodka2">Vodka Balalaika 1L</string>
+    <string name="txtprecoVodka2">R$13,90</string>
+    <string name="txtVodka3">Vodka Askov 900ml</string>
+    <string name="txtprecoVodka3">R$14,00</string>
+    <string name="txtVodka4">Vodka Moscowita 965ml</string>
+    <string name="txtprecoVodka4">R$8,80</string>
+    <!-- whisky -->
+    <string name="txtWhisky">Whisky</string>
+    <string name="txtWhisky1">Whisky Johnnie Walker Red Label 1L</string>
+    <string name="txtprecoWhisky1">R$89,90</string>
+    <string name="txtWhisky2">Whisky White Horse 1L</string>
+    <string name="txtprecoWhisky2">R$79,00</string>
+    <string name="txtWhisky3">Whisky Jack Daniels 1L</string>
+    <string name="txtprecoWhisky3">R$149,00</string>
+    <string name="txtWhisky4">Whisky Ballantines 1L</string>
+    <string name="txtprecoWhisky4">R$94,99</string>
+    <!-- gin -->
+    <string name="txtGin">Gin</string>
+    <string name="txtGin1">Gin Tanqueray 750ml</string>
+    <string name="txtprecoGin1">R$119,00</string>
+    <string name="txtGin2">Gin Seagers 980ml</string>
+    <string name="txtprecoGin2">R$39,99</string>
+    <string name="txtGin3">Gin Gordon’s London Dry 750ml</string>
+    <string name="txtprecoGin3">R$69,99</string>
+    <!-- cachaça -->
+    <string name="txtCachaca">Cachaça</string>
+    <string name="txtCachaca1">Cachaça 51 965ml</string>
+    <string name="txtprecoCachaca1">R$9,99</string>
+    <string name="txtCachaca2">Cachaça Corote 500ml</string>
+    <string name="txtprecoCachaca2">R$3,39</string>
+    <string name="txtCachaca3">Aguardente Velho Barreiro 910ml</string>
+    <string name="txtprecoCachaca3">R$9,90</string>
+
+    <!-- SEM ÁLCOOL -->
+    <!-- refrigerante -->
+    <string name="txtRefri">Refrigerantes</string>
+    <string name="txtRefri1">Coca-Cola 350ml</string>
+    <string name="txtprecoRefri1">R$2,99</string>
+    <string name="txtRefri2">Guaraná Antarctica 350ml</string>
+    <string name="txtprecoRefri2">R$2,39</string>
+    <string name="txtRefri3">Pepsi 350ml</string>
+    <string name="txtprecoRefri3">R$2,49</string>
+    <string name="txtRefri4">Fanta Laranja 350ml</string>
+    <string name="txtprecoRefri4">R$2,89</string>
+    <string name="txtRefri5">Tônica Antarctica 350ml</string>
+    <string name="txtprecoRefri5">R$2,99</string>
+    <!-- energético -->
+    <string name="txtEnerg">Energéticos</string>
+    <string name="txtEnerg1">Red Bull 250ml</string>
+    <string name="txtprecoEnerg1">R$6,99</string>
+    <string name="txtEnerg2">Monster 473ml</string>
+    <string name="txtprecoEnerg2">R$6,99</string>
+    <string name="txtEnerg3">Tnt 269ml</string>
+    <string name="txtprecoEnerg3">R$6,10</string>
+    <!-- suco -->
+    <string name="txtSuco">Sucos</string>
+    <string name="txtSuco1">Suco Del Valle Uva 290ml</string>
+    <string name="txtprecoSuco1">R$3,45</string>
+    <string name="txtSuco2">Suco Del Valle Maracujá 290ml</string>
+    <string name="txtprecoSuco2">R$3,45</string>
+    <string name="txtSuco3">Suco Del Valle Pêssego 290ml</string>
+    <string name="txtprecoSuco3">R$3,45</string>
+    <!-- água -->
+    <string name="txtAgua">Águas</string>
+    <string name="txtAgua1">Água Mineral Crystal Sem Gás 500ml</string>
+    <string name="txtprecoAgua1">R$1,39</string>
+    <string name="txtAgua2">Água Mineral Crystal Com Gás 500ml</string>
+    <string name="txtprecoAgua2">R$1,39</string>
 
     <!-- CARRINHO -->
     <string name="txtpreco1">R$500,00</string>
