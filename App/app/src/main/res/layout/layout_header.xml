@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:id="@+id/DrawerLayout">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="match_parent">
         <include layout="@layout/layout_hamburguer_menu" />
 
         <ImageView
@@ -51,4 +53,15 @@
             android:inputType="textPersonName"
             android:textColor="@color/black" />
     </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/NavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:iconTint="@color/white"
+        android:background="@color/cor_secundaria"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:headerLayout="@layout/layout_hamburguer_menu"
+        app:menu="@menu/hamburguer_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>

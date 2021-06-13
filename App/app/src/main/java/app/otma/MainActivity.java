@@ -1,13 +1,18 @@
 package app.otma;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -15,13 +20,17 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
+
+import static android.view.Gravity.END;
 
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Toolbar toolbar;
-    public LinearLayout cardCerveja;
+    private RelativeLayout contentView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +40,11 @@ public class MainActivity extends AppCompatActivity {
         navigationView=findViewById(R.id.NavigationView);
         drawerLayout=findViewById(R.id.DrawerLayout);
         toolbar=findViewById(R.id.app_Bar);
+        contentView=findViewById(R.id.content_layout);
 
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
@@ -62,13 +72,24 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
             drawerLayout.openDrawer(GravityCompat.START);
+            contentView.setVisibility(View.INVISIBLE);
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        return true;
+    }
+
+    public void returnContent(View view)
+    {
+        drawerLayout.closeDrawer(GravityCompat.START);
+        new Handler().postDelayed(() -> {
+            contentView.setVisibility(View.VISIBLE);
+        }, 200);
+
     }
 
     public void openIndex()
@@ -91,4 +112,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
     }
+
 }
