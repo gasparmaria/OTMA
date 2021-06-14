@@ -19,19 +19,35 @@
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp">
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:id="@+id/txtDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/txtDelivery"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="16dp"/>
+
         <TextView
             android:id="@+id/txtCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDelivery"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="18dp"
             android:fontFamily="@font/montserrat"
             android:text="@string/txtCategoria"
-            android:textColor="@color/black"
-            android:layout_marginLeft="16dp"/>
+            android:textColor="@color/black" />
+
         <HorizontalScrollView
+            android:id="@+id/container_categorias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_below="@+id/txtCategoria"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints">
 
@@ -180,14 +196,17 @@
             android:id="@+id/txtPopulares"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/container_categorias"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/montserrat"
             android:text="@string/txtPopulares"
             android:textColor="@color/black"
-            android:layout_marginTop="230dp"
-            android:layout_marginLeft="16dp"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="141dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="141dp" />
+
+
 
     </RelativeLayout>
 </RelativeLayout>

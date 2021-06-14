@@ -257,4 +257,5 @@
     <string name="btnConfirmarPedido">Confirmar pedido</string>
     <string name="txt_semAlcool">Sem álcool</string>
     <string name="txtqtdprod1">1</string>
+    <string name="txtDelivery">Delivery</string>
 </resources>
