@@ -258,4 +258,17 @@
     <string name="txt_semAlcool">Sem álcool</string>
     <string name="txtqtdprod1">1</string>
     <string name="txtDelivery">Delivery</string>
+    <string name="txtEconimizePopular1">Economize R$30,00</string>
+    <string name="txtTitlePopulares1">Whisky Jake Daniels - 1L</string>
+    <string name="precoAntigoPopulares1"><s>R$82,00</s></string>
+    <string name="precoAtualPopulares1">R$52,00</string>
+    <string name="txtAdicionePopulares">Adicionar</string>
+    <string name="txtEconimizePopular2">Economize R$50,00</string>
+    <string name="precoAntigoPopulares2"><s>R$120,89</s></string>
+    <string name="precoAtualPopulares2">R$70,00</string>
+    <string name="txtTitlePopulares2">Vinho Tinto - 750ml</string>
+    <string name="txtEconimizePopular3">Economize R$10,00</string>
+    <string name="txtTitlePopulares3">Suco de Del Valle - 1L</string>
+    <string name="precoAntigoPopulares3"><s>R$12,00</s></string>
+    <string name="precoAtualPopulares3">R$2,00</string>
 </resources>
