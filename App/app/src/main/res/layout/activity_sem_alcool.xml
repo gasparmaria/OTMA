@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DestiladoActivity">
+    tools:context=".SemAlcoolActivity">
 
     <!-- menu -->
     <include
@@ -22,7 +22,7 @@
     <!-- scrollview vertical -->
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
+        android:layout_width="410dp"
         android:layout_height="602dp"
         android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,12 +38,12 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/txtDestilados"
+                android:id="@+id/txtSemAlcool"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/montserrat"
-                android:text="@string/txtDestilados"
+                android:text="@string/txtsemAlcool"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -52,22 +52,22 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
-            <!-- beats -->
+            <!-- refrigerante -->
             <TextView
-                android:id="@+id/txtBeats"
+                android:id="@+id/txtRefri"
                 android:layout_width="125dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/montserrat"
-                android:text="@string/txtBeats"
+                android:text="@string/txtRefri"
                 android:textColor="#1E1E1E"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtDestilados"
+                app:layout_constraintTop_toBottomOf="@+id/txtSemAlcool"
                 tools:ignore="MissingConstraints" />
 
             <HorizontalScrollView
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/txtBeats"
+                app:layout_constraintTop_toBottomOf="@+id/txtRefri"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="0dp">
 
@@ -84,9 +84,9 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <!-- card 1 beats -->
+                    <!-- card 1 refrigerante -->
                     <LinearLayout
-                        android:id="@+id/cardBeats1_0"
+                        android:id="@+id/cardRefri1_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="15dp"
@@ -95,45 +95,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retBeats1"
+                        android:onClick="retRefri1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_beats1_0"
+                            android:id="@+id/img_refri1_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats1"
+                            app:srcCompat="@drawable/refrigerante1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats1_0"
+                            android:id="@+id/txtRefri1_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats1"
+                            android:text="@string/txtRefri1"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats1_0"
+                            android:id="@+id/txtprecoRefri1_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats1"
+                            android:text="@string/txtprecoRefri1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -194,7 +194,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddBeats1"
+                                android:id="@+id/btnAddRefri1"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -211,7 +211,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardBeats1"
+                        android:id="@+id/cardRefri1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -220,48 +220,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addBeats1"
+                        android:onClick="addRefri1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_beats1"
+                            android:id="@+id/img_refri1"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats1"
+                            app:srcCompat="@drawable/refrigerante1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats1"
+                            android:id="@+id/txtRefri1"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats1"
+                            android:text="@string/txtRefri1"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats1"
+                            android:id="@+id/txtprecoRefri1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats1"
+                            android:text="@string/txtprecoRefri1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 2 beats -->
+                    <!-- card 2 refrigerante -->
                     <LinearLayout
-                        android:id="@+id/cardBeats2_0"
+                        android:id="@+id/cardRefri2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -270,44 +270,44 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retBeats2"
+                        android:onClick="retRefri2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
                         <ImageButton
-                            android:id="@+id/img_beats2_0"
+                            android:id="@+id/img_refri2_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats2"
+                            app:srcCompat="@drawable/refrigerante2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats2_0"
+                            android:id="@+id/txtRefri2_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats2"
+                            android:text="@string/txtRefri2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats2_0"
+                            android:id="@+id/txtprecoRefri2_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats2"
+                            android:text="@string/txtprecoRefri2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -368,7 +368,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddBeats2"
+                                android:id="@+id/btnAddRefri2"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -385,7 +385,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardBeats2"
+                        android:id="@+id/cardRefri2"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -394,48 +394,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addBeats2"
+                        android:onClick="addRefri2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_beats2"
+                            android:id="@+id/img_refri2"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats2"
+                            app:srcCompat="@drawable/refrigerante2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats2"
+                            android:id="@+id/txtRefri2"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats2"
+                            android:text="@string/txtRefri2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats2"
+                            android:id="@+id/txtprecoRefri2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats2"
+                            android:text="@string/txtprecoRefri2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 3 beats -->
+                    <!-- card 3 refrigerante -->
                     <LinearLayout
-                        android:id="@+id/cardBeats3_0"
+                        android:id="@+id/cardRefri3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -444,45 +444,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retBeats3"
+                        android:onClick="retRefri3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_beats3_0"
+                            android:id="@+id/img_refri3_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats3"
+                            app:srcCompat="@drawable/refrigerante3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats3_0"
+                            android:id="@+id/txtRefri3_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats3"
+                            android:text="@string/txtRefri3"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats3_0"
+                            android:id="@+id/txtprecoRefri3_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats3"
+                            android:text="@string/txtprecoRefri3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -543,7 +543,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddBeats3"
+                                android:id="@+id/btnAddRefri3"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -560,7 +560,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardBeats3"
+                        android:id="@+id/cardRefri3"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -569,48 +569,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addBeats3"
+                        android:onClick="addRefri3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_beats3"
+                            android:id="@+id/img_refri3"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats3"
+                            app:srcCompat="@drawable/refrigerante3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats3"
+                            android:id="@+id/txtRefri3"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats3"
+                            android:text="@string/txtRefri3"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats3"
+                            android:id="@+id/txtprecoRefri3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats3"
+                            android:text="@string/txtprecoRefri3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 4 beats -->
+                    <!-- card 4 refrigerante -->
                     <LinearLayout
-                        android:id="@+id/cardBeats4_0"
+                        android:id="@+id/cardRefri4_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -619,45 +619,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retBeats4"
+                        android:onClick="retRefri4"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_beats4_0"
+                            android:id="@+id/img_refri4_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats4"
+                            app:srcCompat="@drawable/refrigerante4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats4_0"
+                            android:id="@+id/txtRefri4_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats4"
+                            android:text="@string/txtRefri4"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats4_0"
+                            android:id="@+id/txtprecoRefri4_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats4"
+                            android:text="@string/txtprecoRefri4"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -718,7 +718,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddBeats4"
+                                android:id="@+id/btnAddRefri4"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -735,7 +735,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardBeats4"
+                        android:id="@+id/cardRefri4"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -744,48 +744,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addBeats4"
+                        android:onClick="addRefri4"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_beats4"
+                            android:id="@+id/img_refri4"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats4"
+                            app:srcCompat="@drawable/refrigerante4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats4"
+                            android:id="@+id/txtRefri4"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats4"
+                            android:text="@string/txtRefri4"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats4"
+                            android:id="@+id/txtprecoRefri4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats4"
+                            android:text="@string/txtprecoRefri4"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 5 beats -->
+                    <!-- card 5 refrigerante -->
                     <LinearLayout
-                        android:id="@+id/cardBeats5_0"
+                        android:id="@+id/cardRefri5_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -794,45 +794,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retBeats5"
+                        android:onClick="retRefri5"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_beats5_0"
+                            android:id="@+id/img_refri5_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats5"
+                            app:srcCompat="@drawable/refrigerante5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats5_0"
+                            android:id="@+id/txtRefri5_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats5"
+                            android:text="@string/txtRefri5"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats5_0"
+                            android:id="@+id/txtprecoRefri5_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats5"
+                            android:text="@string/txtprecoRefri5"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -893,7 +893,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddBeats5"
+                                android:id="@+id/btnAddRefri5"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -910,7 +910,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardBeats5"
+                        android:id="@+id/cardRefri5"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -919,413 +919,63 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addBeats5"
+                        android:onClick="addRefri5"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_beats5"
+                            android:id="@+id/img_refri5"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats5"
+                            app:srcCompat="@drawable/refrigerante5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtBeats5"
+                            android:id="@+id/txtRefri5"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats5"
+                            android:text="@string/txtRefri5"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoBeats5"
+                            android:id="@+id/txtprecoRefri5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats5"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 6 beats -->
-                    <LinearLayout
-                        android:id="@+id/cardBeats6_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retBeats6"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_beats6_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats6"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtBeats6_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats6"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoBeats6_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats6"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd1_6"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddBeats6"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_6"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardBeats6"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addBeats6"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_beats6"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats6"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtBeats6"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats6"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoBeats6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats6"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 7 beats -->
-                    <LinearLayout
-                        android:id="@+id/cardBeats7_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retBeats7"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_beats7_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats7"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtBeats7_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats7"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoBeats7_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats7"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd1_7"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddBeats7"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_7"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardBeats7"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addBeats7"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_beats7"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/beats7"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtBeats7"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtBeats7"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoBeats7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoBeats7"
+                            android:text="@string/txtprecoRefri5"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-            
-            <!-- whisky -->
+
+            <!-- suco -->
             <TextView
-                android:id="@+id/txtWhisky"
-                android:layout_width="140dp"
+                android:id="@+id/txtSuco"
+                android:layout_width="125dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="250dp"
                 android:fontFamily="@font/montserrat"
-                android:text="@string/txtWhisky"
+                android:text="@string/txtSuco"
                 android:textColor="#1E1E1E"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtBeats"
+                app:layout_constraintTop_toBottomOf="@+id/txtRefri"
                 tools:ignore="MissingConstraints" />
 
             <HorizontalScrollView
@@ -1333,7 +983,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/txtWhisky"
+                app:layout_constraintTop_toBottomOf="@+id/txtSuco"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="0dp">
 
@@ -1342,9 +992,9 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <!-- card 1 whisky -->
+                    <!-- card 1 suco -->
                     <LinearLayout
-                        android:id="@+id/cardWhisky1_0"
+                        android:id="@+id/cardSuco1_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="15dp"
@@ -1353,45 +1003,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retWhisky1"
+                        android:onClick="retSuco1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_whisky1_0"
+                            android:id="@+id/img_suco1_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky1"
+                            app:srcCompat="@drawable/suco1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtWhisky1_0"
+                            android:id="@+id/txtSuco1_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky1"
+                            android:text="@string/txtSuco1"
                             android:textColor="#515151"
                             android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoWhisky1_0"
+                            android:id="@+id/txtprecoSuco1_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky1"
+                            android:text="@string/txtprecoSuco1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -1452,7 +1102,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddWhisky1"
+                                android:id="@+id/btnAddSuco1"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -1469,7 +1119,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardWhisky1"
+                        android:id="@+id/cardSuco1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -1478,48 +1128,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addWhisky1"
+                        android:onClick="addSuco1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_whisky1"
+                            android:id="@+id/img_suco1"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky1"
+                            app:srcCompat="@drawable/suco1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtWhisky1"
+                            android:id="@+id/txtSuco1"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky1"
+                            android:text="@string/txtSuco1"
                             android:textColor="#515151"
                             android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoWhisky1"
+                            android:id="@+id/txtprecoSuco1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky1"
+                            android:text="@string/txtprecoSuco1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 2 whisky -->
+                    <!-- card 2 suco -->
                     <LinearLayout
-                        android:id="@+id/cardWhisky2_0"
+                        android:id="@+id/cardSuco2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -1528,45 +1178,44 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retWhisky2"
+                        android:onClick="retSuco2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
-
                         <ImageButton
-                            android:id="@+id/img_whisky2_0"
+                            android:id="@+id/img_suco2_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky2"
+                            app:srcCompat="@drawable/suco2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtWhisky2_0"
+                            android:id="@+id/txtSuco2_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky2"
+                            android:text="@string/txtSuco2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoWhisky2_0"
+                            android:id="@+id/txtprecoSuco2_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky2"
+                            android:text="@string/txtprecoSuco2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -1627,7 +1276,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddWhisky2"
+                                android:id="@+id/btnAddSuco2"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -1644,7 +1293,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardWhisky2"
+                        android:id="@+id/cardSuco2"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -1653,48 +1302,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addWhisky2"
+                        android:onClick="addSuco2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_whisky2"
+                            android:id="@+id/img_suco2"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky2"
+                            app:srcCompat="@drawable/suco2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtWhisky2"
+                            android:id="@+id/txtSuco2"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky2"
+                            android:text="@string/txtSuco2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoWhisky2"
+                            android:id="@+id/txtprecoSuco2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky2"
+                            android:text="@string/txtprecoSuco2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 3 whisky -->
+                    <!-- card 3 suco -->
                     <LinearLayout
-                        android:id="@+id/cardWhisky3_0"
+                        android:id="@+id/cardSuco3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -1703,45 +1352,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retWhisky3"
+                        android:onClick="retSuco3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_whisky3_0"
+                            android:id="@+id/img_suco3_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky3"
+                            app:srcCompat="@drawable/suco3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtWhisky3_0"
+                            android:id="@+id/txtSuco3_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky3"
+                            android:text="@string/txtSuco3"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoWhisky3_0"
+                            android:id="@+id/txtprecoSuco3_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky3"
+                            android:text="@string/txtprecoSuco3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -1802,7 +1451,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddWhisky3"
+                                android:id="@+id/btnAddSuco3"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -1819,7 +1468,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardWhisky3"
+                        android:id="@+id/cardSuco3"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -1828,238 +1477,63 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addWhisky3"
+                        android:onClick="addSuco3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_whisky3"
+                            android:id="@+id/img_suco3"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky3"
+                            app:srcCompat="@drawable/suco3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtWhisky3"
+                            android:id="@+id/txtSuco3"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky3"
+                            android:text="@string/txtSuco3"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoWhisky3"
+                            android:id="@+id/txtprecoSuco3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky3"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 4 whisky -->
-                    <LinearLayout
-                        android:id="@+id/cardWhisky4_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retWhisky4"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_whisky4_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky4"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtWhisky4_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky4"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoWhisky4_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky4"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd2_4"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddWhisky4"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_4"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardWhisky4"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addWhisky4"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_whisky4"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/whisky4"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtWhisky4"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtWhisky4"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoWhisky4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoWhisky4"
+                            android:text="@string/txtprecoSuco3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- vodka -->
+            <!-- água -->
             <TextView
-                android:id="@+id/txtVodka"
-                android:layout_width="140dp"
+                android:id="@+id/txtAgua"
+                android:layout_width="125dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="250dp"
                 android:fontFamily="@font/montserrat"
-                android:text="@string/txtVodka"
+                android:text="@string/txtAgua"
                 android:textColor="#1E1E1E"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtWhisky"
+                app:layout_constraintTop_toBottomOf="@+id/txtSuco"
                 tools:ignore="MissingConstraints" />
 
             <HorizontalScrollView
@@ -2067,7 +1541,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/txtVodka"
+                app:layout_constraintTop_toBottomOf="@+id/txtAgua"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="0dp">
 
@@ -2076,9 +1550,9 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <!-- card 1 vodka -->
+                    <!-- card 1 agua -->
                     <LinearLayout
-                        android:id="@+id/cardVodka1_0"
+                        android:id="@+id/cardAgua1_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="15dp"
@@ -2087,45 +1561,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retVodka1"
+                        android:onClick="retAgua1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_vodka1_0"
+                            android:id="@+id/img_agua1_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka1"
+                            app:srcCompat="@drawable/agua1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtVodka1_0"
+                            android:id="@+id/txtAgua1_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka1"
+                            android:text="@string/txtAgua1"
                             android:textColor="#515151"
                             android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoVodka1_0"
+                            android:id="@+id/txtprecoAgua1_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka1"
+                            android:text="@string/txtprecoAgua1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -2186,7 +1660,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddVodka1"
+                                android:id="@+id/btnAddAgua1"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -2203,7 +1677,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardVodka1"
+                        android:id="@+id/cardAgua1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -2212,48 +1686,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addVodka1"
+                        android:onClick="addAgua1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_vodka1"
+                            android:id="@+id/img_agua1"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka1"
+                            app:srcCompat="@drawable/agua1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtVodka1"
+                            android:id="@+id/txtAgua1"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka1"
+                            android:text="@string/txtAgua1"
                             android:textColor="#515151"
                             android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoVodka1"
+                            android:id="@+id/txtprecoAgua1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka1"
+                            android:text="@string/txtprecoAgua1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 2 vodka -->
+                    <!-- card 2 água -->
                     <LinearLayout
-                        android:id="@+id/cardVodka2_0"
+                        android:id="@+id/cardAgua2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -2262,45 +1736,44 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retVodka2"
+                        android:onClick="retAgua2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
-
                         <ImageButton
-                            android:id="@+id/img_vodka2_0"
+                            android:id="@+id/img_agua2_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka2"
+                            app:srcCompat="@drawable/agua2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtVodka2_0"
+                            android:id="@+id/txtAgua2_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka2"
+                            android:text="@string/txtAgua2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoVodka2_0"
+                            android:id="@+id/txtprecoAgua2_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka2"
+                            android:text="@string/txtprecoAgua2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -2361,7 +1834,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddVodka2"
+                                android:id="@+id/btnAddAgua2"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -2378,7 +1851,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardVodka2"
+                        android:id="@+id/cardAgua2"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -2387,413 +1860,63 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addVodka2"
+                        android:onClick="addAgua2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_vodka2"
+                            android:id="@+id/img_agua2"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka2"
+                            app:srcCompat="@drawable/agua2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtVodka2"
+                            android:id="@+id/txtAgua2"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka2"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoVodka2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka2"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 3 vodka -->
-                    <LinearLayout
-                        android:id="@+id/cardVodka3_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retVodka3"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_vodka3_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka3"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtVodka3_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka3"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoVodka3_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka3"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd3_3"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddVodka3"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_3"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardVodka3"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addVodka3"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_vodka3"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka3"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtVodka3"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka3"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoVodka3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka3"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 4 vodka -->
-                    <LinearLayout
-                        android:id="@+id/cardVodka4_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retVodka4"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_vodka4_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka4"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtVodka4_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka4"
+                            android:text="@string/txtAgua2"
                             android:textColor="#515151"
                             android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoVodka4_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka4"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd3_4"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddVodka4"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_4"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardVodka4"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addVodka4"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_vodka4"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/vodka4"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtVodka4"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtVodka4"
-                            android:textColor="#515151"
-                            android:textSize="12sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoVodka4"
+                            android:id="@+id/txtprecoAgua2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoVodka4"
+                            android:text="@string/txtprecoAgua2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- gin -->
+            <!-- energético -->
             <TextView
-                android:id="@+id/txtGin"
-                android:layout_width="140dp"
+                android:id="@+id/txtEnerg"
+                android:layout_width="125dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="250dp"
                 android:fontFamily="@font/montserrat"
-                android:text="@string/txtGin"
+                android:text="@string/txtEnerg"
                 android:textColor="#1E1E1E"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtVodka"
+                app:layout_constraintTop_toBottomOf="@+id/txtAgua"
                 tools:ignore="MissingConstraints" />
 
             <HorizontalScrollView
@@ -2801,7 +1924,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/txtGin"
+                app:layout_constraintTop_toBottomOf="@+id/txtEnerg"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="0dp">
 
@@ -2810,9 +1933,9 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <!-- card 1 Gin -->
+                    <!-- card 1 energético -->
                     <LinearLayout
-                        android:id="@+id/cardGin1_0"
+                        android:id="@+id/cardEnerg1_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="15dp"
@@ -2821,45 +1944,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retGin1"
+                        android:onClick="retEnerg1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
 
                         <ImageButton
-                            android:id="@+id/img_gin1_0"
+                            android:id="@+id/img_energ1_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/gin1"
+                            app:srcCompat="@drawable/energetico1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtGin1_0"
+                            android:id="@+id/txtEnerg1_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtGin1"
+                            android:text="@string/txtEnerg1"
                             android:textColor="#515151"
-                            android:textSize="13sp"
+                            android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoGin1_0"
+                            android:id="@+id/txtprecoEnerg1_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoGin1"
+                            android:text="@string/txtprecoEnerg1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -2920,7 +2043,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddGin1"
+                                android:id="@+id/btnAddEnerg1"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -2937,7 +2060,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardGin1"
+                        android:id="@+id/cardEnerg1"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="15dp"
@@ -2946,48 +2069,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addGin1"
+                        android:onClick="addEnerg1"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_gin1"
+                            android:id="@+id/img_energ1"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/gin1"
+                            app:srcCompat="@drawable/energetico1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtGin1"
+                            android:id="@+id/txtEnerg1"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtGin1"
+                            android:text="@string/txtEnerg1"
                             android:textColor="#515151"
-                            android:textSize="13sp"
+                            android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoGin1"
+                            android:id="@+id/txtprecoEnerg1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoGin1"
+                            android:text="@string/txtprecoEnerg1"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 2 gin -->
+                    <!-- card 2 energético -->
                     <LinearLayout
-                        android:id="@+id/cardGin2_0"
+                        android:id="@+id/cardEnerg2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -2996,45 +2119,44 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retGin2"
+                        android:onClick="retEnerg2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
-
                         <ImageButton
-                            android:id="@+id/img_gin2_0"
+                            android:id="@+id/img_energ2_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/gin2"
+                            app:srcCompat="@drawable/energetico2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtGin2_0"
+                            android:id="@+id/txtEnerg2_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtGin2"
+                            android:text="@string/txtEnerg2"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoGin2_0"
+                            android:id="@+id/txtprecoEnerg2_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoGin2"
+                            android:text="@string/txtprecoEnerg2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -3095,7 +2217,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddGin2"
+                                android:id="@+id/btnAddEnerg2"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -3112,7 +2234,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardGin2"
+                        android:id="@+id/cardEnerg2"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -3121,48 +2243,48 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addGin2"
+                        android:onClick="addEnerg2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_gin2"
+                            android:id="@+id/img_energ2"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/gin2"
+                            app:srcCompat="@drawable/energetico2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtGin2"
+                            android:id="@+id/txtEnerg2"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtGin2"
+                            android:text="@string/txtEnerg2"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoGin2"
+                            android:id="@+id/txtprecoEnerg2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoGin2"
+                            android:text="@string/txtprecoEnerg2"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- card 3 gin -->
+                    <!-- card 3 energético -->
                     <LinearLayout
-                        android:id="@+id/cardGin3_0"
+                        android:id="@+id/cardEnerg3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
                         android:layout_marginStart="5dp"
@@ -3171,44 +2293,45 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="retGin3"
+                        android:onClick="retEnerg3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
+
                         <ImageButton
-                            android:id="@+id/img_gin3_0"
+                            android:id="@+id/img_energ3_0"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/gin3"
+                            app:srcCompat="@drawable/energetico3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtGin3_0"
+                            android:id="@+id/txtEnerg3_0"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtGin3"
+                            android:text="@string/txtEnerg3"
                             android:textColor="#515151"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoGin3_0"
+                            android:id="@+id/txtprecoEnerg3_0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoGin3"
+                            android:text="@string/txtprecoEnerg3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
 
@@ -3269,7 +2392,7 @@
                             </LinearLayout>
 
                             <Button
-                                android:id="@+id/btnAddGin3"
+                                android:id="@+id/btnAddEnerg3"
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
@@ -3286,7 +2409,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/cardGin3"
+                        android:id="@+id/cardEnerg3"
                         android:layout_width="125dp"
                         android:layout_height="180dp"
                         android:layout_marginStart="5dp"
@@ -3295,599 +2418,41 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:onClick="addGin3"
+                        android:onClick="addEnerg3"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
 
                         <ImageButton
-                            android:id="@+id/img_gin3"
+                            android:id="@+id/img_energ3"
                             android:layout_width="40dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/gin3"
+                            app:srcCompat="@drawable/energetico3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
 
                         <TextView
-                            android:id="@+id/txtGin3"
+                            android:id="@+id/txtEnerg3"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtGin3"
-                            android:textColor="#515151"
-                            android:textSize="12sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoGin3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoGin3"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-
-            <!-- cachaça -->
-            <TextView
-                android:id="@+id/txtCachaca"
-                android:layout_width="140dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="250dp"
-                android:fontFamily="@font/montserrat"
-                android:text="@string/txtCachaca"
-                android:textColor="#1E1E1E"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtGin"
-                tools:ignore="MissingConstraints" />
-
-            <HorizontalScrollView
-                android:id="@+id/horiz_scroll5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/txtCachaca"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="0dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <!-- card 1 cachaca -->
-                    <LinearLayout
-                        android:id="@+id/cardCachaca1_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retCachaca1"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_cachaca1_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/cachaca1"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtCachaca1_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtCachaca1"
+                            android:text="@string/txtEnerg3"
                             android:textColor="#515151"
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
                         <TextView
-                            android:id="@+id/txtprecoCachaca1_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoCachaca1"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd5_1"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddCachaca1"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_1"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardCachaca1"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addCachaca1"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_cachaca1"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/cachaca1"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtCachaca1"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtCachaca1"
-                            android:textColor="#515151"
-                            android:textSize="14sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoCachaca1"
+                            android:id="@+id/txtprecoEnerg3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoCachaca1"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 2 cachaça -->
-                    <LinearLayout
-                        android:id="@+id/cardCachaca2_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retCachaca2"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-
-                        <ImageButton
-                            android:id="@+id/img_cachaca2_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/cachaca2"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtCachaca2_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtCachaca2"
-                            android:textColor="#515151"
-                            android:textSize="13sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoCachaca2_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoCachaca2"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd5_2"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddCachaca2"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_2"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardCachaca2"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addCachaca2"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_cachaca2"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/cachaca2"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtCachaca2"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtCachaca2"
-                            android:textColor="#515151"
-                            android:textSize="13sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoCachaca2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoCachaca2"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <!-- card 3 cachaça -->
-                    <LinearLayout
-                        android:id="@+id/cardCachaca3_0"
-                        android:layout_width="match_parent"
-                        android:layout_height="233dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria_add"
-                        android:gravity="start"
-                        android:onClick="retCachaca3"
-                        android:orientation="vertical"
-                        android:visibility="gone">
-
-                        <ImageButton
-                            android:id="@+id/img_cachaca3_0"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/cachaca3"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtCachaca3_0"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtCachaca3"
-                            android:textColor="#515151"
-                            android:textSize="12sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoCachaca3_0"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoCachaca3"
-                            android:textColor="#373737"
-                            android:textStyle="bold" />
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="58dp"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/ic_adicionar">
-
-                            <LinearLayout
-                                android:id="@+id/layout_qtdProd5_3"
-                                android:layout_width="121dp"
-                                android:layout_height="28dp"
-                                android:layout_marginLeft="2dp"
-                                android:layout_marginTop="1dp"
-                                android:background="#F3F1F1"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.0"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="DuplicateIds">
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtdiminuirItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center"
-                                    android:text="@string/txtqtd"
-                                    android:textAlignment="center"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="40dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="0dp"
-                                    android:fontFamily="@font/montserrat"
-                                    android:gravity="center_horizontal"
-                                    android:text="@string/txtaumentarItem"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                                    android:textColor="@color/cor_principal"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <Button
-                                android:id="@+id/btnAddCachaca3"
-                                android:layout_width="124dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/ic_adicionar"
-                                android:insetTop="0dp"
-                                android:insetBottom="0dp"
-                                android:text="@string/txtadicionar"
-                                android:textColor="@color/white"
-                                android:textSize="10sp"
-                                app:backgroundTint="@color/cor_principal"
-                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd5_3"
-                                tools:ignore="SmallSp"
-                                tools:layout_editor_absoluteX="0dp" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/cardCachaca3"
-                        android:layout_width="125dp"
-                        android:layout_height="180dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/ic_categoria"
-                        android:gravity="start"
-                        android:onClick="addCachaca3"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="5dp"
-                        android:paddingRight="10dp">
-
-                        <ImageButton
-                            android:id="@+id/img_cachaca3"
-                            android:layout_width="40dp"
-                            android:layout_height="84dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/cachaca3"
-                            tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                        <TextView
-                            android:id="@+id/txtCachaca3"
-                            android:layout_width="105dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtCachaca3"
-                            android:textColor="#515151"
-                            android:textSize="12sp"
-                            tools:layout_editor_absoluteX="48dp"
-                            tools:layout_editor_absoluteY="162dp" />
-
-                        <TextView
-                            android:id="@+id/txtprecoCachaca3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat"
-                            android:text="@string/txtprecoCachaca3"
+                            android:text="@string/txtprecoEnerg3"
                             android:textColor="#373737"
                             android:textStyle="bold" />
                     </LinearLayout>

@@ -1,8 +1,6 @@
 package app.otma;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,18 +10,14 @@ public class DestiladoActivity extends AppCompatActivity {
 
     public LinearLayout cardBeats1, cardBeats2, cardBeats3, cardBeats4, cardBeats5, cardBeats6, cardBeats7, cardAddBeats1, cardAddBeats2, cardAddBeats3, cardAddBeats4, cardAddBeats5, cardAddBeats6, cardAddBeats7;
     public LinearLayout cardWhisky1, cardWhisky2, cardWhisky3, cardWhisky4, cardAddWhisky1, cardAddWhisky2, cardAddWhisky3, cardAddWhisky4;
-    public Toolbar toolbar;
+    public LinearLayout cardVodka1, cardVodka2, cardVodka3, cardVodka4, cardAddVodka1, cardAddVodka2, cardAddVodka3, cardAddVodka4;
+    public LinearLayout cardGin1, cardGin2, cardGin3, cardAddGin1, cardAddGin2, cardAddGin3;
+    public LinearLayout cardCachaca1, cardCachaca2, cardCachaca3, cardAddCachaca1, cardAddCachaca2, cardAddCachaca3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destilado);
-
-        toolbar = findViewById(R.id.app_Bar);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar;
-        actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
         // cards beats
         cardBeats1 = (LinearLayout) findViewById(R.id.cardBeats1);
@@ -49,6 +43,29 @@ public class DestiladoActivity extends AppCompatActivity {
         cardAddWhisky3 = (LinearLayout) findViewById(R.id.cardWhisky3_0);
         cardWhisky4 = (LinearLayout) findViewById(R.id.cardWhisky4);
         cardAddWhisky4 = (LinearLayout) findViewById(R.id.cardWhisky4_0);
+        // cards vodka
+        cardVodka1 = (LinearLayout) findViewById(R.id.cardVodka1);
+        cardAddVodka1 = (LinearLayout) findViewById(R.id.cardVodka1_0);
+        cardVodka2 = (LinearLayout) findViewById(R.id.cardVodka2);
+        cardAddVodka2 = (LinearLayout) findViewById(R.id.cardVodka2_0);
+        cardVodka3 = (LinearLayout) findViewById(R.id.cardVodka3);
+        cardAddVodka3 = (LinearLayout) findViewById(R.id.cardVodka3_0);
+        cardVodka4 = (LinearLayout) findViewById(R.id.cardVodka4);
+        cardAddVodka4 = (LinearLayout) findViewById(R.id.cardVodka4_0);
+        // cards gin
+        cardGin1 = (LinearLayout) findViewById(R.id.cardGin1);
+        cardAddGin1 = (LinearLayout) findViewById(R.id.cardGin1_0);
+        cardGin2 = (LinearLayout) findViewById(R.id.cardGin2);
+        cardAddGin2 = (LinearLayout) findViewById(R.id.cardGin2_0);
+        cardGin3 = (LinearLayout) findViewById(R.id.cardGin3);
+        cardAddGin3 = (LinearLayout) findViewById(R.id.cardGin3_0);
+        // cards cachaça
+        cardCachaca1 = (LinearLayout) findViewById(R.id.cardCachaca1);
+        cardAddCachaca1 = (LinearLayout) findViewById(R.id.cardCachaca1_0);
+        cardCachaca2 = (LinearLayout) findViewById(R.id.cardCachaca2);
+        cardAddCachaca2 = (LinearLayout) findViewById(R.id.cardCachaca2_0);
+        cardCachaca3 = (LinearLayout) findViewById(R.id.cardCachaca3);
+        cardAddCachaca3 = (LinearLayout) findViewById(R.id.cardCachaca3_0);
     }
 
     // onclick beats
@@ -141,5 +158,91 @@ public class DestiladoActivity extends AppCompatActivity {
     public void retWhisky4(View asc){
         cardWhisky4.setVisibility(View.VISIBLE);
         cardAddWhisky4.setVisibility(View.GONE);
+    }
+
+    // onclick vodkac
+    public void addVodka1(View asc){
+        cardVodka1.setVisibility(View.GONE);
+        cardAddVodka1.setVisibility(View.VISIBLE);
+    }
+    public void addVodka2(View asc){
+        cardVodka2.setVisibility(View.GONE);
+        cardAddVodka2.setVisibility(View.VISIBLE);
+    }
+    public void addVodka3(View asc){
+        cardVodka3.setVisibility(View.GONE);
+        cardAddVodka3.setVisibility(View.VISIBLE);
+    }
+    public void addVodka4(View asc){
+        cardVodka4.setVisibility(View.GONE);
+        cardAddVodka4.setVisibility(View.VISIBLE);
+    }
+    public void retVodka1(View asc){
+        cardVodka1.setVisibility(View.VISIBLE);
+        cardAddVodka1.setVisibility(View.GONE);
+    }
+    public void retVodka2(View asc){
+        cardVodka2.setVisibility(View.VISIBLE);
+        cardAddVodka2.setVisibility(View.GONE);
+    }
+    public void retVodka3(View asc){
+        cardVodka3.setVisibility(View.VISIBLE);
+        cardAddVodka3.setVisibility(View.GONE);
+    }
+    public void retVodka4(View asc){
+        cardVodka4.setVisibility(View.VISIBLE);
+        cardAddVodka4.setVisibility(View.GONE);
+    }
+
+    // onclick gin
+    public void addGin1(View asc){
+        cardGin1.setVisibility(View.GONE);
+        cardAddGin1.setVisibility(View.VISIBLE);
+    }
+    public void addGin2(View asc){
+        cardGin2.setVisibility(View.GONE);
+        cardAddGin2.setVisibility(View.VISIBLE);
+    }
+    public void addGin3(View asc){
+        cardGin3.setVisibility(View.GONE);
+        cardAddGin3.setVisibility(View.VISIBLE);
+    }
+    public void retGin1(View asc){
+        cardGin1.setVisibility(View.VISIBLE);
+        cardAddGin1.setVisibility(View.GONE);
+    }
+    public void retGin2(View asc){
+        cardGin2.setVisibility(View.VISIBLE);
+        cardAddGin2.setVisibility(View.GONE);
+    }
+    public void retGin3(View asc){
+        cardGin3.setVisibility(View.VISIBLE);
+        cardAddGin3.setVisibility(View.GONE);
+    }
+
+    // onclick cachaça
+    public void addCachaca1(View asc){
+        cardCachaca1.setVisibility(View.GONE);
+        cardAddCachaca1.setVisibility(View.VISIBLE);
+    }
+    public void addCachaca2(View asc){
+        cardCachaca2.setVisibility(View.GONE);
+        cardAddCachaca2.setVisibility(View.VISIBLE);
+    }
+    public void addCachaca3(View asc){
+        cardCachaca3.setVisibility(View.GONE);
+        cardAddCachaca3.setVisibility(View.VISIBLE);
+    }
+    public void retCachaca1(View asc){
+        cardCachaca1.setVisibility(View.VISIBLE);
+        cardAddCachaca1.setVisibility(View.GONE);
+    }
+    public void retCachaca2(View asc){
+        cardCachaca2.setVisibility(View.VISIBLE);
+        cardAddCachaca2.setVisibility(View.GONE);
+    }
+    public void retCachaca3(View asc){
+        cardCachaca3.setVisibility(View.VISIBLE);
+        cardAddCachaca3.setVisibility(View.GONE);
     }
 }
