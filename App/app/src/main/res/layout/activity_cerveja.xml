@@ -23,7 +23,7 @@
     <!-- scrollview vertical -->
     <ScrollView
         android:id="@+id/scrollView1"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="602dp"
         android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"

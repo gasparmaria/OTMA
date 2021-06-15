@@ -1,6 +1,8 @@
 package app.otma;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,11 +13,18 @@ public class VinhoActivity extends AppCompatActivity {
     public LinearLayout cardTinto1, cardTinto2, cardTinto3, cardTinto4, cardTinto5, cardAddTinto1, cardAddTinto2, cardAddTinto3, cardAddTinto4, cardAddTinto5;
     public LinearLayout cardBranco1, cardBranco2, cardBranco3, cardBranco4, cardAddBranco1, cardAddBranco2, cardAddBranco3, cardAddBranco4;
     public LinearLayout cardRose1, cardRose2, cardRose3, cardAddRose1, cardAddRose2, cardAddRose3;
-
+    public Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vinho);
+
+        toolbar = findViewById(R.id.app_Bar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
         // cards tinto
         cardTinto1 = (LinearLayout) findViewById(R.id.cardTinto1);

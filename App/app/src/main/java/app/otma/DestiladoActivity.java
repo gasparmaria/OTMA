@@ -1,6 +1,8 @@
 package app.otma;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,11 +12,18 @@ public class DestiladoActivity extends AppCompatActivity {
 
     public LinearLayout cardBeats1, cardBeats2, cardBeats3, cardBeats4, cardBeats5, cardBeats6, cardBeats7, cardAddBeats1, cardAddBeats2, cardAddBeats3, cardAddBeats4, cardAddBeats5, cardAddBeats6, cardAddBeats7;
     public LinearLayout cardWhisky1, cardWhisky2, cardWhisky3, cardWhisky4, cardAddWhisky1, cardAddWhisky2, cardAddWhisky3, cardAddWhisky4;
-
+    public Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destilado);
+
+        toolbar = findViewById(R.id.app_Bar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
         // cards beats
         cardBeats1 = (LinearLayout) findViewById(R.id.cardBeats1);
