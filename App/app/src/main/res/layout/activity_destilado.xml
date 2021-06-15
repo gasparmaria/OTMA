@@ -107,7 +107,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -232,7 +232,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -281,7 +281,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -406,7 +406,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -456,7 +456,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -581,7 +581,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -631,7 +631,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -756,7 +756,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -806,7 +806,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -931,7 +931,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -981,7 +981,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats6"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1106,7 +1106,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats6"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1156,7 +1156,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats7"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1281,7 +1281,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/beats7"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1309,7 +1309,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-            
+
             <!-- whisky -->
             <TextView
                 android:id="@+id/txtWhisky"
@@ -1365,7 +1365,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1490,7 +1490,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1540,7 +1540,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1665,7 +1665,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1715,7 +1715,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1840,7 +1840,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1890,7 +1890,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2015,7 +2015,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/whisky4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2274,7 +2274,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitCenter"
                             app:srcCompat="@drawable/vodka2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2399,7 +2399,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitCenter"
                             app:srcCompat="@drawable/vodka2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2449,7 +2449,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/vodka3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2574,7 +2574,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/vodka3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2624,7 +2624,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitCenter"
                             app:srcCompat="@drawable/vodka4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2749,7 +2749,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitCenter"
                             app:srcCompat="@drawable/vodka4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3003,12 +3003,12 @@
 
                         <ImageButton
                             android:id="@+id/img_gin2_0"
-                            android:layout_width="40dp"
+                            android:layout_width="45dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/gin2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3129,11 +3129,11 @@
 
                         <ImageButton
                             android:id="@+id/img_gin2"
-                            android:layout_width="40dp"
+                            android:layout_width="45dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/gin2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3561,12 +3561,12 @@
 
                         <ImageButton
                             android:id="@+id/img_cachaca2_0"
-                            android:layout_width="40dp"
+                            android:layout_width="67dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitEnd"
                             app:srcCompat="@drawable/cachaca2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3687,11 +3687,11 @@
 
                         <ImageButton
                             android:id="@+id/img_cachaca2"
-                            android:layout_width="40dp"
+                            android:layout_width="67dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitEnd"
                             app:srcCompat="@drawable/cachaca2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3740,7 +3740,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/cachaca3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3865,7 +3865,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/cachaca3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />

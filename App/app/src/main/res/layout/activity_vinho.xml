@@ -456,7 +456,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/tinto3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -581,7 +581,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/tinto3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1015,7 +1015,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/branco1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1140,7 +1140,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/branco1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1361,7 +1361,7 @@
                         <ImageButton
                             android:id="@+id/img_branco3_0"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="89dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
@@ -1375,7 +1375,7 @@
                             android:layout_width="105dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:layout_marginRight="10dp"
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBranco3"
@@ -1487,10 +1487,10 @@
                         <ImageButton
                             android:id="@+id/img_branco3"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="89dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/branco3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1499,7 +1499,7 @@
                             android:id="@+id/txtBranco3"
                             android:layout_width="105dp"
                             android:layout_height="50dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBranco3"
                             android:textColor="#515151"
@@ -1749,7 +1749,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/rose1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1874,7 +1874,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/rose1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1924,7 +1924,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/rose2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2049,7 +2049,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/rose2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />

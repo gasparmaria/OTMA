@@ -1362,9 +1362,9 @@
                         <ImageButton
                             android:id="@+id/img_brahma2_0"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="80dp"
                             android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="9dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
                             app:srcCompat="@drawable/brahma2"
@@ -1489,8 +1489,9 @@
                         <ImageButton
                             android:id="@+id/img_brahma2"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="80dp"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="4dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
                             app:srcCompat="@drawable/brahma2"
@@ -1716,7 +1717,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/brahma4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1842,7 +1843,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/brahma4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1891,7 +1892,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/brahma5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2017,7 +2018,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/brahma5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2276,7 +2277,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/heineken2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2402,7 +2403,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/heineken2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2451,7 +2452,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/heineken3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2577,7 +2578,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/heineken3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3741,12 +3742,12 @@
 
                         <ImageButton
                             android:id="@+id/img_colorado4_0"
-                            android:layout_width="40dp"
+                            android:layout_width="43dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/colorado4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -3868,11 +3869,11 @@
 
                         <ImageButton
                             android:id="@+id/img_colorado4"
-                            android:layout_width="40dp"
+                            android:layout_width="43dp"
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="center"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/colorado4"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />

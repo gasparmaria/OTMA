@@ -107,7 +107,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitCenter"
                             app:srcCompat="@drawable/refrigerante1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -232,7 +232,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="fitCenter"
                             app:srcCompat="@drawable/refrigerante1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -281,7 +281,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/refrigerante2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -406,7 +406,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/refrigerante2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -456,7 +456,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/refrigerante3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -581,7 +581,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/refrigerante3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -802,11 +802,11 @@
                         <ImageButton
                             android:id="@+id/img_refri5_0"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="80dp"
                             android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="9dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/refrigerante5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -928,10 +928,11 @@
                         <ImageButton
                             android:id="@+id/img_refri5"
                             android:layout_width="40dp"
-                            android:layout_height="84dp"
+                            android:layout_height="80dp"
                             android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="4dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/refrigerante5"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1015,7 +1016,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/suco1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1140,7 +1141,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/suco1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1364,7 +1365,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/suco3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1489,7 +1490,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/suco3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1573,7 +1574,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/agua1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1698,7 +1699,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/agua1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1747,7 +1748,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/agua2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1872,7 +1873,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/agua2"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -1956,7 +1957,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/energetico1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2081,7 +2082,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/energetico1"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2305,7 +2306,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/energetico3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
@@ -2430,7 +2431,7 @@
                             android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/energetico3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />
