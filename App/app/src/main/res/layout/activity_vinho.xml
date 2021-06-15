@@ -1,0 +1,2257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VinhoActivity">
+
+    <!-- menu -->
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- scrollview vertical -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="602dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtVinhos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtVinho"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <!-- tinto -->
+            <TextView
+                android:id="@+id/txtTinto"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtTinto"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVinhos"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:id="@+id/horiz_scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtTinto"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- card 1 tinto -->
+                    <LinearLayout
+                        android:id="@+id/cardTinto1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retTinto1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_tinto1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddTinto1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardTinto1"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addTinto1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_tinto1"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto1"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 2 tinto -->
+                    <LinearLayout
+                        android:id="@+id/cardTinto2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retTinto2"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_tinto2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto2"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddTinto2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardTinto2"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addTinto2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_tinto2"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto2"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto2"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 3 tinto -->
+                    <LinearLayout
+                        android:id="@+id/cardTinto3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retTinto3"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_tinto3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto3"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddTinto3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardTinto3"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addTinto3"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_tinto3"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto3"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto3"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 4 tinto -->
+                    <LinearLayout
+                        android:id="@+id/cardTinto4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retTinto4"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_tinto4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto4"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddTinto4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardTinto4"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addTinto4"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_tinto4"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto4"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto4"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 5 tinto -->
+                    <LinearLayout
+                        android:id="@+id/cardTinto5_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retTinto5"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_tinto5_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto5"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto5_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto5"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto5_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto5"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_5"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddTinto5"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_5"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardTinto5"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addTinto5"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_tinto5"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/tinto5"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtTinto5"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtTinto5"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoTinto5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoTinto5"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- branco -->
+            <TextView
+                android:id="@+id/txtBranco"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtBranco"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTinto"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:id="@+id/horiz_scroll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtBranco"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- card 1 branco -->
+                    <LinearLayout
+                        android:id="@+id/cardBranco1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBranco1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_branco1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBranco1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBranco1"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBranco1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_branco1"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco1"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 2 branco -->
+                    <LinearLayout
+                        android:id="@+id/cardBranco2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBranco2"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_branco2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco2"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBranco2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBranco2"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBranco2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_branco2"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco2"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco2"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 3 branco -->
+                    <LinearLayout
+                        android:id="@+id/cardBranco3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBranco3"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_branco3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco3"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBranco3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBranco3"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBranco3"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_branco3"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco3"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco3"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 4 branco -->
+                    <LinearLayout
+                        android:id="@+id/cardBranco4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBranco4"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_branco4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco4"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBranco4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBranco4"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBranco4"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_branco4"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/branco4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBranco4"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBranco4"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBranco4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBranco4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- rosé -->
+            <TextView
+                android:id="@+id/txtRose"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtRose"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBranco"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:id="@+id/horiz_scroll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtRose"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- card 1 rose -->
+                    <LinearLayout
+                        android:id="@+id/cardRose1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retRose1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_rose1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/rose1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtRose1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtRose1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoRose1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoRose1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddRose1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardRose1"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addRose1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_rose1"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/rose1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtRose1"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtRose1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoRose1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoRose1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 2 rose -->
+                    <LinearLayout
+                        android:id="@+id/cardRose2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retRose2"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_rose2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/rose2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtRose2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtRose2"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoRose2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoRose2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddRose2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardRose2"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addRose2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_rose2"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/rose2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtRose2"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtRose2"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoRose2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoRose2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 3 rose -->
+                    <LinearLayout
+                        android:id="@+id/cardRose3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retRose3"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_rose3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/rose3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtRose3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtRose3"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoRose3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoRose3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd3_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddRose3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd3_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardRose3"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addRose3"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_rose3"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/rose3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtRose3"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtRose3"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoRose3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoRose3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

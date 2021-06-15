@@ -11,10 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
+        <activity android:name=".DestiladoActivity"></activity>
+        <activity android:name=".VinhoActivity" />
         <activity
             android:name=".CervejaActivity"
             android:label="@string/title_activity_cerveja"
-            android:theme="@style/Theme.OTMA.NoActionBar"></activity>
+            android:theme="@style/Theme.OTMA.NoActionBar" />
         <activity
             android:name=".IndexActivity"
             android:label="@string/title_activity_index"
@@ -27,13 +29,15 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.OTMA.NoActionBar" />
-        <activity android:name=".CarrinhoActivity"></activity>
+        <activity android:name=".CarrinhoActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

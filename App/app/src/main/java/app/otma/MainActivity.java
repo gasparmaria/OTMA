@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openCerveja()
     {
-        Intent intent = new Intent(getApplicationContext(), CervejaActivity.class);
+        Intent intent = new Intent(getApplicationContext(), DestiladoActivity.class);
         startActivity(intent);
     }
     public void openCarrinho()

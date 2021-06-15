@@ -1,0 +1,2048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DestiladoActivity">
+
+    <!-- menu -->
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- scrollview vertical -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="410dp"
+        android:layout_height="602dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDestilados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtDestilados"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <!-- beats -->
+            <TextView
+                android:id="@+id/txtBeats"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtBeats"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDestilados"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:id="@+id/horiz_scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtBeats"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- card 1 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_beats1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats1"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats1"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats1"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats1"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats1"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 2 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats2"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/img_beats2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats2"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats2"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats2"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 3 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats3"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_beats3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats3"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats3"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats3"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats3"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 4 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats4"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_beats4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats4"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats4"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats4"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats4"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 5 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats5_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats5"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_beats5_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats5"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats5_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats5"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats5_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats5"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_5"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats5"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_5"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats5"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats5"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats5"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats5"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats5"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats5"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats5"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 6 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats6_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats6"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_beats6_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats6"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats6_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats6"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats6_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats6"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_6"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats6"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_6"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats6"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats6"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats6"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats6"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats6"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats6"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats6"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 7 beats -->
+                    <LinearLayout
+                        android:id="@+id/cardBeats7_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retBeats7"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_beats7_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats7"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats7_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats7"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats7_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats7"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd1_7"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddBeats7"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd1_7"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardBeats7"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addBeats7"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_beats7"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/beats7"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBeats7"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtBeats7"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoBeats7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoBeats7"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            
+            <!-- whisky -->
+            <TextView
+                android:id="@+id/txtWhisky"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txtWhisky"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBeats"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:id="@+id/horiz_scroll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtWhisky"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- card 1 whisky -->
+                    <LinearLayout
+                        android:id="@+id/cardWhisky1_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retWhisky1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_whisky1_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky1_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky1_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_1"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddWhisky1"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_1"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardWhisky1"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addWhisky1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_whisky1"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky1"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky1"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky1"
+                            android:textColor="#515151"
+                            android:textSize="12sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky1"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 2 whisky -->
+                    <LinearLayout
+                        android:id="@+id/cardWhisky2_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retWhisky2"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_whisky2_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky2_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky2_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_2"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddWhisky2"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_2"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardWhisky2"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addWhisky2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_whisky2"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky2"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky2"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky2"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky2"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 3 whisky -->
+                    <LinearLayout
+                        android:id="@+id/cardWhisky3_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retWhisky3"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_whisky3_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky3_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky3_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_3"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddWhisky3"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_3"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardWhisky3"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addWhisky3"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_whisky3"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky3"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky3"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky3"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky3"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- card 4 whisky -->
+                    <LinearLayout
+                        android:id="@+id/cardWhisky4_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria_add"
+                        android:gravity="start"
+                        android:onClick="retWhisky4"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <ImageButton
+                            android:id="@+id/img_whisky4_0"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky4_0"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky4_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/ic_adicionar">
+
+                            <LinearLayout
+                                android:id="@+id/layout_qtdProd2_4"
+                                android:layout_width="121dp"
+                                android:layout_height="28dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#F3F1F1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="DuplicateIds">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtdiminuirItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="@string/txtqtd"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="0dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/txtaumentarItem"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/cor_principal"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnAddWhisky4"
+                                android:layout_width="124dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:text="@string/txtadicionar"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:backgroundTint="@color/cor_principal"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_qtdProd2_4"
+                                tools:ignore="SmallSp"
+                                tools:layout_editor_absoluteX="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardWhisky4"
+                        android:layout_width="125dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_categoria"
+                        android:gravity="start"
+                        android:onClick="addWhisky4"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:id="@+id/img_whisky4"
+                            android:layout_width="40dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/whisky4"
+                            tools:layout_editor_absoluteX="3dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtWhisky4"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtWhisky4"
+                            android:textColor="#515151"
+                            android:textSize="14sp"
+                            tools:layout_editor_absoluteX="48dp"
+                            tools:layout_editor_absoluteY="162dp" />
+
+                        <TextView
+                            android:id="@+id/txtprecoWhisky4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/txtprecoWhisky4"
+                            android:textColor="#373737"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
