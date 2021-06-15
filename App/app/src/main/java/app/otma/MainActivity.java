@@ -54,31 +54,31 @@ public class MainActivity extends AppCompatActivity {
             switch (menuItem.getItemId()) {
                 case R.id.iteminicio:
                     Toast.makeText(MainActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Index");
+                    abrirActivityMenu("Index");
                     return true;
                 case R.id.categoria_cerveja:
                     Toast.makeText(MainActivity.this, "Cerveja", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Cerveja");
+                    abrirActivityMenu("Cerveja");
                     return true;
                 case R.id.categoria_vinho:
                     Toast.makeText(MainActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Vinhos");
+                    abrirActivityMenu("Vinhos");
                     return true;
                 case R.id.categoria_destilados:
                     Toast.makeText(MainActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Destilados");
+                    abrirActivityMenu("Destilados");
                     return true;
                 case R.id.categoria_semAlcool:
                     Toast.makeText(MainActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Destilados");
+                    abrirActivityMenu("Destilados");
                     return true;
                 case R.id.itemcarrinho:
                     Toast.makeText(MainActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Carrinho");
+                    abrirActivityMenu("Carrinho");
                     return true;
                 case R.id.itemsair:
                     Toast.makeText(MainActivity.this, "Sair", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Sair");
+                    abrirActivityMenu("Sair");
                     return true;
             }
             return true;
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openNextActivity(String value) {
+    public void abrirActivityMenu(String value) {
         Intent intent = new Intent();
         if (value == "Index") {
             intent = new Intent(getApplicationContext(), MainActivity.class);
