@@ -73,14 +73,12 @@
 
             <HorizontalScrollView
                 android:id="@+id/horiz_scroll1"
-                android:layout_width="426dp"
-                android:layout_height="236dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 app:layout_constraintTop_toBottomOf="@+id/txtSkol"
-                tools:ignore="MissingConstraints">
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -98,8 +96,10 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retSkol1"
                         android:orientation="vertical"
                         android:visibility="gone">
+
 
                         <ImageButton
                             android:id="@+id/img_skol1_0"
@@ -200,6 +200,8 @@
                                 android:layout_width="124dp"
                                 android:layout_height="29dp"
                                 android:background="@drawable/ic_adicionar"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
                                 android:text="@string/txtadicionar"
                                 android:textColor="@color/white"
                                 android:textSize="10sp"
@@ -264,12 +266,13 @@
                         android:id="@+id/cardSkol2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retSkol2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -438,12 +441,13 @@
                         android:id="@+id/cardSkol3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retSkol3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -612,12 +616,13 @@
                         android:id="@+id/cardSkol4_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retSkol4"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -751,7 +756,7 @@
                         <ImageButton
                             android:id="@+id/img_skol4"
                             android:layout_width="40dp"
-                            android:layout_height="80dp"
+                            android:layout_height="84dp"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/white"
                             android:scaleType="centerInside"
@@ -786,12 +791,13 @@
                         android:id="@+id/cardSkol5_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retSkol5"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -960,12 +966,13 @@
                         android:id="@+id/cardSkol6_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retSkol6"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -1174,6 +1181,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retBrahma1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -1341,12 +1349,13 @@
                         android:id="@+id/cardBrahma2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retBrahma2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -1372,7 +1381,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBrahma2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -1496,7 +1505,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBrahma2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -1515,12 +1524,13 @@
                         android:id="@+id/cardBrahma3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retBrahma3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -1546,7 +1556,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBrahma3"
                             android:textColor="#515151"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -1670,7 +1680,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtBrahma3"
                             android:textColor="#515151"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -1689,12 +1699,13 @@
                         android:id="@+id/cardBrahma4_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retBrahma4"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -1819,6 +1830,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onClick="addBrahma4"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -1862,12 +1874,13 @@
                         android:id="@+id/cardBrahma5_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retBrahma5"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -1992,6 +2005,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onClick="addBrahma5"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -2075,6 +2089,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retHeineken1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -2244,12 +2259,13 @@
                         android:id="@+id/cardHeineken2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retHeineken2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -2418,12 +2434,13 @@
                         android:id="@+id/cardHeineken3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retHeineken3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -2632,6 +2649,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retStella1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -2801,12 +2819,13 @@
                         android:id="@+id/cardStella2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retStella2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -2975,12 +2994,13 @@
                         android:id="@+id/cardStella3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retStella3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -3189,6 +3209,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retColorado1"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -3358,13 +3379,13 @@
                         android:id="@+id/cardColorado2_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
-                        android:onClick="addColorado2"
+                        android:onClick="retColorado2"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -3390,7 +3411,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -3489,6 +3510,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
+                        android:onClick="addColorado2"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
@@ -3513,7 +3535,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado2"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -3532,12 +3554,13 @@
                         android:id="@+id/cardColorado3_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retColorado3"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -3563,7 +3586,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado3"
                             android:textColor="#515151"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -3687,7 +3710,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado3"
                             android:textColor="#515151"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -3706,12 +3729,13 @@
                         android:id="@+id/cardColorado4_0"
                         android:layout_width="match_parent"
                         android:layout_height="233dp"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria_add"
                         android:gravity="start"
+                        android:onClick="retColorado4"
                         android:orientation="vertical"
                         android:visibility="gone">
 
@@ -3737,7 +3761,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado4"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 
@@ -3861,7 +3885,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/txtColorado4"
                             android:textColor="#515151"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
 

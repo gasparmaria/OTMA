@@ -123,6 +123,30 @@ public class CervejaActivity extends AppCompatActivity {
         cardSkol6.setVisibility(View.GONE);
         cardAddSkol6.setVisibility(View.VISIBLE);
     }
+    public void retSkol1(View asc){
+        cardSkol1.setVisibility(View.VISIBLE);
+        cardAddSkol1.setVisibility(View.GONE);
+    }
+    public void retSkol2(View asc){
+        cardSkol2.setVisibility(View.VISIBLE);
+        cardAddSkol2.setVisibility(View.GONE);
+    }
+    public void retSkol3(View asc){
+        cardSkol3.setVisibility(View.VISIBLE);
+        cardAddSkol3.setVisibility(View.GONE);
+    }
+    public void retSkol4(View asc){
+        cardSkol4.setVisibility(View.VISIBLE);
+        cardAddSkol4.setVisibility(View.GONE);
+    }
+    public void retSkol5(View asc){
+        cardSkol5.setVisibility(View.VISIBLE);
+        cardAddSkol5.setVisibility(View.GONE);
+    }
+    public void retSkol6(View asc){
+        cardSkol6.setVisibility(View.VISIBLE);
+        cardAddSkol6.setVisibility(View.GONE);
+    }
 
     // onclick brahma
     public void addBrahma1(View asc){
@@ -145,6 +169,26 @@ public class CervejaActivity extends AppCompatActivity {
         cardBrahma5.setVisibility(View.GONE);
         cardAddBrahma5.setVisibility(View.VISIBLE);
     }
+    public void retBrahma1(View asc){
+        cardBrahma1.setVisibility(View.VISIBLE);
+        cardAddBrahma1.setVisibility(View.GONE);
+    }
+    public void retBrahma2(View asc){
+        cardBrahma2.setVisibility(View.VISIBLE);
+        cardAddBrahma2.setVisibility(View.GONE);
+    }
+    public void retBrahma3(View asc){
+        cardBrahma3.setVisibility(View.VISIBLE);
+        cardAddBrahma3.setVisibility(View.GONE);
+    }
+    public void retBrahma4(View asc){
+        cardBrahma4.setVisibility(View.VISIBLE);
+        cardAddBrahma4.setVisibility(View.GONE);
+    }
+    public void retBrahma5(View asc){
+        cardBrahma5.setVisibility(View.VISIBLE);
+        cardAddBrahma5.setVisibility(View.GONE);
+    }
 
     // onclick heineken
     public void addHeineken1(View asc){
@@ -159,6 +203,18 @@ public class CervejaActivity extends AppCompatActivity {
         cardHeineken3.setVisibility(View.GONE);
         cardAddHeineken3.setVisibility(View.VISIBLE);
     }
+    public void retHeineken1(View asc){
+        cardHeineken1.setVisibility(View.VISIBLE);
+        cardAddHeineken1.setVisibility(View.GONE);
+    }
+    public void retHeineken2(View asc){
+        cardHeineken2.setVisibility(View.VISIBLE);
+        cardAddHeineken2.setVisibility(View.GONE);
+    }
+    public void retHeineken3(View asc){
+        cardHeineken3.setVisibility(View.VISIBLE);
+        cardAddHeineken3.setVisibility(View.GONE);
+    }
 
     // onclick stella
     public void addStella1(View asc){
@@ -172,6 +228,18 @@ public class CervejaActivity extends AppCompatActivity {
     public void addStella3(View asc){
         cardStella3.setVisibility(View.GONE);
         cardAddStella3.setVisibility(View.VISIBLE);
+    }
+    public void retStella1(View asc){
+        cardStella1.setVisibility(View.VISIBLE);
+        cardAddStella1.setVisibility(View.GONE);
+    }
+    public void retStella2(View asc){
+        cardStella2.setVisibility(View.VISIBLE);
+        cardAddStella2.setVisibility(View.GONE);
+    }
+    public void retStella3(View asc){
+        cardStella3.setVisibility(View.VISIBLE);
+        cardAddStella3.setVisibility(View.GONE);
     }
 
     // onclick colorado
@@ -191,5 +259,20 @@ public class CervejaActivity extends AppCompatActivity {
         cardColorado4.setVisibility(View.GONE);
         cardAddColorado4.setVisibility(View.VISIBLE);
     }
-
+    public void retColorado1(View asc){
+        cardColorado1.setVisibility(View.VISIBLE);
+        cardAddColorado1.setVisibility(View.GONE);
+    }
+    public void retColorado2(View asc){
+        cardColorado2.setVisibility(View.VISIBLE);
+        cardAddColorado2.setVisibility(View.GONE);
+    }
+    public void retColorado3(View asc){
+        cardColorado3.setVisibility(View.VISIBLE);
+        cardAddColorado3.setVisibility(View.GONE);
+    }
+    public void retColorado4(View asc){
+        cardColorado4.setVisibility(View.VISIBLE);
+        cardAddColorado4.setVisibility(View.GONE);
+    }
 }
