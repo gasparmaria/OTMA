@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        navigationView=findViewById(R.id.NavigationView);
-        drawerLayout=findViewById(R.id.DrawerLayout);
-        toolbar=findViewById(R.id.app_Bar);
-        contentView=findViewById(R.id.content_layout);
+        navigationView = findViewById(R.id.NavigationView);
+        drawerLayout = findViewById(R.id.DrawerLayout);
+        toolbar = findViewById(R.id.app_Bar);
+        contentView = findViewById(R.id.content_layout);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
@@ -51,28 +51,40 @@ public class MainActivity extends AppCompatActivity {
 
 
         navigationView.setNavigationItemSelectedListener(menuItem -> {
-            switch (menuItem.getItemId())
-            {
+            switch (menuItem.getItemId()) {
                 case R.id.iteminicio:
                     Toast.makeText(MainActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
-                    openIndex();
+                    openNextActivity("Index");
                     return true;
                 case R.id.categoria_cerveja:
-                    Toast.makeText(MainActivity.this, "Categorias", Toast.LENGTH_SHORT).show();
-                    openCerveja();
+                    Toast.makeText(MainActivity.this, "Cerveja", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Cerveja");
+                    return true;
+                case R.id.categoria_vinho:
+                    Toast.makeText(MainActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Vinhos");
+                    return true;
+                case R.id.categoria_destilados:
+                    Toast.makeText(MainActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Destilados");
+                    return true;
+                case R.id.categoria_semAlcool:
+                    Toast.makeText(MainActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Destilados");
                     return true;
                 case R.id.itemcarrinho:
                     Toast.makeText(MainActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
-                    openCarrinho();
+                    openNextActivity("Carrinho");
                     return true;
                 case R.id.itemsair:
                     Toast.makeText(MainActivity.this, "Sair", Toast.LENGTH_SHORT).show();
-                    openLogin();
+                    openNextActivity("Sair");
                     return true;
             }
             return true;
         });
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -83,8 +95,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void returnContent(View view)
-    {
+    public void returnContent(View view) {
         drawerLayout.closeDrawer(GravityCompat.START);
         new Handler().postDelayed(() -> {
             contentView.setVisibility(View.VISIBLE);
@@ -92,25 +103,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openIndex()
-    {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+    public void openNextActivity(String value) {
+        Intent intent = new Intent();
+        if (value == "Index") {
+            intent = new Intent(getApplicationContext(), MainActivity.class);
+        } else if (value == "Cerveja") {
+            intent = new Intent(getApplicationContext(), CervejaActivity.class);
+        } else if (value == "Vinhos") {
+            intent = new Intent(getApplicationContext(), VinhoActivity.class);
+        } else if (value == "Destilados") {
+            intent = new Intent(getApplicationContext(), DestiladoActivity.class);
+        } else if (value == "Carrinho") {
+            intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        } else if (value == "Sair") {
+            intent = new Intent(getApplicationContext(), LoginActivity.class);
+        }
+        /*else if(value == "SemAcool")
+        {
+            intent = new Intent(getApplicationContext(), SemAcoolActivity.class);
+        }*/
         startActivity(intent);
     }
-    public void openCerveja()
-    {
-        Intent intent = new Intent(getApplicationContext(), DestiladoActivity.class);
-        startActivity(intent);
-    }
-    public void openCarrinho()
-    {
-        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
-        startActivity(intent);
-    }
-    public void openLogin()
-    {
-        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-        startActivity(intent);
-    }
-
 }
