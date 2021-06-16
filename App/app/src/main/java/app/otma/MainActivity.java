@@ -1,19 +1,15 @@
 package app.otma;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -21,10 +17,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
-import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageListener;
-
-import static android.view.Gravity.END;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+
     }
 
     @Override
@@ -103,7 +96,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openNextActivity(String value) {
+
+    public void openCerveja(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), CervejaActivity.class);
+        startActivity(intent);
+    }
+    public void openDestilado(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), DestiladoActivity.class);
+        startActivity(intent);
+    }
+    public void openVinho(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), VinhoActivity.class);
+        startActivity(intent);
+    }
+
+    public View.OnLongClickListener openNextActivity(String value) {
         Intent intent = new Intent();
         if (value == "Index") {
             intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -123,5 +133,6 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(getApplicationContext(), SemAcoolActivity.class);
         }*/
         startActivity(intent);
+        return null;
     }
 }
