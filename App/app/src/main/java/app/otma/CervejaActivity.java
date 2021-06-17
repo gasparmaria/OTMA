@@ -2,31 +2,22 @@ package app.otma;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
+import android.os.Handler;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.HorizontalScrollView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-import app.otma.databinding.ActivityCervejaBinding;
+import com.google.android.material.navigation.NavigationView;
+
 
 public class CervejaActivity extends AppCompatActivity {
 
@@ -35,19 +26,61 @@ public class CervejaActivity extends AppCompatActivity {
     public LinearLayout cardHeineken1, cardHeineken2, cardHeineken3, cardAddHeineken1, cardAddHeineken2, cardAddHeineken3;
     public LinearLayout cardStella1, cardStella2, cardStella3, cardAddStella1, cardAddStella2, cardAddStella3;
     public LinearLayout cardColorado1, cardColorado2, cardColorado3, cardColorado4, cardAddColorado1, cardAddColorado2, cardAddColorado3, cardAddColorado4;
-    public Toolbar toolbar;
+    private Toolbar toolbar;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private ScrollView contentView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cerveja);
 
+        contentView=findViewById(R.id.content_layout_cerveja);
+        navigationView=findViewById(R.id.NavigationView);
+        drawerLayout=findViewById(R.id.DrawerLayout);
         toolbar = findViewById(R.id.app_Bar);
+
         setSupportActionBar(toolbar);
         ActionBar actionBar;
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
+
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
+            switch (menuItem.getItemId()) {
+                case R.id.iteminicio:
+                    Toast.makeText(CervejaActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Index");
+                    return true;
+                case R.id.categoria_cerveja:
+                    Toast.makeText(CervejaActivity.this, "Cerveja", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Cerveja");
+                    return true;
+                case R.id.categoria_vinho:
+                    Toast.makeText(CervejaActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Vinhos");
+                    return true;
+                case R.id.categoria_destilados:
+                    Toast.makeText(CervejaActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Destilados");
+                    return true;
+                case R.id.categoria_semAlcool:
+                    Toast.makeText(CervejaActivity.this, "Sem álcool", Toast.LENGTH_SHORT).show();
+                    openNextActivity("SemAlcool");
+                    return true;
+                case R.id.itemcarrinho:
+                    Toast.makeText(CervejaActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Carrinho");
+                    return true;
+                case R.id.itemsair:
+                    Toast.makeText(CervejaActivity.this, "Sair", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Sair");
+                    return true;
+            }
+            return true;
+        });
+
 
         // cards skol
         cardSkol1 = (LinearLayout) findViewById(R.id.cardSkol1);
@@ -97,6 +130,49 @@ public class CervejaActivity extends AppCompatActivity {
         cardColorado4 = (LinearLayout) findViewById(R.id.cardColorado4);
         cardAddColorado4 = (LinearLayout) findViewById(R.id.cardColorado4_0);
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            drawerLayout.openDrawer(GravityCompat.START);
+            contentView.setVisibility(View.INVISIBLE);
+            return true;
+        }
+        return true;
+    }
+
+    public void returnContent(View view) {
+        drawerLayout.closeDrawer(GravityCompat.START);
+        new Handler().postDelayed(() -> {
+            contentView.setVisibility(View.VISIBLE);
+        }, 200);
+
+    }
+
+    public void openNextActivity(String value) {
+        Intent intent = new Intent();
+
+        if (value == "Index") {
+            intent = new Intent(getApplicationContext(), MainActivity.class);
+        } else if (value == "Cerveja") {
+            intent = new Intent(getApplicationContext(), CervejaActivity.class);
+        } else if (value == "Vinhos") {
+            intent = new Intent(getApplicationContext(), VinhoActivity.class);
+        } else if (value == "Destilados") {
+            intent = new Intent(getApplicationContext(), DestiladoActivity.class);
+        } else if (value == "Carrinho") {
+            intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        } else if (value == "Sair") {
+            intent = new Intent(getApplicationContext(), LoginActivity.class);
+        }
+        else if(value == "SemAlcool")
+        {
+            intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
+        }
+        startActivity(intent);
+    }
+
 
     // onclick skol
     public void addSkol1(View asc){

@@ -17,7 +17,7 @@
 
     <!-- CONTEÚDO -->
     <ScrollView
-        android:id="@+id/content_layout"
+        android:id="@+id/content_layout_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp">
@@ -70,10 +70,10 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="10dp"
-                        android:onClick="openCerveja"
                         android:background="@drawable/ic_categoria"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="openCerveja">
 
                         <ImageButton
                             android:id="@+id/img_cerveja"
@@ -83,7 +83,8 @@
                             android:scaleType="centerInside"
                             app:srcCompat="@drawable/categoria_cerveja"
                             tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
+                            tools:layout_editor_absoluteY="0dp"
+                            android:onClick="openCerveja"/>
 
                         <TextView
                             android:id="@+id/txtCatCervejas"
@@ -117,7 +118,8 @@
                             android:layout_height="140dp"
                             android:background="@color/white"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/categoria_vinho" />
+                            app:srcCompat="@drawable/categoria_vinho"
+                            android:onClick="openVinho"/>
 
                         <TextView
                             android:id="@+id/txtCategoria2"
@@ -151,7 +153,8 @@
                             android:scaleType="centerInside"
                             app:srcCompat="@drawable/categoria_destilado"
                             tools:layout_editor_absoluteX="3dp"
-                            tools:layout_editor_absoluteY="0dp" />
+                            tools:layout_editor_absoluteY="0dp"
+                            android:onClick="openDestilado"/>
 
                         <TextView
                             android:id="@+id/txtCategoria3"
@@ -176,7 +179,8 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="openSemAlcool">
 
                         <ImageButton
                             android:id="@+id/img_sem_alcool"

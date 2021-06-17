@@ -20,9 +20,9 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
-    private Toolbar toolbar;
     private ScrollView contentView;
 
     @Override
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView = findViewById(R.id.NavigationView);
         drawerLayout = findViewById(R.id.DrawerLayout);
         toolbar = findViewById(R.id.app_Bar);
-        contentView = findViewById(R.id.content_layout);
+        contentView = findViewById(R.id.content_layout_main);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.categoria_semAlcool:
                     Toast.makeText(MainActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Destilados");
+                    openNextActivity("SemAlcool");
                     return true;
                 case R.id.itemcarrinho:
                     Toast.makeText(MainActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
@@ -112,9 +112,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), VinhoActivity.class);
         startActivity(intent);
     }
+    public void openSemAlcool(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
+        startActivity(intent);
+    }
 
-    public View.OnLongClickListener openNextActivity(String value) {
+    public void openNextActivity(String value) {
         Intent intent = new Intent();
+
         if (value == "Index") {
             intent = new Intent(getApplicationContext(), MainActivity.class);
         } else if (value == "Cerveja") {
@@ -128,11 +134,10 @@ public class MainActivity extends AppCompatActivity {
         } else if (value == "Sair") {
             intent = new Intent(getApplicationContext(), LoginActivity.class);
         }
-        /*else if(value == "SemAcool")
+        else if(value == "SemAlcool")
         {
-            intent = new Intent(getApplicationContext(), SemAcoolActivity.class);
-        }*/
+            intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
+        }
         startActivity(intent);
-        return null;
     }
 }

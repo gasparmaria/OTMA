@@ -1,10 +1,22 @@
 package app.otma;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class SemAlcoolActivity extends AppCompatActivity {
 
@@ -12,11 +24,60 @@ public class SemAlcoolActivity extends AppCompatActivity {
     public LinearLayout cardSuco1, cardSuco2, cardSuco3, cardAddSuco1, cardAddSuco2, cardAddSuco3;
     public LinearLayout cardAgua1, cardAgua2, cardAddAgua1, cardAddAgua2;
     public LinearLayout cardEnerg1, cardEnerg2, cardEnerg3, cardAddEnerg1, cardAddEnerg2, cardAddEnerg3;
+    private Toolbar toolbar;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private ScrollView contentView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sem_alcool);
+
+        contentView=findViewById(R.id.content_layout_semAlcool);
+        navigationView=findViewById(R.id.NavigationView);
+        drawerLayout=findViewById(R.id.DrawerLayout);
+        toolbar = findViewById(R.id.app_Bar);
+
+        setSupportActionBar(toolbar);
+        ActionBar actionBar;
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
+
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
+            switch (menuItem.getItemId()) {
+                case R.id.iteminicio:
+                    Toast.makeText(SemAlcoolActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Index");
+                    return true;
+                case R.id.categoria_cerveja:
+                    Toast.makeText(SemAlcoolActivity.this, "Cerveja", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Cerveja");
+                    return true;
+                case R.id.categoria_vinho:
+                    Toast.makeText(SemAlcoolActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Vinhos");
+                    return true;
+                case R.id.categoria_destilados:
+                    Toast.makeText(SemAlcoolActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Destilados");
+                    return true;
+                case R.id.categoria_semAlcool:
+                    Toast.makeText(SemAlcoolActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
+                    openNextActivity("SemAlcool");
+                    return true;
+                case R.id.itemcarrinho:
+                    Toast.makeText(SemAlcoolActivity.this, "Carrinho", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Carrinho");
+                    return true;
+                case R.id.itemsair:
+                    Toast.makeText(SemAlcoolActivity.this, "Sair", Toast.LENGTH_SHORT).show();
+                    openNextActivity("Sair");
+                    return true;
+            }
+            return true;
+        });
 
         // cards refrigerante
         cardRefri1 = (LinearLayout) findViewById(R.id.cardRefri1);
@@ -48,6 +109,46 @@ public class SemAlcoolActivity extends AppCompatActivity {
         cardAddEnerg2 = (LinearLayout) findViewById(R.id.cardEnerg2_0);
         cardEnerg3 = (LinearLayout) findViewById(R.id.cardEnerg3);
         cardAddEnerg3 = (LinearLayout) findViewById(R.id.cardEnerg3_0);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            drawerLayout.openDrawer(GravityCompat.START);
+            contentView.setVisibility(View.INVISIBLE);
+            return true;
+        }
+        return true;
+    }
+
+    public void returnContent(View view) {
+        drawerLayout.closeDrawer(GravityCompat.START);
+        new Handler().postDelayed(() -> {
+            contentView.setVisibility(View.VISIBLE);
+        }, 200);
+
+    }
+
+    public void openNextActivity(String value) {
+        Intent intent = new Intent();
+
+        if (value == "Index") {
+            intent = new Intent(getApplicationContext(), MainActivity.class);
+        } else if (value == "Cerveja") {
+            intent = new Intent(getApplicationContext(), CervejaActivity.class);
+        } else if (value == "Vinhos") {
+            intent = new Intent(getApplicationContext(), VinhoActivity.class);
+        } else if (value == "Destilados") {
+            intent = new Intent(getApplicationContext(), DestiladoActivity.class);
+        } else if (value == "Carrinho") {
+            intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        } else if (value == "Sair") {
+            intent = new Intent(getApplicationContext(), LoginActivity.class);
+        } else if(value == "SemAlcool")
+        {
+            intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
+        }
+        startActivity(intent);
     }
 
     // onclick refrigerante
