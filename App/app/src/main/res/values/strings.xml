@@ -270,4 +270,9 @@
     <string name="txtTitlePopulares3">Suco de Del Valle - 1L</string>
     <string name="precoAntigoPopulares3"><s>R$12,00</s></string>
     <string name="precoAtualPopulares3">R$2,00</string>
+    <string name="txtPagamentoAPP">Pagamento pelo app</string>
+    <string name="txtCartaoCredito">Cartão de Crédito</string>
+    <string name="txtPagamentoEntrega">Pagamento na entrega</string>
+    <string name="txtCartaoCreditoDebito">Cartão de Débito ou Crédito</string>
+    <string name="txtDinheiro">Dinheiro</string>
 </resources>

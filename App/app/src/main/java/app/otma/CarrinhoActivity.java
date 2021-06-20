@@ -1,6 +1,7 @@
 package app.otma;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -15,6 +16,8 @@ public class CarrinhoActivity extends AppCompatActivity {
     public RelativeLayout telaEndereco, informacoesCard;
     public Button btn_confirmarPedido;
     public TextView addProdutos;
+    public ConstraintLayout telaFormaPagamento;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,8 @@ public class CarrinhoActivity extends AppCompatActivity {
         informacoesCard=findViewById(R.id.card_info);
         addProdutos=findViewById(R.id.txtaddProd);
         btn_confirmarPedido=findViewById(R.id.btn_confirmarPedido);
+        telaFormaPagamento=findViewById(R.id.forma_pagamento_activity);
+
     }
 
     public void abrirTelaEndereco(View asc)
@@ -40,5 +45,9 @@ public class CarrinhoActivity extends AppCompatActivity {
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                                     Uri.parse("http://maps.google.com/maps"));
         startActivity(intent);
+    }
+
+    public void abrirFormaPagamento(View view) {
+        telaFormaPagamento.setVisibility(View.VISIBLE);
     }
 }

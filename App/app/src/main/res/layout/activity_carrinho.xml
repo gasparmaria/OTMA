@@ -633,11 +633,18 @@
 
             <include
                 android:id="@+id/endereco_activity"
-                layout="@layout/endereco_activity"
+                layout="@layout/activity_endereco"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
                 android:visibility="invisible" />
+            <include
+                android:id="@+id/forma_pagamento_activity"
+                layout="@layout/activity_forma_pagamento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"/>
         </RelativeLayout>
 
 
