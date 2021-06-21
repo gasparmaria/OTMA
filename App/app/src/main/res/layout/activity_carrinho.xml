@@ -35,7 +35,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/ic_baseline_keyboard_backspace"
-                android:backgroundTint="@color/black"/>
+                android:backgroundTint="@color/black"
+                android:onClick="voltar"/>
         </RelativeLayout>
 
         <!-- CONTEÚDO -->

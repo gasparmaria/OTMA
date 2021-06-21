@@ -169,6 +169,7 @@
         android:id="@+id/btnCadastrar"
         android:layout_width="245dp"
         android:layout_height="47dp"
+        android:onClick="entrar"
         android:text="@string/btnCadastrar"
         android:textColor="@color/white"
         app:backgroundTint="@color/cor_principal"

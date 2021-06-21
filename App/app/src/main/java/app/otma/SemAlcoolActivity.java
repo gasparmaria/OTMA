@@ -56,15 +56,15 @@ public class SemAlcoolActivity extends AppCompatActivity {
                     openNextActivity("Cerveja");
                     return true;
                 case R.id.categoria_vinho:
-                    Toast.makeText(SemAlcoolActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SemAlcoolActivity.this, "Vinhos", Toast.LENGTH_SHORT).show();
                     openNextActivity("Vinhos");
                     return true;
                 case R.id.categoria_destilados:
-                    Toast.makeText(SemAlcoolActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SemAlcoolActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
                     openNextActivity("Destilados");
                     return true;
                 case R.id.categoria_semAlcool:
-                    Toast.makeText(SemAlcoolActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SemAlcoolActivity.this, "Sem Álcool", Toast.LENGTH_SHORT).show();
                     openNextActivity("SemAlcool");
                     return true;
                 case R.id.itemcarrinho:
@@ -126,7 +126,6 @@ public class SemAlcoolActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             contentView.setVisibility(View.VISIBLE);
         }, 200);
-
     }
 
     public void openNextActivity(String value) {
@@ -144,8 +143,7 @@ public class SemAlcoolActivity extends AppCompatActivity {
             intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
         } else if (value == "Sair") {
             intent = new Intent(getApplicationContext(), LoginActivity.class);
-        } else if(value == "SemAlcool")
-        {
+        } else if(value == "SemAlcool") {
             intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
         }
         startActivity(intent);

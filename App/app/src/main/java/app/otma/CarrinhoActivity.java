@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CarrinhoActivity extends AppCompatActivity {
 
@@ -29,6 +30,13 @@ public class CarrinhoActivity extends AppCompatActivity {
         btn_confirmarPedido=findViewById(R.id.btn_confirmarPedido);
         telaFormaPagamento=findViewById(R.id.forma_pagamento_activity);
 
+    }
+
+    public void voltar(View asc)
+    {
+        Toast.makeText(CarrinhoActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
     }
 
     public void abrirTelaEndereco(View asc)

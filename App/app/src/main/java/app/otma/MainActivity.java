@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
                     openNextActivity("Cervejas");
                     return true;
                 case R.id.categoria_vinho:
-                    Toast.makeText(MainActivity.this, "Vinho", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Vinhos", Toast.LENGTH_SHORT).show();
                     openNextActivity("Vinhos");
                     return true;
                 case R.id.categoria_destilados:
-                    Toast.makeText(MainActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
                     openNextActivity("Destilados");
                     return true;
                 case R.id.categoria_semAlcool:
@@ -93,9 +93,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             contentView.setVisibility(View.VISIBLE);
         }, 200);
-
     }
-
 
     public void openCerveja(View view)
     {
@@ -133,9 +131,7 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
         } else if (value == "Sair") {
             intent = new Intent(getApplicationContext(), LoginActivity.class);
-        }
-        else if(value == "SemAlcool")
-        {
+        } else if(value == "SemAlcool") {
             intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
         }
         startActivity(intent);

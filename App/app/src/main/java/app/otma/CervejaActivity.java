@@ -1,5 +1,12 @@
 package app.otma;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,15 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.google.android.material.navigation.NavigationView;
-
 
 public class CervejaActivity extends AppCompatActivity {
 
@@ -58,11 +57,11 @@ public class CervejaActivity extends AppCompatActivity {
                     openNextActivity("Cerveja");
                     return true;
                 case R.id.categoria_vinho:
-                    Toast.makeText(CervejaActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CervejaActivity.this, "Vinhos", Toast.LENGTH_SHORT).show();
                     openNextActivity("Vinhos");
                     return true;
                 case R.id.categoria_destilados:
-                    Toast.makeText(CervejaActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CervejaActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
                     openNextActivity("Destilados");
                     return true;
                 case R.id.categoria_semAlcool:
@@ -80,7 +79,6 @@ public class CervejaActivity extends AppCompatActivity {
             }
             return true;
         });
-
 
         // cards skol
         cardSkol1 = (LinearLayout) findViewById(R.id.cardSkol1);
@@ -131,7 +129,6 @@ public class CervejaActivity extends AppCompatActivity {
         cardAddColorado4 = (LinearLayout) findViewById(R.id.cardColorado4_0);
     }
 
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -147,7 +144,6 @@ public class CervejaActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             contentView.setVisibility(View.VISIBLE);
         }, 200);
-
     }
 
     public void openNextActivity(String value) {
@@ -165,9 +161,7 @@ public class CervejaActivity extends AppCompatActivity {
             intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
         } else if (value == "Sair") {
             intent = new Intent(getApplicationContext(), LoginActivity.class);
-        }
-        else if(value == "SemAlcool")
-        {
+        } else if(value == "SemAlcool"){
             intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
         }
         startActivity(intent);
