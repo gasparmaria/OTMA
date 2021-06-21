@@ -50,6 +50,7 @@
             android:drawableLeft="@drawable/icon_pesquisa"
             android:ems="10"
             android:hint="Buscar"
+            android:textColorHint="@color/cor_cinza"
             android:inputType="textPersonName"
             android:textColor="@color/black" />
     </RelativeLayout>
