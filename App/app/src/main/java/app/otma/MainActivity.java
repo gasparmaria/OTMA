@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ScrollView contentView;
+    private ImageView icon_carrinho;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.DrawerLayout);
         toolbar = findViewById(R.id.app_Bar);
         contentView = findViewById(R.id.content_layout_main);
+        icon_carrinho = findViewById(R.id.carrinho_icon);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
-
 
         navigationView.setNavigationItemSelectedListener(menuItem -> {
             switch (menuItem.getItemId()) {
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.categoria_cerveja:
                     Toast.makeText(MainActivity.this, "Cerveja", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Cervejas");
+                    openNextActivity("Cerveja");
                     return true;
                 case R.id.categoria_vinho:
                     Toast.makeText(MainActivity.this, "Vinhos", Toast.LENGTH_SHORT).show();
@@ -93,6 +95,11 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             contentView.setVisibility(View.VISIBLE);
         }, 200);
+    }
+
+    public void abrirCarrinho(View view){
+        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        startActivity(intent);
     }
 
     public void openCerveja(View view)

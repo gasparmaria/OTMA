@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
@@ -27,6 +28,8 @@ public class VinhoActivity extends AppCompatActivity {
     public DrawerLayout drawerLayout;
     public NavigationView navigationView;
     public ScrollView contentView;
+    private ImageView icon_carrinho;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,7 @@ public class VinhoActivity extends AppCompatActivity {
         navigationView=findViewById(R.id.NavigationView);
         drawerLayout=findViewById(R.id.DrawerLayout);
         toolbar = findViewById(R.id.app_Bar);
+        icon_carrinho = findViewById(R.id.carrinho_icon);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
@@ -121,7 +125,11 @@ public class VinhoActivity extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             contentView.setVisibility(View.VISIBLE);
         }, 200);
+    }
 
+    public void abrirCarrinho(View view){
+        Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+        startActivity(intent);
     }
 
     public void openNextActivity(String value) {
