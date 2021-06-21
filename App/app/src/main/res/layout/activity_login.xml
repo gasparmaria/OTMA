@@ -44,15 +44,14 @@
         app:layout_constraintBottom_toTopOf="@+id/edtxtEmailLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883"
+        app:layout_constraintTop_toTopOf="@+id/view2"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtxtEmailLogin"
         android:layout_width="244dp"
         android:layout_height="37dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="@string/edtxtEmail"
@@ -60,9 +59,9 @@
         android:textColor="@color/black"
         android:textColorHint="@color/cor_cinza"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -100,14 +99,17 @@
         android:layout_width="244dp"
         android:layout_height="47dp"
         android:layout_marginTop="25dp"
+        android:onClick="entrar"
         android:text="@string/btnEntrar"
         android:textColor="@color/white"
         app:backgroundTint="@color/cor_principal"
         app:iconTint="@color/white"
-        android:onClick="entrar"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEsqueciSenha"
+        app:layout_constraintVertical_bias="0.093"
         app:rippleColor="@color/cor_principal"
         tools:ignore="MissingConstraints" />
 
@@ -115,15 +117,14 @@
         android:id="@+id/txtFacaCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="abrirCadastro"
         android:text="@string/txtFacaCadastro"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:onClick="abrirCadastro"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrar"
-        app:layout_constraintVertical_bias="0.103"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

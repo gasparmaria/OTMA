@@ -9,21 +9,21 @@
 
     <!-- menu -->
     <include
+        android:id="@+id/include3"
         layout="@layout/layout_header"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <!-- scrollview vertical -->
     <ScrollView
         android:id="@+id/content_layout_cerveja"
         android:layout_width="match_parent"
         android:layout_height="602dp"
-        android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include3"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints">
 
@@ -390,8 +390,8 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:orientation="vertical"
                         android:onClick="addSkol2"
+                        android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">
@@ -1327,6 +1327,7 @@
                             android:textSize="14sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
+
                         <TextView
                             android:id="@+id/txtprecoBrahma1"
                             android:layout_width="match_parent"
@@ -3854,8 +3855,8 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/ic_categoria"
                         android:gravity="start"
-                        android:orientation="vertical"
                         android:onClick="addColorado4"
+                        android:orientation="vertical"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp">

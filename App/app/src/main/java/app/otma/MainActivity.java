@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.categoria_cerveja:
                     Toast.makeText(MainActivity.this, "Cerveja", Toast.LENGTH_SHORT).show();
-                    openNextActivity("Cerveja");
+                    openNextActivity("Cervejas");
                     return true;
                 case R.id.categoria_vinho:
-                    Toast.makeText(MainActivity.this, "Destilado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Vinho", Toast.LENGTH_SHORT).show();
                     openNextActivity("Vinhos");
                     return true;
                 case R.id.categoria_destilados:
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     openNextActivity("Destilados");
                     return true;
                 case R.id.categoria_semAlcool:
-                    Toast.makeText(MainActivity.this, "Destilados", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Sem Álcool", Toast.LENGTH_SHORT).show();
                     openNextActivity("SemAlcool");
                     return true;
                 case R.id.itemcarrinho:

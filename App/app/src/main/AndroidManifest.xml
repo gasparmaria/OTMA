@@ -11,31 +11,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
-        <activity android:name=".SemAlcoolActivity"></activity>
+        <activity android:name=".SemAlcoolActivity" />
         <activity android:name=".DestiladoActivity" />
         <activity android:name=".VinhoActivity" />
         <activity
             android:name=".CervejaActivity"
             android:label="@string/title_activity_cerveja"
-            android:theme="@style/Theme.OTMA.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".IndexActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_index"
-            android:theme="@style/Theme.OTMA.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CadastroActivity"
             android:label="@string/title_activity_cadastro"
-            android:theme="@style/Theme.OTMA.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/Theme.OTMA.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CarrinhoActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
