@@ -634,7 +634,7 @@
 
             <include
                 android:id="@+id/endereco_activity"
-                layout="@layout/activity_endereco"
+                layout="@layout/activity_pagamento"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"

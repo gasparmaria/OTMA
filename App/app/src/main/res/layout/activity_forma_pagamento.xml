@@ -10,12 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,7 +61,8 @@
                 android:inputType="number"
                 android:hint="Número do cartão"
                 android:textSize="16sp"
-                android:textColor="@color/black" android:textColorHint="@color/cor_cinza"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cor_cinza"
                 app:layout_constraintTop_toTopOf="parent" />
             <LinearLayout
                 android:layout_width="match_parent"

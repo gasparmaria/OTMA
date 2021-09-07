@@ -10,20 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
+        <activity android:name=".LocalizacaoActivity"></activity>
         <activity android:name=".SemAlcoolActivity" />
         <activity android:name=".DestiladoActivity" />
         <activity android:name=".VinhoActivity" />
-        <activity android:name=".CervejaActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".CervejaActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".CadastroActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".CarrinhoActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>
