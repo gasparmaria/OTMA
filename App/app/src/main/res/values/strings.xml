@@ -286,4 +286,5 @@
     <string name="txtPontoReferencia">Ponto de referência</string>
     <string name="btnSalvar">Salvar</string>
     <string name="btnLimpar">Limpar</string>
+    <string name="txtPagamento">Pagamento</string>
 </resources>

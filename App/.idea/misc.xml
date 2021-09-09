@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_carrinho.xml" value="0.1" />
+        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/drawable/border.xml" value="0.15197368421052632" />
+        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_carrinho.xml" value="0.2" />
         <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_endereco.xml" value="0.1076388888888889" />
         <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_forma_pagamento.xml" value="0.168359375" />
         <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_localizacao.xml" value="0.25" />
+        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_pagamento.xml" value="0.25" />
       </map>
     </option>
   </component>

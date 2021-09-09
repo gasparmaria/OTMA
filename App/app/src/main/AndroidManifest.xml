@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
-        <activity android:name=".LocalizacaoActivity"></activity>
+        <activity
+            android:name=".PagamentoActivity"
+            android:exported="true" />
+        <activity android:name=".LocalizacaoActivity" />
         <activity android:name=".SemAlcoolActivity" />
         <activity android:name=".DestiladoActivity" />
         <activity android:name=".VinhoActivity" />
