@@ -1,12 +1,16 @@
 package app.otma;
 
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
@@ -19,13 +23,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ScrollView contentView;
     private ImageView icon_carrinho;
+    private SensorManager sensorManager;
+    private Sensor sensorLuz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.app_Bar);
         contentView = findViewById(R.id.content_layout_main);
         icon_carrinho = findViewById(R.id.carrinho_icon);
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
@@ -97,28 +106,27 @@ public class MainActivity extends AppCompatActivity {
         }, 200);
     }
 
-    public void abrirCarrinho(View view){
+    public void abrirCarrinho(View view) {
         Intent intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
         startActivity(intent);
     }
 
-    public void openCerveja(View view)
-    {
+    public void openCerveja(View view) {
         Intent intent = new Intent(getApplicationContext(), CervejaActivity.class);
         startActivity(intent);
     }
-    public void openDestilado(View view)
-    {
+
+    public void openDestilado(View view) {
         Intent intent = new Intent(getApplicationContext(), DestiladoActivity.class);
         startActivity(intent);
     }
-    public void openVinho(View view)
-    {
+
+    public void openVinho(View view) {
         Intent intent = new Intent(getApplicationContext(), VinhoActivity.class);
         startActivity(intent);
     }
-    public void openSemAlcool(View view)
-    {
+
+    public void openSemAlcool(View view) {
         Intent intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
         startActivity(intent);
     }
@@ -138,9 +146,34 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
         } else if (value == "Sair") {
             intent = new Intent(getApplicationContext(), LoginActivity.class);
-        } else if(value == "SemAlcool") {
+        } else if (value == "SemAlcool") {
             intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
         }
         startActivity(intent);
+    }
+
+    //MÉTODOS DO SENSOR
+
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(this);
+    }
+
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(this, sensorLuz, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+            //Mudar brilho do celular
+
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 }

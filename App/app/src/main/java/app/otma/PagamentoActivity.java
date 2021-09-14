@@ -1,11 +1,10 @@
 package app.otma;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class PagamentoActivity extends AppCompatActivity {
     private LinearLayout viewEndereco, viewFormaPagamento;
@@ -18,14 +17,16 @@ public class PagamentoActivity extends AppCompatActivity {
         viewEndereco = findViewById(R.id.viewEndereco);
         viewFormaPagamento = findViewById(R.id.viewFormaPagamento);
 
+        /*
         viewFormaPagamento.setOnClickListener(v -> {
             ConstraintLayout telaFormaPagamento = findViewById(R.id.activityFormaPagamento);
             telaFormaPagamento.setVisibility(View.VISIBLE);
         });
+        */
 
         viewEndereco.setOnClickListener(v -> {
-            LinearLayout telaEndereco = findViewById(R.id.activityLocalizacao);
-            telaEndereco.setVisibility(View.VISIBLE);
+            Intent intent = new Intent(getApplicationContext(), LocalizacaoActivity.class);
+            startActivity(intent);
         });
     }
 }
