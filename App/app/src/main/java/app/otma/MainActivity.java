@@ -1,13 +1,17 @@
 package app.otma;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -152,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         startActivity(intent);
     }
 
-    //MÉTODOS DO SENSOR
+    // MÉTODOS DO SENSOR
 
     protected void onPause() {
         super.onPause();
@@ -166,14 +170,50 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onSensorChanged(SensorEvent event) {
+
         if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
             //Mudar brilho do celular
 
+            if(permissaoControlarBrilho()){
+                int brilho = (int) (event.values[0]);
+                controlarBrilho(brilho);
+            }
         }
     }
 
-    @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    private boolean permissaoControlarBrilho()
+    {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.System.canWrite(this)) {
+                return true;
+            }
+            else
+            {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+                intent.setData((Uri.parse("package:" + getApplication().getPackageName())));
+                startActivity(intent);
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private void controlarBrilho(int brilho)
+    {
+        if(brilho < 0)
+        {
+            brilho = 0;
+        }
+        else if(brilho > 255)
+        {
+            brilho = 255;
+        }
+
+        ContentResolver contentResolver = getApplicationContext().getContentResolver();
+        Settings.System.putInt(contentResolver, Settings.System.SCREEN_BRIGHTNESS, brilho);
     }
 }

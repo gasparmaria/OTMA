@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/drawable/border.xml" value="0.15197368421052632" />
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_carrinho.xml" value="0.2" />
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_endereco.xml" value="0.1076388888888889" />
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_forma_pagamento.xml" value="0.168359375" />
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_localizacao.xml" value="0.25" />
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/otavi/OneDrive/Documentos/Otavio/Some_Projects/OTMA/App/app/src/main/res/layout/activity_pagamento.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_cadastro.xml" value="0.12635869565217392" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_cerveja.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_destilado.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_forma_pagamento.xml" value="0.22" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_localizacao.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_pagamento.xml" value="0.22" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_sem_alcool.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/BG 2021/PAM/OTMA/OTMA/App/app/src/main/res/layout/activity_vinho.xml" value="0.1" />
       </map>
     </option>
   </component>

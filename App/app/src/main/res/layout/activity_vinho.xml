@@ -1357,7 +1357,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="5dp"
                             android:background="@color/white"
-                            android:scaleType="centerInside"
+                            android:scaleType="centerCrop"
                             app:srcCompat="@drawable/branco3"
                             tools:layout_editor_absoluteX="3dp"
                             tools:layout_editor_absoluteY="0dp" />

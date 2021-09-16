@@ -7,9 +7,18 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +28,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class CervejaActivity extends AppCompatActivity {
+public class CervejaActivity extends AppCompatActivity implements SensorEventListener {
 
     public LinearLayout cardSkol1, cardSkol2, cardSkol3, cardSkol4, cardSkol5, cardSkol6, cardAddSkol1, cardAddSkol2, cardAddSkol3, cardAddSkol4, cardAddSkol5, cardAddSkol6;
     public LinearLayout cardBrahma1, cardBrahma2, cardBrahma3, cardBrahma4, cardBrahma5, cardAddBrahma1, cardAddBrahma2, cardAddBrahma3, cardAddBrahma4, cardAddBrahma5;
@@ -31,6 +40,8 @@ public class CervejaActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private ScrollView contentView;
     private ImageView icon_carrinho;
+    private SensorManager sensorManager;
+    private Sensor sensorLuz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +53,9 @@ public class CervejaActivity extends AppCompatActivity {
         drawerLayout=findViewById(R.id.DrawerLayout);
         toolbar = findViewById(R.id.app_Bar);
         icon_carrinho = findViewById(R.id.carrinho_icon);
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
@@ -352,5 +366,66 @@ public class CervejaActivity extends AppCompatActivity {
     public void retColorado4(View asc){
         cardColorado4.setVisibility(View.VISIBLE);
         cardAddColorado4.setVisibility(View.GONE);
+    }
+
+    //MÉTODOS DO SENSOR
+
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(this);
+    }
+
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(this, sensorLuz, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+
+        if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+            //Mudar brilho do celular
+
+            if(permissaoControlarBrilho()){
+                int brilho = (int) (event.values[0]);
+                controlarBrilho(brilho);
+            }
+        }
+    }
+
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    private boolean permissaoControlarBrilho()
+    {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.System.canWrite(this)) {
+                return true;
+            }
+            else
+            {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+                intent.setData((Uri.parse("package:" + getApplication().getPackageName())));
+                startActivity(intent);
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private void controlarBrilho(int brilho)
+    {
+        if(brilho < 0)
+        {
+            brilho = 0;
+        }
+        else if(brilho > 255)
+        {
+            brilho = 255;
+        }
+
+        ContentResolver contentResolver = getApplicationContext().getContentResolver();
+        Settings.System.putInt(contentResolver, Settings.System.SCREEN_BRIGHTNESS, brilho);
     }
 }
