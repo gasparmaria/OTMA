@@ -7,9 +7,18 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +28,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class VinhoActivity extends AppCompatActivity {
+public class VinhoActivity extends AppCompatActivity implements SensorEventListener {
 
     public LinearLayout cardTinto1, cardTinto2, cardTinto3, cardTinto4, cardTinto5, cardAddTinto1, cardAddTinto2, cardAddTinto3, cardAddTinto4, cardAddTinto5;
     public LinearLayout cardBranco1, cardBranco2, cardBranco3, cardBranco4, cardAddBranco1, cardAddBranco2, cardAddBranco3, cardAddBranco4;
@@ -29,6 +38,8 @@ public class VinhoActivity extends AppCompatActivity {
     public NavigationView navigationView;
     public ScrollView contentView;
     private ImageView icon_carrinho;
+    private SensorManager sensorManager;
+    private Sensor sensorLuz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +51,9 @@ public class VinhoActivity extends AppCompatActivity {
         drawerLayout=findViewById(R.id.DrawerLayout);
         toolbar = findViewById(R.id.app_Bar);
         icon_carrinho = findViewById(R.id.carrinho_icon);
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         setSupportActionBar(toolbar);
         ActionBar actionBar;
@@ -253,5 +267,64 @@ public class VinhoActivity extends AppCompatActivity {
     public void retRose3(View asc){
         cardRose3.setVisibility(View.VISIBLE);
         cardAddRose3.setVisibility(View.GONE);
+    }
+
+    //MÉTODOS DO SENSOR
+
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(this);
+    }
+
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(this, sensorLuz, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+
+        if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+            if(permissaoControlarBrilho()){
+                int brilho = (int) (event.values[0]);
+                controlarBrilho(brilho);
+            }
+        }
+    }
+
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    private boolean permissaoControlarBrilho()
+    {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.System.canWrite(this)) {
+                return true;
+            }
+            else
+            {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+                intent.setData((Uri.parse("package:" + getApplication().getPackageName())));
+                startActivity(intent);
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private void controlarBrilho(int brilho)
+    {
+        if(brilho < 0)
+        {
+            brilho = 0;
+        }
+        else if(brilho > 255)
+        {
+            brilho = 255;
+        }
+
+        ContentResolver contentResolver = getApplicationContext().getContentResolver();
+        Settings.System.putInt(contentResolver, Settings.System.SCREEN_BRIGHTNESS, brilho);
     }
 }

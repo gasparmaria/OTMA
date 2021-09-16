@@ -172,8 +172,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onSensorChanged(SensorEvent event) {
 
         if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
-            //Mudar brilho do celular
-
             if(permissaoControlarBrilho()){
                 int brilho = (int) (event.values[0]);
                 controlarBrilho(brilho);
