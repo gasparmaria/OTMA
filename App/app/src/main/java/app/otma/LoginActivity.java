@@ -22,30 +22,31 @@ import app.otma.databinding.ActivityLoginBinding;
 public class LoginActivity extends AppCompatActivity {
 
     private Button btnLogin;
-    private EditText inputEmail, inputSenha;
+    private EditText email, senha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
-        inputEmail = (EditText) findViewById(R.id.edtxtEmailLogin);
-        inputSenha = (EditText) findViewById(R.id.edtxtSenhaLogin);
+        email = (EditText) findViewById(R.id.edtxtEmailLogin);
+        senha = (EditText) findViewById(R.id.edtxtSenhaLogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String email = String.valueOf(inputEmail.getText());
-                String senha = String.valueOf(inputSenha.getText());
-                /*
-                if((senha.equals(cliente.getClienteSenha())) && (email.equals(cliente.getClienteEmail())))
+                //String emailCadastro = String.valueOf(Cliente.Email);
+                //String senhaCadastro = String.valueOf(Cliente.Senha);
+                if((senha.equals(Cliente.Senha)) && (email.equals(Cliente.Email)))
                 {
                     Toast.makeText(LoginActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
-                }*/
-                Toast.makeText(LoginActivity.this, "Usuário ou senha não correspondem", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(LoginActivity.this, "Usuário ou senha não correspondem", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

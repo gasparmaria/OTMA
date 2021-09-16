@@ -2,73 +2,46 @@ package app.otma;
 
 public class Cliente {
 
-    private String ClienteNome;
-    private String ClienteCPF;
-    private String ClienteCelular;
-    private int ClienteIdade;
-    private String ClienteEmail;
-    private String ClienteSenha;
+    public static String Senha, Email;
+    private String nome, cpf, celular, email, senha;
+    private int idade;
 
-    //CONSTRUTORES
+    // CONSTRUTORES
 
     public Cliente() {}
 
-    public Cliente(String clienteNome, String clienteCPF, String clienteCelular, int clienteIdade, String clienteEmail, String clienteSenha) {
-        ClienteNome = clienteNome;
-        ClienteCPF = clienteCPF;
-        ClienteCelular = clienteCelular;
-        ClienteIdade = clienteIdade;
-        ClienteEmail = clienteEmail;
-        ClienteSenha = clienteSenha;
+    public Cliente(String nome, String CPF, String celular, int idade, String email, String senha) {
+        this.nome = nome;
+        this.cpf = CPF;
+        this.celular = celular;
+        this.idade = idade;
+        this.email = email;
+        this.senha = senha;
     }
 
-    // GETTERS
-    public String getClienteNome() {
-        return ClienteNome;
-    }
+    // GETS
+    public String getNome() { return nome; }
 
-    public String getClienteCPF() {
-        return ClienteCPF;
-    }
+    public String getCPF() { return cpf; }
 
-    public String getClienteCelular() {
-        return ClienteCelular;
-    }
+    public String getCelular() { return celular; }
 
-    public int getClienteIdade() {
-        return ClienteIdade;
-    }
+    public int getIdade() { return idade; }
 
-    public String getClienteEmail() {
-        return ClienteEmail;
-    }
+    public String getEmail() { return email; }
 
-    public String getClienteSenha() {
-        return ClienteSenha;
-    }
+    public String getSenha() { return senha; }
 
-    //SETTERS
-    public void setClienteNome(String clienteNome) {
-        ClienteNome = clienteNome;
-    }
+    // SETS
+    public void setNome(String nome) { this.nome = nome; }
 
-    public void setClienteCPF(String clienteCPF) {
-        ClienteCPF = clienteCPF;
-    }
+    public void setClienteCPF(String CPF) { this.cpf = CPF; }
 
-    public void setClienteCelular(String clienteCelular) {
-        ClienteCelular = clienteCelular;
-    }
+    public void setCelular(String celular) { this.celular = celular; }
 
-    public void setClienteIdade(int clienteIdade) {
-        ClienteIdade = clienteIdade;
-    }
+    public void setIdade(int idade) { this.idade = idade; }
 
-    public void setClienteEmail(String clienteEmail) {
-        ClienteEmail = clienteEmail;
-    }
+    public void setEmail(String email) { this.email = email; }
 
-    public void setClienteSenha(String clienteSenha) {
-        ClienteSenha = clienteSenha;
-    }
+    public void setSenha(String senha) { this.senha = senha; }
 }
