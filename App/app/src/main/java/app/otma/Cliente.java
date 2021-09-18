@@ -1,14 +1,13 @@
 package app.otma;
 
-public class Cliente {
+import java.io.Serializable;
 
-    public static String Senha, Email;
+public class Cliente implements Serializable {
+
     private String nome, cpf, celular, email, senha;
     private int idade;
 
     // CONSTRUTORES
-
-    public Cliente() {}
 
     public Cliente(String nome, String CPF, String celular, int idade, String email, String senha) {
         this.nome = nome;

@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="app.otma">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
+        <activity
+            android:name=".TesteActivity"
+            android:exported="true" />
         <activity
             android:name=".PagamentoActivity"
             android:exported="true" />
@@ -30,10 +38,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
 
 </manifest>

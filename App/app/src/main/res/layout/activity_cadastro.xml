@@ -48,6 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
+        android:nextFocusDown="@+id/edtxtCPF"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -65,6 +66,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtNome"
+        android:nextFocusDown="@+id/edtxtCelular"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -82,6 +84,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtCPF"
+        android:nextFocusDown="@+id/edtxtIdade"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -99,6 +102,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtCelular"
+        android:nextFocusDown="@+id/edtxtEmail"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -116,6 +120,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtIdade"
+        android:nextFocusDown="@+id/edtxtSenha"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -133,6 +138,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtEmail"
+        android:nextFocusDown="@+id/edtxtConfSenha"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -149,6 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtSenha"
+        android:nextFocusDown="@+id/chkPolitica"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
@@ -163,13 +170,13 @@
         app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtConfSenha"
+        android:nextFocusDown="@+id/btnCadastrar"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_width="245dp"
         android:layout_height="47dp"
-        android:onClick="entrar"
         android:text="@string/btnCadastrar"
         android:textColor="@color/white"
         app:backgroundTint="@color/cor_principal"
