@@ -43,6 +43,7 @@
     <string name="txtFacaLogin">Tem cadastro? Faça login</string>
 
     <!-- INDEX -->
+    <string name="txtDelivery">Delivery</string>
     <string name="txtCategoria">Categorias</string>
     <string name="txtPopulares">Populares</string>
     <!-- categorias -->
@@ -51,7 +52,19 @@
     <string name="txtsemAlcool">Sem álcool</string>
     <string name="txtCervejas">Cervejas</string>
     <!-- populares -->
-
+    <string name="txtEconimizePopular1">Economize R$30,00</string>
+    <string name="txtTitlePopulares1">Whisky Jake Daniels - 1L</string>
+    <string name="precoAntigoPopulares1"><s>R$82,00</s></string>
+    <string name="precoAtualPopulares1">R$52,00</string>
+    <string name="txtAdicionePopulares">Adicionar</string>
+    <string name="txtEconimizePopular2">Economize R$50,00</string>
+    <string name="precoAntigoPopulares2"><s>R$120,89</s></string>
+    <string name="precoAtualPopulares2">R$70,00</string>
+    <string name="txtTitlePopulares2">Vinho Tinto - 750ml</string>
+    <string name="txtEconimizePopular3">Economize R$10,00</string>
+    <string name="txtTitlePopulares3">Suco de Del Valle - 1L</string>
+    <string name="precoAntigoPopulares3"><s>R$12,00</s></string>
+    <string name="precoAtualPopulares3">R$2,00</string>
     <!-- adicionar produto -->
     <string name="txtdiminuirItem">-</string>
     <string name="txtaumentarItem">+</string>
@@ -248,6 +261,9 @@
     <string name="txtqtdProd3">2</string>
     <string name="txtvalor3">R$4,00</string>
     <string name="txtaddProd">Adicionar mais produtos</string>
+    <string name="txtPagamento">Pagamento</string>
+
+    <!-- PAGAMENTO -->
     <string name="txtsubtotal">Subtotal</string>
     <string name="txtvalorSubtotal">R$554,00</string>
     <string name="txtTaxaEntrega">Taxa de entrega</string>
@@ -255,26 +271,25 @@
     <string name="txtTotal">Total</string>
     <string name="txtValorTotal">R$559,00</string>
     <string name="btnConfirmarPedido">Confirmar pedido</string>
-    <string name="txtqtdprod1">1</string>
-    <string name="txtDelivery">Delivery</string>
-    <string name="txtEconimizePopular1">Economize R$30,00</string>
-    <string name="txtTitlePopulares1">Whisky Jake Daniels - 1L</string>
-    <string name="precoAntigoPopulares1"><s>R$82,00</s></string>
-    <string name="precoAtualPopulares1">R$52,00</string>
-    <string name="txtAdicionePopulares">Adicionar</string>
-    <string name="txtEconimizePopular2">Economize R$50,00</string>
-    <string name="precoAntigoPopulares2"><s>R$120,89</s></string>
-    <string name="precoAtualPopulares2">R$70,00</string>
-    <string name="txtTitlePopulares2">Vinho Tinto - 750ml</string>
-    <string name="txtEconimizePopular3">Economize R$10,00</string>
-    <string name="txtTitlePopulares3">Suco de Del Valle - 1L</string>
-    <string name="precoAntigoPopulares3"><s>R$12,00</s></string>
-    <string name="precoAtualPopulares3">R$2,00</string>
+    <string name="txtEndereco">Endereço</string>
+    <string name="txtFormaPagto">Forma de pagamento</string>
+    <string name="txtSelecionarFormaPagto">Selecionar pagamento</string>
+
+    <!-- FORMA DE PAGAMENTO -->
     <string name="txtPagamentoAPP">Pagamento pelo app</string>
     <string name="txtCartaoCredito">Cartão de Crédito</string>
     <string name="txtPagamentoEntrega">Pagamento na entrega</string>
     <string name="txtCartaoCreditoDebito">Cartão de Débito ou Crédito</string>
     <string name="txtDinheiro">Dinheiro</string>
+    <string name="txtNumeroCartao">Número do cartão</string>
+    <string name="txtNomeTitular">Nome do titular</string>
+    <string name="txtValidade">Validade</string>
+    <string name="txtCVV">CVV</string>
+    <string name="txtTroco">Preciso de troco</string>
+    <string name="txtTotalCompra">Valor da compra: R$559,00</string>
+    <string name="txtValorTroco">Troco para quanto?</string>
+
+    <!-- LOCALIZAÇÃO -->
     <string name="txtSelecionarEndereco">Selecionar endereço</string>
     <string name="txtLocalizacaoAtual">Usar localização atual</string>
     <string name="txtLogradouro">Logradouro *</string>
@@ -286,5 +301,11 @@
     <string name="txtPontoReferencia">Ponto de referência</string>
     <string name="btnSalvar">Salvar</string>
     <string name="btnLimpar">Limpar</string>
-    <string name="txtPagamento">Pagamento</string>
+    <string name="txtExemploLogradouro">Ex. Avenida Paulista</string>
+    <string name="txtExemploNumero">Ex. 1000</string>
+    <string name="txtExemploCEP">Ex. 00000-000</string>
+    <string name="txtExemploBairro">Ex. Jardim Central</string>
+    <string name="txtExemploCidade">Ex. São Paulo</string>
+    <string name="txtExemploEstado">Ex. São Paulo</string>
+    <string name="txtExemploPontoReferencia">Ex. Ao lado da igreja</string>
 </resources>

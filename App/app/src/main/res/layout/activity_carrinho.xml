@@ -9,8 +9,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <!-- HEADER -->
         <RelativeLayout
             android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:textAllCaps="true"
                 android:textColor="@color/cor_principal"
                 android:textSize="28sp" />
+
             <!-- BOTÃO VOLTAR -->
             <ImageButton
                 android:id="@+id/btnvoltar"
@@ -37,6 +39,7 @@
                 android:background="@drawable/ic_baseline_keyboard_backspace"
                 android:backgroundTint="@color/black"
                 android:onClick="voltar"/>
+
         </RelativeLayout>
 
         <!-- CONTEÚDO -->

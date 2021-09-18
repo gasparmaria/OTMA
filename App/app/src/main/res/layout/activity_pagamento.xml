@@ -11,135 +11,16 @@
     tools:context=".CarrinhoActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/viewEndereco"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="48dp"
-            android:orientation="horizontal">
-
-            <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@drawable/border">
-
-                <ImageButton
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_cartao" />
-            </FrameLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Endereço"
-                    android:textColor="@color/cor_cinza"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Selecionar endereço"
-                    android:textColor="@color/cor_cinza"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="16dp">
-
-                <ImageButton
-                    android:layout_width="43dp"
-                    android:layout_height="47dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:background="@drawable/ic_sinal_de_maior" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/viewFormaPagamento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="48dp"
-            android:orientation="horizontal">
-
-            <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@drawable/border">
-
-                <ImageButton
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_local" />
-            </FrameLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Forma de pagamento"
-                    android:textColor="@color/cor_cinza"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Selecionar pagamento"
-                    android:textColor="@color/cor_cinza"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:layout_width="43dp"
-                    android:layout_height="47dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:background="@drawable/ic_sinal_de_maior" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
+        <!-- HEADER -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp">
 
-            <!-- BOTÃO VOLTAR -->
             <ImageButton
                 android:id="@+id/btnvoltar"
                 android:layout_width="24dp"
@@ -158,14 +39,14 @@
                 android:textAllCaps="true"
                 android:textColor="@color/cor_principal"
                 android:textSize="28sp" />
+
         </RelativeLayout>
 
-        <!-- INFORMAÇÕES -->
+        <!-- INFORMAÇÕES DO PEDIDO -->
         <RelativeLayout
             android:id="@+id/card_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtaddProd"
             android:layout_marginTop="52dp"
             android:background="@color/cor_cinza">
 
@@ -247,12 +128,139 @@
                     android:textColor="@color/black"
                     android:textSize="28sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
+
         </RelativeLayout>
 
+        <!-- ENCAMINHAR PARA VIEW LOCALIZAÇÃO -->
+        <LinearLayout
+            android:id="@+id/viewEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_cartao" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txtEndereco"
+                    android:textColor="@color/cor_cinza"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txtSelecionarEndereco"
+                    android:textColor="@color/cor_cinza"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp">
+
+                <ImageButton
+                    android:layout_width="43dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_sinal_de_maior" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- ENCAMINHAR PARA VIEW FORMA DE PAGAMENTO -->
+        <LinearLayout
+            android:id="@+id/viewFormaPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_local" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txtFormaPagto"
+                    android:textColor="@color/cor_cinza"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txtSelecionarFormaPagto"
+                    android:textColor="@color/cor_cinza"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp">
+
+                <ImageButton
+                    android:layout_width="43dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_sinal_de_maior" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- BOTÃO CONFIRMAR PEDIDO -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <Button
                 android:id="@+id/btnConfirmarPedido"

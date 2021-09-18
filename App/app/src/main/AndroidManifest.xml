@@ -16,7 +16,7 @@
         android:theme="@style/Theme.OTMA"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".TesteActivity"
+            android:name=".FormaPagamentoActivity"
             android:exported="true" />
         <activity
             android:name=".PagamentoActivity"

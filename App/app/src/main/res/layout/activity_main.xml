@@ -36,6 +36,7 @@
                 android:textColor="@color/black"
                 android:layout_marginLeft="16dp"/>
 
+            <!-- CATEGORIAS -->
             <TextView
                 android:id="@+id/txtCategoria"
                 android:layout_width="wrap_content"
@@ -61,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
+                    <!-- card categoria cervejas -->
                     <LinearLayout
                         android:id="@+id/cardCerveja"
                         android:layout_width="match_parent"
@@ -98,6 +100,7 @@
                             tools:layout_editor_absoluteY="162dp" />
                     </LinearLayout>
 
+                    <!-- card categoria vinhos -->
                     <LinearLayout
                         android:id="@+id/cardVinhos"
                         android:layout_width="148dp"
@@ -131,6 +134,7 @@
                             android:textSize="16sp" />
                     </LinearLayout>
 
+                    <!-- card categoria destilados -->
                     <LinearLayout
                         android:id="@+id/cardDestilados"
                         android:layout_width="match_parent"
@@ -168,6 +172,7 @@
                             tools:layout_editor_absoluteY="162dp" />
                     </LinearLayout>
 
+                    <!-- card categoria sem álcool -->
                     <LinearLayout
                         android:id="@+id/cardSemAcool"
                         android:layout_width="match_parent"
@@ -202,10 +207,14 @@
                             android:textSize="16sp"
                             tools:layout_editor_absoluteX="48dp"
                             tools:layout_editor_absoluteY="162dp" />
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </HorizontalScrollView>
 
+            <!-- POPULARES -->
             <TextView
                 android:id="@+id/txtPopulares"
                 android:layout_width="wrap_content"
@@ -220,7 +229,6 @@
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="141dp" />
 
-            <!-- CONTAINER POPULARES -->
             <HorizontalScrollView
                 android:id="@+id/container_populares"
                 android:layout_width="match_parent"
@@ -233,7 +241,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
-                    <!-- Card 1 -->
+
+                    <!-- card 1 populares -->
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="match_parent"
@@ -298,7 +307,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/txtTitlePopulares1"
                             android:textColor="@color/cor_principal"
-                            android:textSize="17dp"
+                            android:textSize="17sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -314,7 +323,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/precoAntigoPopulares1"
                             android:textColor="@color/cor_principal"
-                            android:textSize="12dp" />
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/txtPrecoAtualPopulares1"
@@ -329,7 +338,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/precoAtualPopulares1"
                             android:textColor="@color/cor_principal"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <RelativeLayout
                             android:id="@+id/AdicionePopular1"
@@ -380,9 +389,12 @@
                                 android:layout_marginRight="24dp"
                                 android:background="@drawable/ic_shopping_cart"
                                 android:backgroundTint="@color/white" />
+
                         </RelativeLayout>
+
                     </RelativeLayout>
-                    <!-- CARD 2 -->
+
+                    <!-- card 2 populares -->
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="match_parent"
@@ -494,7 +506,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/precoAntigoPopulares2"
                             android:textColor="@color/cor_principal"
-                            android:textSize="12dp" />
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/txtPrecoAtualPopulares2"
@@ -509,7 +521,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/precoAtualPopulares2"
                             android:textColor="@color/cor_principal"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <TextView
                             android:id="@+id/txtTitlePopulares2"
@@ -529,10 +541,12 @@
                             android:gravity="center_horizontal"
                             android:text="@string/txtTitlePopulares2"
                             android:textColor="@color/cor_principal"
-                            android:textSize="17dp"
+                            android:textSize="17sp"
                             android:textStyle="bold" />
+
                     </RelativeLayout>
-                    <!-- CARD 3 -->
+
+                    <!-- card 3 populares -->
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="match_parent"
@@ -599,7 +613,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/txtTitlePopulares3"
                             android:textColor="@color/cor_principal"
-                            android:textSize="17dp"
+                            android:textSize="17sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -615,7 +629,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/precoAntigoPopulares3"
                             android:textColor="@color/cor_principal"
-                            android:textSize="12dp" />
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/txtPrecoAtualPopulares3"
@@ -630,7 +644,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/precoAtualPopulares3"
                             android:textColor="@color/cor_principal"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <!-- BOTÃO ADICIONAR AO CARRINHO -->
                         <RelativeLayout
@@ -682,11 +696,17 @@
                                 android:text="@string/txtAdicionePopulares"
                                 android:textColor="@color/white"
                                 android:textSize="12sp" />
-                        </RelativeLayout>
-                    </RelativeLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-    </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
 
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,6 +36,11 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
             Intent intent = new Intent(getApplicationContext(), LocalizacaoActivity.class);
             startActivity(intent);
         });
+
+        viewFormaPagamento.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), FormaPagamentoActivity.class);
+            startActivity(intent);
+        });
     }
 
     //MÉTODOS DO SENSOR
