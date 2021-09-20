@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PagamentoActivity extends AppCompatActivity implements SensorEventListener {
 
-    private LinearLayout viewEndereco, viewFormaPagamento;
     private SensorManager sensorManager;
     private Sensor sensorLuz;
 
@@ -26,8 +25,8 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagamento);
 
-        viewEndereco = findViewById(R.id.viewEndereco);
-        viewFormaPagamento = findViewById(R.id.viewFormaPagamento);
+        LinearLayout viewEndereco = findViewById(R.id.viewEndereco);
+        LinearLayout viewFormaPagamento = findViewById(R.id.viewFormaPagamento);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);

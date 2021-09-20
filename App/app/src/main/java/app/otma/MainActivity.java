@@ -14,7 +14,6 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
@@ -29,11 +28,8 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
-    private Toolbar toolbar;
     private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
     private ScrollView contentView;
-    private ImageView icon_carrinho;
     private SensorManager sensorManager;
     private Sensor sensorLuz;
 
@@ -42,11 +38,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        navigationView = findViewById(R.id.NavigationView);
+        NavigationView navigationView = findViewById(R.id.NavigationView);
         drawerLayout = findViewById(R.id.DrawerLayout);
-        toolbar = findViewById(R.id.app_Bar);
+        Toolbar toolbar = findViewById(R.id.app_Bar);
         contentView = findViewById(R.id.content_layout_main);
-        icon_carrinho = findViewById(R.id.carrinho_icon);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
@@ -54,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setSupportActionBar(toolbar);
         ActionBar actionBar;
         actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
@@ -105,9 +101,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     public void returnContent(View view) {
         drawerLayout.closeDrawer(GravityCompat.START);
-        new Handler().postDelayed(() -> {
-            contentView.setVisibility(View.VISIBLE);
-        }, 200);
+        new Handler().postDelayed(() -> contentView.setVisibility(View.VISIBLE), 200);
     }
 
     public void abrirCarrinho(View view) {
@@ -138,20 +132,28 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void openNextActivity(String value) {
         Intent intent = new Intent();
 
-        if (value == "Index") {
-            intent = new Intent(getApplicationContext(), MainActivity.class);
-        } else if (value == "Cerveja") {
-            intent = new Intent(getApplicationContext(), CervejaActivity.class);
-        } else if (value == "Vinhos") {
-            intent = new Intent(getApplicationContext(), VinhoActivity.class);
-        } else if (value == "Destilados") {
-            intent = new Intent(getApplicationContext(), DestiladoActivity.class);
-        } else if (value == "Carrinho") {
-            intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
-        } else if (value == "Sair") {
-            intent = new Intent(getApplicationContext(), LoginActivity.class);
-        } else if (value == "SemAlcool") {
-            intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
+        switch (value) {
+            case "Index":
+                intent = new Intent(getApplicationContext(), MainActivity.class);
+                break;
+            case "Cerveja":
+                intent = new Intent(getApplicationContext(), CervejaActivity.class);
+                break;
+            case "Vinhos":
+                intent = new Intent(getApplicationContext(), VinhoActivity.class);
+                break;
+            case "Destilados":
+                intent = new Intent(getApplicationContext(), DestiladoActivity.class);
+                break;
+            case "Carrinho":
+                intent = new Intent(getApplicationContext(), CarrinhoActivity.class);
+                break;
+            case "Sair":
+                intent = new Intent(getApplicationContext(), LoginActivity.class);
+                break;
+            case "SemAlcool":
+                intent = new Intent(getApplicationContext(), SemAlcoolActivity.class);
+                break;
         }
         startActivity(intent);
     }

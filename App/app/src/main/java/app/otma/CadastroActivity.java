@@ -33,13 +33,12 @@ public class CadastroActivity extends AppCompatActivity implements SensorEventLi
     private int idade;
     private SensorManager sensorManager;
     private Sensor sensorLuz;
-    private Button btnCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
-        btnCadastrar = findViewById(R.id.btnCadastrar);
+        Button btnCadastrar = findViewById(R.id.btnCadastrar);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
@@ -51,29 +50,24 @@ public class CadastroActivity extends AppCompatActivity implements SensorEventLi
         txtSenha = findViewById(R.id.edtxtSenha);
         txtConfSenha = findViewById(R.id.edtxtConfSenha);
 
-        btnCadastrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nome = txtNome.getText().toString();
-                cpf = txtCPF.getText().toString();
-                celular = txtCelular.getText().toString();
-                stringidade = txtIdade.getText().toString();
-                idade = Integer.parseInt(stringidade);
-                email = txtEmail.getText().toString();
-                senha = txtSenha.getText().toString();
-                confsenha = txtConfSenha.getText().toString();
+        btnCadastrar.setOnClickListener(v -> {
+            nome = txtNome.getText().toString();
+            cpf = txtCPF.getText().toString();
+            celular = txtCelular.getText().toString();
+            stringidade = txtIdade.getText().toString();
+            idade = Integer.parseInt(stringidade);
+            email = txtEmail.getText().toString();
+            senha = txtSenha.getText().toString();
+            confsenha = txtConfSenha.getText().toString();
 
-                if(senha.equals(confsenha)) {
-                    Cliente cliente = new Cliente(nome, cpf, celular, idade, email, senha);
-                    Gson gson = new Gson();
-                    String json = gson.toJson(cliente);
-                    gravarDados(json);
-                    abrirLogin(null);
-                }
-                else
-                {
-                    Toast.makeText(CadastroActivity.this, "As senhas não correspondem.", Toast.LENGTH_SHORT).show();
-                }
+            if (senha.equals(confsenha)) {
+                Cliente cliente = new Cliente(nome, cpf, celular, idade, email, senha);
+                Gson gson = new Gson();
+                String json = gson.toJson(cliente);
+                gravarDados(json);
+                abrirLogin(null);
+            } else {
+                Toast.makeText(CadastroActivity.this, "As senhas não correspondem.", Toast.LENGTH_SHORT).show();
             }
         });
     }
