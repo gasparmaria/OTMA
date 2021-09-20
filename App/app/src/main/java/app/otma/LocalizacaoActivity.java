@@ -18,8 +18,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.Html;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,17 +43,43 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_localizacao);
-        LinearLayout btn_localizacao = findViewById(R.id.btnLocalizacaoAtual);
+
+        LinearLayout btnLocalizacao = findViewById(R.id.btnLocalizacaoAtual);
+
         inputLogradouro = findViewById(R.id.inputLogradouro);
         inputNumero = findViewById(R.id.inputNumeroEndereco);
         inputCEP = findViewById(R.id.inputCEP);
         inputCidade = findViewById(R.id.inputCidade);
         inputEstado = findViewById(R.id.inputEstado);
         inputBairro = findViewById(R.id.inputBairro);
+
+        Button btnSalvar = findViewById(R.id.btnSalvar);
+        Button btnLimpar = findViewById(R.id.btnLimpar);
+
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        btn_localizacao.setOnClickListener(v -> {
+
+
+        // LIMPAR DADOS DO FORMULÁRIO
+        btnLimpar.setOnClickListener(v -> {
+            inputLogradouro.setText(null);
+            inputNumero.setText(null);
+            inputCEP.setText(null);
+            inputCidade.setText(null);
+            inputEstado.setText(null);
+            inputBairro.setText(null);
+        });
+
+        // SALVAR DADOS
+        btnSalvar.setOnClickListener(v -> {
+            Toast.makeText(this, "Endereço confirmado com sucesso.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), PagamentoActivity.class);
+            startActivity(intent);
+        });
+
+        // PEGAR LOCALIZAÇÃO ATUAL
+        btnLocalizacao.setOnClickListener(v -> {
             if (ActivityCompat.checkSelfPermission(LocalizacaoActivity.this,
                     Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 //PERMISSÃO CEDIDA
@@ -64,6 +92,7 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
             }
         });
     }
+
     @SuppressLint("MissingPermission")
     private void getLocalizacaoAtual() {
         fusedLocationProviderClient.getLastLocation().addOnCompleteListener(task -> {

@@ -229,6 +229,24 @@
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp">
+
+            <Button
+                android:id="@+id/btnSalvarFormaPagto"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_view"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/btnSalvar"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:backgroundTint="@color/cor_principal"
+                app:iconTint="@color/white" />
+        </RelativeLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

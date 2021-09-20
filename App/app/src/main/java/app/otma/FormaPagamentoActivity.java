@@ -11,7 +11,9 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,13 +27,24 @@ public class FormaPagamentoActivity extends AppCompatActivity implements SensorE
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forma_pagamento);
+
+
         inputNumeroCartao = findViewById(R.id.inputNumeroCartao);
         inputNomeTitular = findViewById(R.id.inputNomeTitular);
         inputValidade = findViewById(R.id.inputValidade);
         inputCVV = findViewById(R.id.inputCVV);
         inputTroco = findViewById(R.id.inputTroco);
+
+        Button btnSalvarFormaPagto = findViewById(R.id.btnSalvarFormaPagto);
+
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+
+        btnSalvarFormaPagto.setOnClickListener(v -> {
+            Toast.makeText(this, "Forma de pagamento confirmada com sucesso.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), PagamentoActivity.class);
+            startActivity(intent);
+        });
     }
 
     // SAVED INSTANCE
