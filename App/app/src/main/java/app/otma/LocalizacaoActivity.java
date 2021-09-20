@@ -35,10 +35,11 @@ import java.util.List;
 import java.util.Locale;
 
 public class LocalizacaoActivity extends AppCompatActivity implements SensorEventListener {
-    private EditText inputLogradouro, inputNumero, inputCidade, inputEstado, inputCEP, inputBairro;
+    private EditText inputLogradouro, inputNumero, inputCidade, inputEstado, inputCEP, inputBairro, inputPontoReferencia;
     private FusedLocationProviderClient fusedLocationProviderClient;
     private SensorManager sensorManager;
     private Sensor sensorLuz;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,7 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
         inputCidade = findViewById(R.id.inputCidade);
         inputEstado = findViewById(R.id.inputEstado);
         inputBairro = findViewById(R.id.inputBairro);
+        inputPontoReferencia = findViewById(R.id.inputPontoReferencia);
 
         Button btnSalvar = findViewById(R.id.btnSalvar);
         Button btnLimpar = findViewById(R.id.btnLimpar);
@@ -69,6 +71,7 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
             inputCidade.setText(null);
             inputEstado.setText(null);
             inputBairro.setText(null);
+            inputPontoReferencia.setText(null);
         });
 
         // SALVAR DADOS
