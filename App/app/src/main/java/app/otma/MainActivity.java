@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menuicon);
 
+
         navigationView.setNavigationItemSelectedListener(menuItem -> {
             switch (menuItem.getItemId()) {
                 case R.id.iteminicio:
@@ -181,9 +182,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {

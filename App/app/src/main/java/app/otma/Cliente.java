@@ -8,7 +8,6 @@ public class Cliente implements Serializable {
     private int idade;
 
     // CONSTRUTORES
-
     public Cliente(String nome, String CPF, String celular, int idade, String email, String senha) {
         this.nome = nome;
         this.cpf = CPF;

@@ -78,7 +78,9 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
         btnSalvar.setOnClickListener(v -> {
             Toast.makeText(this, "Endereço confirmado com sucesso.", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), PagamentoActivity.class);
+            intent.putExtra("log", inputLogradouro.getText().toString());
             startActivity(intent);
+
         });
 
         // PEGAR LOCALIZAÇÃO ATUAL
@@ -159,8 +161,9 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
             }
         }
     }
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
+
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
+
     private boolean permissaoControlarBrilho()
     {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

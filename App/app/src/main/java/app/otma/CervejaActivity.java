@@ -94,52 +94,52 @@ public class CervejaActivity extends AppCompatActivity implements SensorEventLis
         });
 
         // cards skol
-        cardSkol1 = (LinearLayout) findViewById(R.id.cardSkol1);
-        cardAddSkol1 = (LinearLayout) findViewById(R.id.cardSkol1_0);
-        cardSkol2 = (LinearLayout) findViewById(R.id.cardSkol2);
-        cardAddSkol2 = (LinearLayout) findViewById(R.id.cardSkol2_0);
-        cardSkol3 = (LinearLayout) findViewById(R.id.cardSkol3);
-        cardAddSkol3 = (LinearLayout) findViewById(R.id.cardSkol3_0);
-        cardSkol4 = (LinearLayout) findViewById(R.id.cardSkol4);
-        cardAddSkol4 = (LinearLayout) findViewById(R.id.cardSkol4_0);
-        cardSkol5 = (LinearLayout) findViewById(R.id.cardSkol5);
-        cardAddSkol5 = (LinearLayout) findViewById(R.id.cardSkol5_0);
-        cardSkol6 = (LinearLayout) findViewById(R.id.cardSkol6);
-        cardAddSkol6 = (LinearLayout) findViewById(R.id.cardSkol6_0);
+        cardSkol1 = findViewById(R.id.cardSkol1);
+        cardAddSkol1 = findViewById(R.id.cardSkol1_0);
+        cardSkol2 = findViewById(R.id.cardSkol2);
+        cardAddSkol2 = findViewById(R.id.cardSkol2_0);
+        cardSkol3 = findViewById(R.id.cardSkol3);
+        cardAddSkol3 = findViewById(R.id.cardSkol3_0);
+        cardSkol4 = findViewById(R.id.cardSkol4);
+        cardAddSkol4 = findViewById(R.id.cardSkol4_0);
+        cardSkol5 = findViewById(R.id.cardSkol5);
+        cardAddSkol5 = findViewById(R.id.cardSkol5_0);
+        cardSkol6 = findViewById(R.id.cardSkol6);
+        cardAddSkol6 = findViewById(R.id.cardSkol6_0);
         // cards brahma
-        cardBrahma1 = (LinearLayout) findViewById(R.id.cardBrahma1);
-        cardAddBrahma1 = (LinearLayout) findViewById(R.id.cardBrahma1_0);
-        cardBrahma2 = (LinearLayout) findViewById(R.id.cardBrahma2);
-        cardAddBrahma2 = (LinearLayout) findViewById(R.id.cardBrahma2_0);
-        cardBrahma3 = (LinearLayout) findViewById(R.id.cardBrahma3);
-        cardAddBrahma3 = (LinearLayout) findViewById(R.id.cardBrahma3_0);
-        cardBrahma4 = (LinearLayout) findViewById(R.id.cardBrahma4);
-        cardAddBrahma4 = (LinearLayout) findViewById(R.id.cardBrahma4_0);
-        cardBrahma5 = (LinearLayout) findViewById(R.id.cardBrahma5);
-        cardAddBrahma5 = (LinearLayout) findViewById(R.id.cardBrahma5_0);
+        cardBrahma1 = findViewById(R.id.cardBrahma1);
+        cardAddBrahma1 = findViewById(R.id.cardBrahma1_0);
+        cardBrahma2 = findViewById(R.id.cardBrahma2);
+        cardAddBrahma2 = findViewById(R.id.cardBrahma2_0);
+        cardBrahma3 = findViewById(R.id.cardBrahma3);
+        cardAddBrahma3 = findViewById(R.id.cardBrahma3_0);
+        cardBrahma4 = findViewById(R.id.cardBrahma4);
+        cardAddBrahma4 = findViewById(R.id.cardBrahma4_0);
+        cardBrahma5 = findViewById(R.id.cardBrahma5);
+        cardAddBrahma5 = findViewById(R.id.cardBrahma5_0);
         // cards heineken
-        cardHeineken1 = (LinearLayout) findViewById(R.id.cardHeineken1);
-        cardAddHeineken1 = (LinearLayout) findViewById(R.id.cardHeineken1_0);
-        cardHeineken2 = (LinearLayout) findViewById(R.id.cardHeineken2);
-        cardAddHeineken2 = (LinearLayout) findViewById(R.id.cardHeineken2_0);
-        cardHeineken3 = (LinearLayout) findViewById(R.id.cardHeineken3);
-        cardAddHeineken3 = (LinearLayout) findViewById(R.id.cardHeineken3_0);
+        cardHeineken1 = findViewById(R.id.cardHeineken1);
+        cardAddHeineken1 = findViewById(R.id.cardHeineken1_0);
+        cardHeineken2 = findViewById(R.id.cardHeineken2);
+        cardAddHeineken2 = findViewById(R.id.cardHeineken2_0);
+        cardHeineken3 = findViewById(R.id.cardHeineken3);
+        cardAddHeineken3 = findViewById(R.id.cardHeineken3_0);
         // cards stella
-        cardStella1 = (LinearLayout) findViewById(R.id.cardStella1);
-        cardAddStella1 = (LinearLayout) findViewById(R.id.cardStella1_0);
-        cardStella2 = (LinearLayout) findViewById(R.id.cardStella2);
-        cardAddStella2 = (LinearLayout) findViewById(R.id.cardStella2_0);
-        cardStella3 = (LinearLayout) findViewById(R.id.cardStella3);
-        cardAddStella3 = (LinearLayout) findViewById(R.id.cardStella3_0);
+        cardStella1 = findViewById(R.id.cardStella1);
+        cardAddStella1 = findViewById(R.id.cardStella1_0);
+        cardStella2 = findViewById(R.id.cardStella2);
+        cardAddStella2 = findViewById(R.id.cardStella2_0);
+        cardStella3 = findViewById(R.id.cardStella3);
+        cardAddStella3 = findViewById(R.id.cardStella3_0);
         // cards colorado
-        cardColorado1 = (LinearLayout) findViewById(R.id.cardColorado1);
-        cardAddColorado1 = (LinearLayout) findViewById(R.id.cardColorado1_0);
-        cardColorado2 = (LinearLayout) findViewById(R.id.cardColorado2);
-        cardAddColorado2 = (LinearLayout) findViewById(R.id.cardColorado2_0);
-        cardColorado3 = (LinearLayout) findViewById(R.id.cardColorado3);
-        cardAddColorado3 = (LinearLayout) findViewById(R.id.cardColorado3_0);
-        cardColorado4 = (LinearLayout) findViewById(R.id.cardColorado4);
-        cardAddColorado4 = (LinearLayout) findViewById(R.id.cardColorado4_0);
+        cardColorado1 = findViewById(R.id.cardColorado1);
+        cardAddColorado1 = findViewById(R.id.cardColorado1_0);
+        cardColorado2 = findViewById(R.id.cardColorado2);
+        cardAddColorado2 = findViewById(R.id.cardColorado2_0);
+        cardColorado3 = findViewById(R.id.cardColorado3);
+        cardAddColorado3 = findViewById(R.id.cardColorado3_0);
+        cardColorado4 = findViewById(R.id.cardColorado4);
+        cardAddColorado4 = findViewById(R.id.cardColorado4_0);
     }
 
     @Override
@@ -393,9 +393,7 @@ public class CervejaActivity extends AppCompatActivity implements SensorEventLis
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {

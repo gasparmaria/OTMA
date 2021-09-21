@@ -20,8 +20,7 @@ import java.io.InputStreamReader;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String FILE_NAME = "dadosCliente.json";
-    private EditText txtEmail;
-    private EditText txtSenha;
+    private EditText txtEmail, txtSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             Cliente cliente = gson.fromJson(clienteJson, Cliente.class);
             String emailLogin = String.valueOf(txtEmail.getText());
             String senhaLogin = String.valueOf(txtSenha.getText());
+
             if ((senhaLogin.equals(cliente.getSenha())) && (emailLogin.equals(cliente.getEmail()))) {
                 entrar();
             } else {
@@ -43,17 +43,20 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
     // MÉTODOS PARA ENTRAR
     public void entrar() {
         Toast.makeText(LoginActivity.this, "Inicio", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
     }
+
     public void abrirCadastro(View asc) {
         Toast.makeText(LoginActivity.this, "Cadastro", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(), CadastroActivity.class);
         startActivity(intent);
     }
+
     // LER DADOS
     private String lerDados() {
         FileInputStream fis;

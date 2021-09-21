@@ -147,8 +147,7 @@ public class CadastroActivity extends AppCompatActivity implements SensorEventLi
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

@@ -93,35 +93,35 @@ public class SemAlcoolActivity extends AppCompatActivity implements SensorEventL
         });
 
         // cards refrigerante
-        cardRefri1 = (LinearLayout) findViewById(R.id.cardRefri1);
-        cardAddRefri1 = (LinearLayout) findViewById(R.id.cardRefri1_0);
-        cardRefri2 = (LinearLayout) findViewById(R.id.cardRefri2);
-        cardAddRefri2 = (LinearLayout) findViewById(R.id.cardRefri2_0);
-        cardRefri3 = (LinearLayout) findViewById(R.id.cardRefri3);
-        cardAddRefri3 = (LinearLayout) findViewById(R.id.cardRefri3_0);
-        cardRefri4 = (LinearLayout) findViewById(R.id.cardRefri4);
-        cardAddRefri4 = (LinearLayout) findViewById(R.id.cardRefri4_0);
-        cardRefri5 = (LinearLayout) findViewById(R.id.cardRefri5);
-        cardAddRefri5 = (LinearLayout) findViewById(R.id.cardRefri5_0);
+        cardRefri1 = findViewById(R.id.cardRefri1);
+        cardAddRefri1 = findViewById(R.id.cardRefri1_0);
+        cardRefri2 = findViewById(R.id.cardRefri2);
+        cardAddRefri2 = findViewById(R.id.cardRefri2_0);
+        cardRefri3 = findViewById(R.id.cardRefri3);
+        cardAddRefri3 = findViewById(R.id.cardRefri3_0);
+        cardRefri4 = findViewById(R.id.cardRefri4);
+        cardAddRefri4 = findViewById(R.id.cardRefri4_0);
+        cardRefri5 = findViewById(R.id.cardRefri5);
+        cardAddRefri5 = findViewById(R.id.cardRefri5_0);
         // cards suco
-        cardSuco1 = (LinearLayout) findViewById(R.id.cardSuco1);
-        cardAddSuco1 = (LinearLayout) findViewById(R.id.cardSuco1_0);
-        cardSuco2 = (LinearLayout) findViewById(R.id.cardSuco2);
-        cardAddSuco2 = (LinearLayout) findViewById(R.id.cardSuco2_0);
-        cardSuco3 = (LinearLayout) findViewById(R.id.cardSuco3);
-        cardAddSuco3 = (LinearLayout) findViewById(R.id.cardSuco3_0);
+        cardSuco1 = findViewById(R.id.cardSuco1);
+        cardAddSuco1 = findViewById(R.id.cardSuco1_0);
+        cardSuco2 = findViewById(R.id.cardSuco2);
+        cardAddSuco2 = findViewById(R.id.cardSuco2_0);
+        cardSuco3 = findViewById(R.id.cardSuco3);
+        cardAddSuco3 = findViewById(R.id.cardSuco3_0);
         // cards água
-        cardAgua1 = (LinearLayout) findViewById(R.id.cardAgua1);
-        cardAddAgua1 = (LinearLayout) findViewById(R.id.cardAgua1_0);
-        cardAgua2 = (LinearLayout) findViewById(R.id.cardAgua2);
-        cardAddAgua2 = (LinearLayout) findViewById(R.id.cardAgua2_0);
+        cardAgua1 = findViewById(R.id.cardAgua1);
+        cardAddAgua1 = findViewById(R.id.cardAgua1_0);
+        cardAgua2 = findViewById(R.id.cardAgua2);
+        cardAddAgua2 = findViewById(R.id.cardAgua2_0);
         // cards energético
-        cardEnerg1 = (LinearLayout) findViewById(R.id.cardEnerg1);
-        cardAddEnerg1 = (LinearLayout) findViewById(R.id.cardEnerg1_0);
-        cardEnerg2 = (LinearLayout) findViewById(R.id.cardEnerg2);
-        cardAddEnerg2 = (LinearLayout) findViewById(R.id.cardEnerg2_0);
-        cardEnerg3 = (LinearLayout) findViewById(R.id.cardEnerg3);
-        cardAddEnerg3 = (LinearLayout) findViewById(R.id.cardEnerg3_0);
+        cardEnerg1 = findViewById(R.id.cardEnerg1);
+        cardAddEnerg1 = findViewById(R.id.cardEnerg1_0);
+        cardEnerg2 = findViewById(R.id.cardEnerg2);
+        cardAddEnerg2 = findViewById(R.id.cardEnerg2_0);
+        cardEnerg3 = findViewById(R.id.cardEnerg3);
+        cardAddEnerg3 = findViewById(R.id.cardEnerg3_0);
     }
 
     @Override
@@ -308,9 +308,7 @@ public class SemAlcoolActivity extends AppCompatActivity implements SensorEventL
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {

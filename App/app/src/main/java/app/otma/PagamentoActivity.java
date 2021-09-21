@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +31,14 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+        TextView txtEndereco = findViewById(R.id.txtSelecionarEndereco);
+
+
+        Intent log = getIntent();
+        if(log.getStringExtra("log") != null){
+            String logradouro = log.getStringExtra("log");
+            txtEndereco.setText(logradouro);
+        }
 
         viewEndereco.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), LocalizacaoActivity.class);
@@ -41,7 +50,6 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
             startActivity(intent);
         });
     }
-
     //MÉTODOS DO SENSOR
 
     protected void onPause() {
@@ -65,9 +73,7 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {

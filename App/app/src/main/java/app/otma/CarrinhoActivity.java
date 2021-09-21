@@ -70,9 +70,7 @@ public class CarrinhoActivity extends AppCompatActivity implements SensorEventLi
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {

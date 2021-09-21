@@ -94,32 +94,32 @@ public class VinhoActivity extends AppCompatActivity implements SensorEventListe
         });
 
         // cards tinto
-        cardTinto1 = (LinearLayout) findViewById(R.id.cardTinto1);
-        cardAddTinto1 = (LinearLayout) findViewById(R.id.cardTinto1_0);
-        cardTinto2 = (LinearLayout) findViewById(R.id.cardTinto2);
-        cardAddTinto2 = (LinearLayout) findViewById(R.id.cardTinto2_0);
-        cardTinto3 = (LinearLayout) findViewById(R.id.cardTinto3);
-        cardAddTinto3 = (LinearLayout) findViewById(R.id.cardTinto3_0);
-        cardTinto4 = (LinearLayout) findViewById(R.id.cardTinto4);
-        cardAddTinto4 = (LinearLayout) findViewById(R.id.cardTinto4_0);
-        cardTinto5 = (LinearLayout) findViewById(R.id.cardTinto5);
-        cardAddTinto5 = (LinearLayout) findViewById(R.id.cardTinto5_0);
+        cardTinto1 = findViewById(R.id.cardTinto1);
+        cardAddTinto1 = findViewById(R.id.cardTinto1_0);
+        cardTinto2 = findViewById(R.id.cardTinto2);
+        cardAddTinto2 = findViewById(R.id.cardTinto2_0);
+        cardTinto3 = findViewById(R.id.cardTinto3);
+        cardAddTinto3 = findViewById(R.id.cardTinto3_0);
+        cardTinto4 = findViewById(R.id.cardTinto4);
+        cardAddTinto4 = findViewById(R.id.cardTinto4_0);
+        cardTinto5 = findViewById(R.id.cardTinto5);
+        cardAddTinto5 = findViewById(R.id.cardTinto5_0);
         // cards branco
-        cardBranco1 = (LinearLayout) findViewById(R.id.cardBranco1);
-        cardAddBranco1 = (LinearLayout) findViewById(R.id.cardBranco1_0);
-        cardBranco2 = (LinearLayout) findViewById(R.id.cardBranco2);
-        cardAddBranco2 = (LinearLayout) findViewById(R.id.cardBranco2_0);
-        cardBranco3 = (LinearLayout) findViewById(R.id.cardBranco3);
-        cardAddBranco3 = (LinearLayout) findViewById(R.id.cardBranco3_0);
-        cardBranco4 = (LinearLayout) findViewById(R.id.cardBranco4);
-        cardAddBranco4 = (LinearLayout) findViewById(R.id.cardBranco4_0);
+        cardBranco1 = findViewById(R.id.cardBranco1);
+        cardAddBranco1 = findViewById(R.id.cardBranco1_0);
+        cardBranco2 = findViewById(R.id.cardBranco2);
+        cardAddBranco2 = findViewById(R.id.cardBranco2_0);
+        cardBranco3 = findViewById(R.id.cardBranco3);
+        cardAddBranco3 = findViewById(R.id.cardBranco3_0);
+        cardBranco4 = findViewById(R.id.cardBranco4);
+        cardAddBranco4 = findViewById(R.id.cardBranco4_0);
         // cards rose
-        cardRose1 = (LinearLayout) findViewById(R.id.cardRose1);
-        cardAddRose1 = (LinearLayout) findViewById(R.id.cardRose1_0);
-        cardRose2 = (LinearLayout) findViewById(R.id.cardRose2);
-        cardAddRose2 = (LinearLayout) findViewById(R.id.cardRose2_0);
-        cardRose3 = (LinearLayout) findViewById(R.id.cardRose3);
-        cardAddRose3 = (LinearLayout) findViewById(R.id.cardRose3_0);
+        cardRose1 = findViewById(R.id.cardRose1);
+        cardAddRose1 = findViewById(R.id.cardRose1_0);
+        cardRose2 = findViewById(R.id.cardRose2);
+        cardAddRose2 = findViewById(R.id.cardRose2_0);
+        cardRose3 = findViewById(R.id.cardRose3);
+        cardAddRose3 = findViewById(R.id.cardRose3_0);
     }
 
     @Override
@@ -296,9 +296,7 @@ public class VinhoActivity extends AppCompatActivity implements SensorEventListe
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {

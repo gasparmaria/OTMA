@@ -94,52 +94,52 @@ public class DestiladoActivity extends AppCompatActivity implements SensorEventL
         });
 
         // cards beats
-        cardBeats1 = (LinearLayout) findViewById(R.id.cardBeats1);
-        cardAddBeats1 = (LinearLayout) findViewById(R.id.cardBeats1_0);
-        cardBeats2 = (LinearLayout) findViewById(R.id.cardBeats2);
-        cardAddBeats2 = (LinearLayout) findViewById(R.id.cardBeats2_0);
-        cardBeats3 = (LinearLayout) findViewById(R.id.cardBeats3);
-        cardAddBeats3 = (LinearLayout) findViewById(R.id.cardBeats3_0);
-        cardBeats4 = (LinearLayout) findViewById(R.id.cardBeats4);
-        cardAddBeats4 = (LinearLayout) findViewById(R.id.cardBeats4_0);
-        cardBeats5 = (LinearLayout) findViewById(R.id.cardBeats5);
-        cardAddBeats5 = (LinearLayout) findViewById(R.id.cardBeats5_0);
-        cardBeats6 = (LinearLayout) findViewById(R.id.cardBeats6);
-        cardAddBeats6 = (LinearLayout) findViewById(R.id.cardBeats6_0);
-        cardBeats7 = (LinearLayout) findViewById(R.id.cardBeats7);
-        cardAddBeats7 = (LinearLayout) findViewById(R.id.cardBeats7_0);
+        cardBeats1 = findViewById(R.id.cardBeats1);
+        cardAddBeats1 = findViewById(R.id.cardBeats1_0);
+        cardBeats2 = findViewById(R.id.cardBeats2);
+        cardAddBeats2 = findViewById(R.id.cardBeats2_0);
+        cardBeats3 = findViewById(R.id.cardBeats3);
+        cardAddBeats3 = findViewById(R.id.cardBeats3_0);
+        cardBeats4 = findViewById(R.id.cardBeats4);
+        cardAddBeats4 = findViewById(R.id.cardBeats4_0);
+        cardBeats5 = findViewById(R.id.cardBeats5);
+        cardAddBeats5 = findViewById(R.id.cardBeats5_0);
+        cardBeats6 = findViewById(R.id.cardBeats6);
+        cardAddBeats6 = findViewById(R.id.cardBeats6_0);
+        cardBeats7 = findViewById(R.id.cardBeats7);
+        cardAddBeats7 = findViewById(R.id.cardBeats7_0);
         // cards whisky
-        cardWhisky1 = (LinearLayout) findViewById(R.id.cardWhisky1);
-        cardAddWhisky1 = (LinearLayout) findViewById(R.id.cardWhisky1_0);
-        cardWhisky2 = (LinearLayout) findViewById(R.id.cardWhisky2);
-        cardAddWhisky2 = (LinearLayout) findViewById(R.id.cardWhisky2_0);
-        cardWhisky3 = (LinearLayout) findViewById(R.id.cardWhisky3);
-        cardAddWhisky3 = (LinearLayout) findViewById(R.id.cardWhisky3_0);
-        cardWhisky4 = (LinearLayout) findViewById(R.id.cardWhisky4);
-        cardAddWhisky4 = (LinearLayout) findViewById(R.id.cardWhisky4_0);
+        cardWhisky1 = findViewById(R.id.cardWhisky1);
+        cardAddWhisky1 = findViewById(R.id.cardWhisky1_0);
+        cardWhisky2 = findViewById(R.id.cardWhisky2);
+        cardAddWhisky2 = findViewById(R.id.cardWhisky2_0);
+        cardWhisky3 = findViewById(R.id.cardWhisky3);
+        cardAddWhisky3 = findViewById(R.id.cardWhisky3_0);
+        cardWhisky4 = findViewById(R.id.cardWhisky4);
+        cardAddWhisky4 = findViewById(R.id.cardWhisky4_0);
         // cards vodka
-        cardVodka1 = (LinearLayout) findViewById(R.id.cardVodka1);
-        cardAddVodka1 = (LinearLayout) findViewById(R.id.cardVodka1_0);
-        cardVodka2 = (LinearLayout) findViewById(R.id.cardVodka2);
-        cardAddVodka2 = (LinearLayout) findViewById(R.id.cardVodka2_0);
-        cardVodka3 = (LinearLayout) findViewById(R.id.cardVodka3);
-        cardAddVodka3 = (LinearLayout) findViewById(R.id.cardVodka3_0);
-        cardVodka4 = (LinearLayout) findViewById(R.id.cardVodka4);
-        cardAddVodka4 = (LinearLayout) findViewById(R.id.cardVodka4_0);
+        cardVodka1 = findViewById(R.id.cardVodka1);
+        cardAddVodka1 = findViewById(R.id.cardVodka1_0);
+        cardVodka2 = findViewById(R.id.cardVodka2);
+        cardAddVodka2 = findViewById(R.id.cardVodka2_0);
+        cardVodka3 = findViewById(R.id.cardVodka3);
+        cardAddVodka3 = findViewById(R.id.cardVodka3_0);
+        cardVodka4 = findViewById(R.id.cardVodka4);
+        cardAddVodka4 = findViewById(R.id.cardVodka4_0);
         // cards gin
-        cardGin1 = (LinearLayout) findViewById(R.id.cardGin1);
-        cardAddGin1 = (LinearLayout) findViewById(R.id.cardGin1_0);
-        cardGin2 = (LinearLayout) findViewById(R.id.cardGin2);
-        cardAddGin2 = (LinearLayout) findViewById(R.id.cardGin2_0);
-        cardGin3 = (LinearLayout) findViewById(R.id.cardGin3);
-        cardAddGin3 = (LinearLayout) findViewById(R.id.cardGin3_0);
+        cardGin1 = findViewById(R.id.cardGin1);
+        cardAddGin1 = findViewById(R.id.cardGin1_0);
+        cardGin2 = findViewById(R.id.cardGin2);
+        cardAddGin2 = findViewById(R.id.cardGin2_0);
+        cardGin3 = findViewById(R.id.cardGin3);
+        cardAddGin3 = findViewById(R.id.cardGin3_0);
         // cards cachaça
-        cardCachaca1 = (LinearLayout) findViewById(R.id.cardCachaca1);
-        cardAddCachaca1 = (LinearLayout) findViewById(R.id.cardCachaca1_0);
-        cardCachaca2 = (LinearLayout) findViewById(R.id.cardCachaca2);
-        cardAddCachaca2 = (LinearLayout) findViewById(R.id.cardCachaca2_0);
-        cardCachaca3 = (LinearLayout) findViewById(R.id.cardCachaca3);
-        cardAddCachaca3 = (LinearLayout) findViewById(R.id.cardCachaca3_0);
+        cardCachaca1 = findViewById(R.id.cardCachaca1);
+        cardAddCachaca1 = findViewById(R.id.cardCachaca1_0);
+        cardCachaca2 = findViewById(R.id.cardCachaca2);
+        cardAddCachaca2 = findViewById(R.id.cardCachaca2_0);
+        cardCachaca3 = findViewById(R.id.cardCachaca3);
+        cardAddCachaca3 = findViewById(R.id.cardCachaca3_0);
     }
 
     @Override
@@ -392,9 +392,7 @@ public class DestiladoActivity extends AppCompatActivity implements SensorEventL
         }
     }
 
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {    }
 
     private boolean permissaoControlarBrilho()
     {
