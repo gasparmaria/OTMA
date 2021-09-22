@@ -18,6 +18,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.Html;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -36,6 +37,7 @@ import java.util.Locale;
 
 public class LocalizacaoActivity extends AppCompatActivity implements SensorEventListener {
     private EditText inputLogradouro, inputNumero, inputCidade, inputEstado, inputCEP, inputBairro, inputPontoReferencia;
+    private String logradouro, numero, cep, cidade, estado, bairro, pontoreferencia;
     private FusedLocationProviderClient fusedLocationProviderClient;
     private SensorManager sensorManager;
     private Sensor sensorLuz;
@@ -76,11 +78,11 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
 
         // SALVAR DADOS
         btnSalvar.setOnClickListener(v -> {
+            validarCampos();
             Toast.makeText(this, "Endereço confirmado com sucesso.", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), PagamentoActivity.class);
             intent.putExtra("log", inputLogradouro.getText().toString());
             startActivity(intent);
-
         });
 
         // PEGAR LOCALIZAÇÃO ATUAL
@@ -123,22 +125,62 @@ public class LocalizacaoActivity extends AppCompatActivity implements SensorEven
         });
     }
 
+    // VALIDAR CAMPOS
+    private void validarCampos(){
+        boolean verificacao = false;
+
+        logradouro = inputLogradouro.getText().toString();
+        numero = inputNumero.getText().toString();
+        cidade = inputCidade.getText().toString();
+        estado = inputEstado.getText().toString();
+        cep = inputCEP.getText().toString();
+        bairro = inputBairro.getText().toString();
+        pontoreferencia = inputPontoReferencia.getText().toString();
+
+        if (verificacao = campoNulo(logradouro)) {
+            inputLogradouro.requestFocus();
+            Toast.makeText(this, "Preencha o campo logradouro.", Toast.LENGTH_SHORT).show();
+        } else if (verificacao = campoNulo(numero)) {
+            inputNumero.requestFocus();
+            Toast.makeText(this, "Preencha o campo número.", Toast.LENGTH_SHORT).show();
+        } else if (verificacao = campoNulo(cidade)) {
+            inputCidade.requestFocus();
+            Toast.makeText(this, "Preencha o campo cidade.", Toast.LENGTH_SHORT).show();
+        } else if (verificacao = campoNulo(estado)) {
+            inputEstado.requestFocus();
+            Toast.makeText(this, "Preencha o campo estado.", Toast.LENGTH_SHORT).show();
+        } else if (verificacao = campoNulo(cep)) {
+            inputCEP.requestFocus();
+            Toast.makeText(this, "Preencha o campo CEP.", Toast.LENGTH_SHORT).show();
+        } else if (verificacao = campoNulo(bairro)) {
+            inputBairro.requestFocus();
+            Toast.makeText(this, "Preencha o campo bairro.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean campoNulo (String campo){
+        boolean verificacao = (TextUtils.isEmpty(campo) || campo.trim().isEmpty());
+        return verificacao;
+    }
+
     // SAVED INSTANCE
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        String logradouro = inputLogradouro.getText().toString();
-        String numero = inputNumero.getText().toString();
-        String cidade = inputCidade.getText().toString();
-        String estado = inputEstado.getText().toString();
-        String cep = inputCEP.getText().toString();
-        String bairro = inputBairro.getText().toString();
+        logradouro = inputLogradouro.getText().toString();
+        numero = inputNumero.getText().toString();
+        cidade = inputCidade.getText().toString();
+        estado = inputEstado.getText().toString();
+        cep = inputCEP.getText().toString();
+        bairro = inputBairro.getText().toString();
+        pontoreferencia = inputPontoReferencia.getText().toString();
         outState.putString("Logradouro", logradouro);
         outState.putString("Numero", numero);
         outState.putString("Cidade", cidade);
         outState.putString("Estado", estado);
         outState.putString("Cep", cep);
         outState.putString("Bairro", bairro);
+        outState.putString("PontoReferencia", pontoreferencia);
     }
 
     //MÉTODOS DO SENSOR

@@ -2,6 +2,7 @@ package app.otma;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,20 +22,25 @@ import java.io.InputStreamReader;
 public class LoginActivity extends AppCompatActivity {
     private static final String FILE_NAME = "dadosCliente.json";
     private EditText txtEmail, txtSenha;
+    private String email, senha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         Button btnLogin = findViewById(R.id.btnLogin);
         txtEmail = findViewById(R.id.edtxtEmailLogin);
         txtSenha = findViewById(R.id.edtxtSenhaLogin);
+
         btnLogin.setOnClickListener(v -> {
             Gson gson = new Gson();
             String clienteJson = lerDados();
             Cliente cliente = gson.fromJson(clienteJson, Cliente.class);
             String emailLogin = String.valueOf(txtEmail.getText());
             String senhaLogin = String.valueOf(txtSenha.getText());
+
+            validarCampos();
 
             if ((senhaLogin.equals(cliente.getSenha())) && (emailLogin.equals(cliente.getEmail()))) {
                 entrar();
@@ -55,6 +61,27 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(LoginActivity.this, "Cadastro", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(), CadastroActivity.class);
         startActivity(intent);
+    }
+
+    // VALIDAR CAMPOS
+    private void validarCampos(){
+        boolean verificacao = false;
+
+        email = txtEmail.getText().toString();
+        senha = txtSenha.getText().toString();
+
+        if (verificacao = campoNulo(email)) {
+            txtEmail.requestFocus();
+            Toast.makeText(this, "Preencha o campo email.", Toast.LENGTH_SHORT).show();
+        } else if (verificacao = campoNulo(senha)) {
+            txtSenha.requestFocus();
+            Toast.makeText(this, "Preencha o campo senha.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean campoNulo (String campo){
+        boolean verificacao = (TextUtils.isEmpty(campo) || campo.trim().isEmpty());
+        return verificacao;
     }
 
     // LER DADOS

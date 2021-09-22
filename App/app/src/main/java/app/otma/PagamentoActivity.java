@@ -38,6 +38,9 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
         if(log.getStringExtra("log") != null){
             String logradouro = log.getStringExtra("log");
             txtEndereco.setText(logradouro);
+        }if(log.getStringExtra("num") != null){
+            String numerocartao = log.getStringExtra("num");
+            txtEndereco.setText(numerocartao);
         }
 
         viewEndereco.setOnClickListener(v -> {
@@ -50,8 +53,8 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
             startActivity(intent);
         });
     }
-    //MÉTODOS DO SENSOR
 
+    //MÉTODOS DO SENSOR
     protected void onPause() {
         super.onPause();
         sensorManager.unregisterListener(this);
