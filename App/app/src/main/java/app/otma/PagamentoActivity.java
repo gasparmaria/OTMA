@@ -32,6 +32,7 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLuz = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         TextView txtEndereco = findViewById(R.id.txtSelecionarEndereco);
+        TextView txtFormaPagamento = findViewById(R.id.txtSelecionarPagamento);
 
 
         Intent log = getIntent();
@@ -40,7 +41,7 @@ public class PagamentoActivity extends AppCompatActivity implements SensorEventL
             txtEndereco.setText(logradouro);
         }if(log.getStringExtra("num") != null){
             String numerocartao = log.getStringExtra("num");
-            txtEndereco.setText(numerocartao);
+            txtFormaPagamento.setText(numerocartao);
         }
 
         viewEndereco.setOnClickListener(v -> {
